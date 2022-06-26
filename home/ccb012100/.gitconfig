@@ -1,0 +1,34 @@
+# $HOME/.gitconfig
+[core]
+    editor = vim
+    autocrlf = input
+    filemode = false
+	excludesfile = ~/.config/git/ignore
+[gpg]
+    program = gpg
+[commit]
+    gpgsign = true
+	verbose = true
+[pull]
+    ff = only
+    rebase = true
+[push]
+	default = simple
+[fetch]
+    prune = false
+[rebase]
+    autoStash = false
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[include]
+    path = .config/git/aliases.gitconfig
+    path = .config/git/dracula-theme.gitconfig
+    path = .config/git/github.gitconfig
+    path = .config/git/tools.gitconfig
+    # local-machine.gitconfig contains username/email/gpg key configs
+    path = .local/local-machine.gitconfig

@@ -1,0 +1,99 @@
+[global_config]
+  broadcast_default = off
+  sticky = True
+  title_transmit_fg_color = "#000000"
+  title_transmit_bg_color = "#4e9a06"
+  title_inactive_fg_color = "#ffffff"
+  title_inactive_bg_color = "#2e3436"
+  inactive_color_offset = 0.9027777777777778
+  enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, TerminatorThemes
+  suppress_multiple_term_dialog = True
+  title_use_system_font = False
+  title_font = Hack Nerd Font Mono 9
+[keybindings]
+  new_tab = <Alt><Super>Return
+  cycle_next = <Primary><Shift>n
+  cycle_prev = <Primary><Shift>p
+  go_next = None
+  go_prev = None
+  go_up = <Alt><Super>Up
+  go_down = <Alt><Super>Down
+  go_left = <Alt><Super>Left
+  go_right = <Alt><Super>Right
+  rotate_cw = <Alt><Super>period
+  rotate_ccw = <Alt><Super>comma
+  split_horiz = <Primary><Shift>Return
+  split_vert = <Primary><Shift>Tab
+  close_term = <Shift><Alt><Super>q
+  copy = <Primary><Shift>c
+  toggle_scrollbar = None
+  page_up = Page_Up
+  page_down = Page_Down
+  page_up_half = <Shift>Page_Up
+  page_down_half = <Shift>Page_Down
+  line_up = <Alt><Super>p
+  line_down = <Alt><Super>n
+  close_window = <Alt><Super>q
+  resize_up = <Primary><Shift>Up
+  resize_down = <Primary><Shift>Up
+  resize_left = <Primary><Shift>Left
+  resize_right = <Primary><Shift>Right
+  move_tab_right = None
+  move_tab_left = None
+  toggle_zoom = <Primary><Shift>z
+  scaled_zoom = None
+  next_tab = <Alt><Super>t
+  prev_tab = <Alt><Super>p
+  switch_to_tab_1 = <Alt><Super>1
+  switch_to_tab_2 = <Alt><Super>KP_2
+  switch_to_tab_3 = <Alt><Super>KP_3
+  switch_to_tab_4 = <Alt><Super>KP_4
+  switch_to_tab_5 = <Alt><Super>KP_5
+  switch_to_tab_6 = <Alt><Super>KP_6
+  switch_to_tab_7 = <Alt><Super>KP_7
+  switch_to_tab_8 = <Alt><Super>KP_8
+  switch_to_tab_9 = <Alt><Super>KP_9
+  switch_to_tab_10 = <Alt><Super>0
+  reset = <Alt><Super>r
+  reset_clear = <Shift><Alt><Super>r
+  hide_window = None
+  group_all = None
+  group_all_toggle = None
+  ungroup_all = None
+  group_tab = None
+  ungroup_tab = None
+  new_window = <Alt><Super>w
+  new_terminator = None
+  broadcast_off = None
+  broadcast_group = None
+  broadcast_all = None
+  insert_number = None
+  insert_padded = None
+  edit_window_title = None
+  edit_tab_title = None
+  edit_terminal_title = None
+  layout_launcher = None
+[profiles]
+  [[default]]
+    cursor_color = "#aaaaaa"
+  [[Candy]]
+    visible_bell = True
+    cursor_shape = ibeam
+    cursor_color = "#aaaaaa"
+    cursor_color_fg = False
+    font = Hack Nerd Font Mono 10
+    scrollback_lines = 10000
+    palette = "#2e3436:#fa2573:#a6e32d:#fc951e:#c48dff:#fa2573:#67d9f0:#f2f2f2:#555753:#fa2573:#8ae234:#fce94f:#729fcf:#fa2573:#34e2e2:#eeeeec"
+    use_system_font = False
+    copy_on_selection = True
+    split_to_group = True
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = Candy
+[plugins]

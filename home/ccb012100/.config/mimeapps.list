@@ -1,0 +1,15 @@
+[Default Applications]
+x-scheme-handler/http=google-chrome.desktop
+application/xhtml+xml=google-chrome.desktop
+text/html=microsoft-edge.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/unknown=google-chrome.desktop
+x-scheme-handler/webcal=microsoft-edge.desktop
+
+[Added Associations]
+x-scheme-handler/http=google-chrome.desktop;
+application/xhtml+xml=google-chrome.desktop;
+text/html=google-chrome.desktop;
+x-scheme-handler/https=google-chrome.desktop;
+text/plain=code.desktop;microsoft-edge.desktop;

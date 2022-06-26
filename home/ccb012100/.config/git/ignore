@@ -1,0 +1,16 @@
+# MacOS
+
+.DS_Store
+
+# vi
+
+*~
+
+# Windows
+
+Thumbs.db
+
+# Google Drive
+
+.tmp.driveupload
+.tmp.drivedownload
