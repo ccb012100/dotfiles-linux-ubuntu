@@ -1,0 +1,7 @@
+Extension Manager	com.mattjakeman.ExtensionManager	0.3.1	stable	system
+Freedesktop Platform	org.freedesktop.Platform	21.08.14	21.08	system
+Mesa	org.freedesktop.Platform.GL.default	21.3.8	21.08	system
+Intel	org.freedesktop.Platform.VAAPI.Intel		21.08	system
+openh264	org.freedesktop.Platform.openh264	2.1.0	2.0	system
+GNOME Application Platform version 42	org.gnome.Platform		42	system
+Cider	sh.cider.Cider	v1.5.1	stable	system
