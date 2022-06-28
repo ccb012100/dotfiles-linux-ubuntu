@@ -27,7 +27,6 @@
 	smudge = git-lfs smudge -- %f
 [include]
     path = .config/git/aliases.gitconfig
-    path = .config/git/dracula-theme.gitconfig
     path = .config/git/github.gitconfig
     path = .config/git/tools.gitconfig
     # local-machine.gitconfig contains username/email/gpg key configs
