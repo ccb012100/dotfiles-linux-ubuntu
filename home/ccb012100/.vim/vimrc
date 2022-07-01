@@ -46,6 +46,7 @@ set number relativenumber       " toggle hybrid line numbers
 set number
 set rtp+=/usr/local/opt/fzf     " add fzf to runtimepath
 set ruler                       " displays cursor position
+set shiftround
 set shiftwidth=4                " indentation setting
 set showcmd                     " show last command in bottom bar
 set showmatch                   " highlight matching brackets/parens
