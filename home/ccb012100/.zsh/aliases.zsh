@@ -20,6 +20,7 @@ alias paths='path | sort'
 alias rm='rm -v'
 alias rmi='rm -i'
 alias rmdir='rmdir -v'
+alias trash='gio trash'
 
 ## cd
 alias ...='cd ../..'
@@ -60,6 +61,8 @@ alias py='python3'
 alias r='ranger'
 # make ripgrep searches case insensitive by default
 alias rg='rg -i'
+# keep making this mistake for some reason
+alias rust='echo think you mean _rush_'
 alias sesh='tmux new-session -A -s sesh'
 alias v='vim'
 
