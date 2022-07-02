@@ -51,7 +51,10 @@ alias emacs='emacsclient -nc -a=""'
 # show hidden files when doing fd search
 alias fd='fd -H'
 alias g='git'
-alias gf='git forgit'
+# build the go project in the cwd
+alias gob='go build .'
+# run the go project in the cwd
+alias gor='go run .'
 alias gitconfig='vim ~/.gitconfig'
 # colorize json
 alias jq='jq -C'
