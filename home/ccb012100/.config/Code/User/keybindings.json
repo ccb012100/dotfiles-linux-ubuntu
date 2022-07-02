@@ -232,17 +232,13 @@
     "command": "-editor.action.copyLinesDownAction"
   },
   {
-    "key": "ctrl+shift+/",
-    "command": "redo"
+    "key": "ctrl+.",
+    "command": "redo",
+    "when": "textInputFocus && !editorReadonly"
   },
   {
     "key": "ctrl+y",
     "command": "-redo"
-  },
-  {
-    "key": "ctrl+l ctrl+j",
-    "command": "editor.action.joinLines",
-    "when": "editorTextFocus && !editorReadonly"
   },
   {
     "key": "cmd+k v",
@@ -371,11 +367,6 @@
     "command": "-editor.action.toggleRenderWhitespace"
   },
   {
-    "key": "ctrl+/",
-    "command": "undo",
-    "when": "textInputFocus && !editorReadonly"
-  },
-  {
     "key": "ctrl+x b",
     "command": "workbench.action.showAllEditors"
   },
@@ -408,11 +399,6 @@
     "key": "enter",
     "command": "acceptSelectedSuggestionOnEnter",
     "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
-  },
-  {
-    "key": "ctrl+j",
-    "command": "-editor.action.joinLines",
-    "when": "editorTextFocus && !editorReadonly"
   },
   {
     "key": "cmd+u",
@@ -1002,10 +988,6 @@
     "when": "inSettingsEditor"
   },
   {
-    "key": "ctrl+; s",
-    "command": "workbench.action.showAllSymbols"
-  },
-  {
     "key": "ctrl+t",
     "command": "-workbench.action.showAllSymbols"
   },
@@ -1049,31 +1031,13 @@
     "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
   },
   {
-    "key": "ctrl+; d",
-    "command": "editor.action.revealDefinition",
-    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
-  },
-  {
-    "key": "ctrl+; i",
-    "command": "editor.action.goToImplementation"
-  },
-  {
     "key": "ctrl+h i",
     "command": "editor.action.peekImplementation",
     "when": "editorHasImplementationProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
   },
   {
-    "key": "ctrl+; r",
-    "command": "editor.action.goToReferences",
-    "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
-  },
-  {
     "key": "ctrl+h r",
     "command": "editor.action.referenceSearch.trigger"
-  },
-  {
-    "key": "ctrl+; t",
-    "command": "editor.action.goToTypeDefinition"
   },
   {
     "key": "ctrl+h t",
@@ -1098,10 +1062,6 @@
     "key": "ctrl+k f12",
     "command": "-editor.action.revealDefinitionAside",
     "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
-  },
-  {
-    "key": "ctrl+; ctrl+s",
-    "command": "workbench.action.gotoSymbol"
   },
   {
     "key": "ctrl+shift+o",
@@ -1659,7 +1619,8 @@
   },
   {
     "key": "ctrl+x k",
-    "command": "workbench.action.closeActiveEditor"
+    "command": "workbench.action.closeActiveEditor",
+    "when": "!activeEditorIsPinned"
   },
   {
     "key": "ctrl+h k",
@@ -2309,14 +2270,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+; n",
-    "command": "bookmarks.jumpToNext"
-  },
-  {
-    "key": "ctrl+; p",
-    "command": "bookmarks.jumpToPrevious"
-  },
-  {
     "key": "ctrl+;",
     "command": "-findJump.activate"
   },
@@ -2949,7 +2902,7 @@
     "command": "workbench.action.openSettingsJson"
   },
   {
-    "key": "ctrl+z",
+    "key": "ctrl+alt+j",
     "command": "workbench.action.togglePanel"
   },
   {
@@ -3272,22 +3225,9 @@
     "when": "!config.breadcrumbs.enabled"
   },
   {
-    "key": "ctrl+'",
-    "command": "editor.action.smartSelect.expand",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "ctrl+shift+'",
     "command": "editor.action.smartSelect.shrink",
     "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+.",
-    "command": "findJump.activate"
-  },
-  {
-    "key": "ctrl+shift+.",
-    "command": "findJump.activate"
   },
   {
     "key": "ctrl+/",
@@ -3385,7 +3325,7 @@
     "command": "workbench.action.toggleAuxiliaryBar"
   },
   {
-    "key": "shift+alt+2",
+    "key": "ctrl+'",
     "command": "editor.action.smartSelect.expand",
     "when": "editorTextFocus"
   },
@@ -3445,5 +3385,197 @@
   {
     "key": "ctrl+c g",
     "command": "workbench.action.moveEditorToNextGroup"
+  },
+  {
+    "key": "alt+k",
+    "command": "deleteAllRight"
+  },
+  {
+    "key": "alt+/",
+    "command": "-gitlens.gitCommands",
+    "when": "!gitlens:disabled && config.gitlens.keymap == 'alternate'"
+  },
+  {
+    "key": "alt+.",
+    "command": "-auto-close-tag.closeTag"
+  },
+  {
+    "key": "ctrl+g c",
+    "command": "git.commitStaged"
+  },
+  {
+    "key": "ctrl+g shift+c",
+    "command": "git.commitAll"
+  },
+  {
+    "key": "ctrl+g h",
+    "command": "workbench.view.extension.github-pull-requests"
+  },
+  {
+    "key": "ctrl+g s",
+    "command": "git.sync"
+  },
+  {
+    "key": "ctrl+g p",
+    "command": "git.pull"
+  },
+  {
+    "key": "ctrl+g shift+p",
+    "command": "git.push"
+  },
+  {
+    "key": "ctrl+g shift+f",
+    "command": "git.fetchPrune"
+  },
+  {
+    "key": "ctrl+g f",
+    "command": "git.fetch"
+  },
+  {
+    "key": "ctrl+g g",
+    "command": "gitlens.views.commits.focus"
+  },
+  {
+    "key": "ctrl+shift+g g",
+    "command": "-workbench.view.scm",
+    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  },
+  {
+    "key": "ctrl+g ctrl+g",
+    "command": "workbench.scm.focus"
+  },
+  {
+    "key": "ctrl+g ctrl+s",
+    "command": "gitlens.showQuickRepoStatus",
+    "when": "!gitlens:disabled"
+  },
+  {
+    "key": "alt+s",
+    "command": "-gitlens.showQuickRepoStatus",
+    "when": "!gitlens:disabled && config.gitlens.keymap == 'alternate'"
+  },
+  {
+    "key": "ctrl+g l",
+    "command": "git-graph.view"
+  },
+  {
+    "key": "ctrl+g ctrl+c",
+    "command": "git.checkout"
+  },
+  {
+    "key": "ctrl+g b",
+    "command": "gitlens.toggleFileBlame",
+    "when": "editorTextFocus && gitlens:activeFileStatus =~ /blameable/"
+  },
+  {
+    "key": "alt+b",
+    "command": "-gitlens.toggleFileBlame",
+    "when": "editorTextFocus && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /blameable/"
+  },
+  {
+    "key": "ctrl+g n",
+    "command": "git.branchFrom"
+  },
+  {
+    "key": "ctrl+c p",
+    "command": "workbench.action.pinEditor",
+    "when": "!activeEditorIsPinned"
+  },
+  {
+    "key": "ctrl+c p",
+    "command": "workbench.action.unpinEditor",
+    "when": "activeEditorIsPinned"
+  },
+  {
+    "key": "ctrl+x k",
+    "command": "workbench.action.closeActivePinnedEditor",
+    "when": "activeEditorIsPinned"
+  },
+  {
+    "key": "ctrl+right",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+left",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "rust-analyzer.joinLines",
+    "when": "editorTextFocus && editorLangId == 'rust'"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "-rust-analyzer.joinLines",
+    "when": "editorTextFocus && editorLangId == 'rust'"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "editor.action.joinLines",
+    "when": "editorTextFocus && editorLangId != 'rust'"
+  },
+  {
+    "key": "ctrl+g ,",
+    "command": "gitlens.gitCommands",
+    "when": "!gitlens:disabled"
+  },
+  {
+    "key": "ctrl+shift+g /",
+    "command": "-gitlens.gitCommands",
+    "when": "!gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  },
+  {
+    "key": "ctrl+/",
+    "command": "undo",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+z",
+    "command": "default:undo"
+  },
+  {
+    "key": "ctrl+.",
+    "command": "redo",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+.",
+    "command": "default:redo"
+  },
+  {
+    "key": "ctrl+shift+/",
+    "command": "default:redo"
+  },
+  {
+    "key": "ctrl+shift+/",
+    "command": "redo",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+;",
+    "command": "findThenJump.initiateWithSelection"
+  },
+  {
+    "key": "ctrl+;",
+    "command": "findThenJump.initiate"
+  },
+  {
+    "key": "ctrl+shift+;",
+    "command": "-breadcrumbs.focus",
+    "when": "breadcrumbsPossible"
+  },
+  {
+    "key": "ctrl+l b",
+    "command": "workbench.view.extension.bookmarks"
+  },
+  {
+    "key": "alt+n",
+    "command": "scrollLineDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+p",
+    "command": "scrollLineUp",
+    "when": "textInputFocus"
   }
 ]
