@@ -28,6 +28,13 @@ if [ -n "$RANGER_LEVEL" ]; then export PS1="[ranger]$PS1"; fi
 ## starship
 eval "$(starship init zsh)"
 
+# set window title via starship
+function set_win_title(){
+    echo -ne "\033]0; $(realpath .) \007"
+}
+
+precmd_functions+=(set_win_title)
+
 # homebrew
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
