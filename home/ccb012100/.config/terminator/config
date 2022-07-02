@@ -1,68 +1,69 @@
 [global_config]
   broadcast_default = off
+  scroll_tabbar = True
+  homogeneous_tabbar = False
   sticky = True
-  title_transmit_fg_color = "#000000"
-  title_transmit_bg_color = "#4e9a06"
+  title_transmit_bg_color = "#004a2b"
   title_inactive_fg_color = "#ffffff"
   title_inactive_bg_color = "#2e3436"
   inactive_color_offset = 0.9027777777777778
-  enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, TerminatorThemes
+  enabled_plugins = Logger, APTURLHandler, DumpToFile, TerminatorThemes
   suppress_multiple_term_dialog = True
-  title_use_system_font = False
-  title_font = Hack Nerd Font Mono 9
+  always_split_with_profile = True
+  title_font = Ubuntu Mono 10
 [keybindings]
-  new_tab = <Alt><Super>Return
+  new_tab = <Primary><Shift>t
   cycle_next = <Primary><Shift>n
   cycle_prev = <Primary><Shift>p
   go_next = None
   go_prev = None
-  go_up = <Alt><Super>Up
-  go_down = <Alt><Super>Down
-  go_left = <Alt><Super>Left
-  go_right = <Alt><Super>Right
-  rotate_cw = <Alt><Super>period
-  rotate_ccw = <Alt><Super>comma
-  split_horiz = <Primary><Shift>Return
-  split_vert = <Primary><Shift>Tab
-  close_term = <Shift><Alt><Super>q
+  go_up = <Primary><Shift>k
+  go_down = <Primary><Shift>j
+  go_left = <Primary><Shift>h
+  go_right = <Primary><Shift>l
+  rotate_cw = <Primary><Shift>u
+  rotate_ccw = <Primary><Shift>y
+  split_horiz = <Primary><Shift>o
+  split_vert = <Primary><Shift>i
+  close_term = None
   copy = <Primary><Shift>c
   toggle_scrollbar = None
   page_up = Page_Up
-  page_down = Page_Down
+  page_down = Page_Up
   page_up_half = <Shift>Page_Up
   page_down_half = <Shift>Page_Down
-  line_up = <Alt><Super>p
-  line_down = <Alt><Super>n
-  close_window = <Alt><Super>q
-  resize_up = <Primary><Shift>Up
-  resize_down = <Primary><Shift>Up
-  resize_left = <Primary><Shift>Left
-  resize_right = <Primary><Shift>Right
+  line_up = None
+  line_down = None
+  close_window = <Primary><Shift>q
+  resize_up = None
+  resize_down = None
+  resize_left = None
+  resize_right = None
   move_tab_right = None
   move_tab_left = None
   toggle_zoom = <Primary><Shift>z
   scaled_zoom = None
-  next_tab = <Alt><Super>t
-  prev_tab = <Alt><Super>p
-  switch_to_tab_1 = <Alt><Super>1
-  switch_to_tab_2 = <Alt><Super>KP_2
-  switch_to_tab_3 = <Alt><Super>KP_3
-  switch_to_tab_4 = <Alt><Super>KP_4
-  switch_to_tab_5 = <Alt><Super>KP_5
-  switch_to_tab_6 = <Alt><Super>KP_6
-  switch_to_tab_7 = <Alt><Super>KP_7
-  switch_to_tab_8 = <Alt><Super>KP_8
-  switch_to_tab_9 = <Alt><Super>KP_9
-  switch_to_tab_10 = <Alt><Super>0
-  reset = <Alt><Super>r
-  reset_clear = <Shift><Alt><Super>r
+  next_tab = None
+  prev_tab = None
+  switch_to_tab_1 = None
+  switch_to_tab_2 = None
+  switch_to_tab_3 = None
+  switch_to_tab_4 = None
+  switch_to_tab_5 = None
+  switch_to_tab_6 = None
+  switch_to_tab_7 = None
+  switch_to_tab_8 = None
+  switch_to_tab_9 = None
+  switch_to_tab_10 = None
+  reset = None
+  reset_clear = <Primary><Shift>r
   hide_window = None
   group_all = None
   group_all_toggle = None
   ungroup_all = None
   group_tab = None
   ungroup_tab = None
-  new_window = <Alt><Super>w
+  new_window = <Primary><Shift>w
   new_terminator = None
   broadcast_off = None
   broadcast_group = None
@@ -75,7 +76,11 @@
   layout_launcher = None
 [profiles]
   [[default]]
+    visible_bell = True
+    icon_bell = False
     cursor_color = "#aaaaaa"
+    font = Hack Nerd Font Mono 10
+    use_system_font = False
   [[Candy]]
     visible_bell = True
     cursor_shape = ibeam
@@ -89,11 +94,21 @@
     split_to_group = True
 [layouts]
   [[default]]
-    [[[window0]]]
+    [[[child0]]]
       type = Window
       parent = ""
-    [[[child1]]]
+      order = 0
+      position = 13:11
+      maximised = False
+      fullscreen = False
+      size = 814, 985
+      title = /usr/bin/zsh
+      last_active_term = 8f1c5a3b-7e44-4ee9-998b-828dffc11773
+      last_active_window = True
+    [[[terminal1]]]
       type = Terminal
-      parent = window0
+      parent = child0
+      order = 0
       profile = Candy
+      uuid = 8f1c5a3b-7e44-4ee9-998b-828dffc11773
 [plugins]
