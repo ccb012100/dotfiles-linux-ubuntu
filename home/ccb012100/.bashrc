@@ -118,4 +118,4 @@ fi
 
 . "$HOME/.cargo/env"
 
-source /home/cbocardo/.config/broot/launcher/bash/br
+source "$HOME/.config/broot/launcher/bash/br"
