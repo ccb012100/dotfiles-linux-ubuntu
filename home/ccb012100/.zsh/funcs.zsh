@@ -27,22 +27,7 @@ function dot() {
         ;;
     esac
 }
-# golang cli commands
-function gl() {
-    case $1 in
-            b )
-            shift
-            go build .
-        ;;
-        r )
-            shift
-            go run .
-        ;;
-        * )
-            go "$@"
-        ;;
-    esac
-}
+
 # cargo cli commands
 function cg() {
     case $1 in
