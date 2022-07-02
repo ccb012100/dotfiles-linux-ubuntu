@@ -15,33 +15,19 @@
     ds      = diff --staged
     dt      = difftool
     dts     = difftool --staged
+    f       = fetch -v
+    fp      = push -v --force
     l       = log --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
     l1      = l -1 --stat
     last    = log -1 HEAD --stat
     main    = checkout main
     master  = checkout master
+    pf      = push -v --force
     ps      = push -v
     pl      = pull -v
     pub     = !git push -v --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
     ri      = rebase  -v --interactive
     ruo     = remote update origin -v --prune # update local list of remote branches
     s       = status
-    f       = forgit
-    fe      = fetch -v
     # resets the previous commit but keep all the changes from that commit in the working directory
     undo = reset HEAD~1 --mixed
-    ## forgit aliases
-    fl      = forgit log
-    fa      = forgit add
-    fcb     = forgit checkout_branch
-    fcc     = forgit checkout_commit
-    fcf     = forgit checkout_file
-    fcp     = forgit cherry_pick
-    fct     = forgit checkout_tag
-    fd      = forgit diff
-    ffu     = forgit fixup
-    fi      = forgit ignore
-    fr      = forgit rebase
-    frc     = forgit revert_commit
-    frg     = forgit reset_head
-    fss     = forgit stash_show
