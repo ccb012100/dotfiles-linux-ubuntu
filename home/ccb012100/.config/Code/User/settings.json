@@ -210,7 +210,6 @@
     "editor.guides.bracketPairs": true,
     "errorLens.messageEnabled": false,
     "path-intellisense.showHiddenFiles": true,
-    "diffEditor.ignoreTrimWhitespace": false,
     "git.suggestSmartCommit": false,
     "editor.hover.above": false,
     "json.schemas": [],
@@ -387,5 +386,9 @@
         "editor.rulers": [
             120
         ]
+    },
+    "[shellscript]": {
+        "files.eol": "\n",
+        "editor.rulers": [80]
     }
 }
