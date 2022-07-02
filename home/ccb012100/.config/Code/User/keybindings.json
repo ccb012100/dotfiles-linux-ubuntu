@@ -905,8 +905,9 @@
     "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
   },
   {
-    "key": "ctrl+c ctrl+shift+s",
-    "command": "editor.action.insertSnippet"
+    "key": "ctrl+c ctrl+s",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus"
   },
   {
     "key": "ctrl+v",
@@ -2019,7 +2020,8 @@
   },
   {
     "key": "ctrl+c ctrl+s",
-    "command": "editor.action.surroundWithSnippet"
+    "command": "editor.action.surroundWithSnippet",
+    "when": "editorHasSelection && editorTextFocus"
   },
   {
     "key": "ctrl+x 0",
