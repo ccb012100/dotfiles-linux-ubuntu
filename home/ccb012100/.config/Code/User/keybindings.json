@@ -1792,7 +1792,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+l ctrl+m",
+    "key": "ctrl+c ctrl+d",
     "command": "editor.debug.action.toggleBreakpoint",
     "when": "debuggersAvailable && editorTextFocus"
   },
@@ -2291,7 +2291,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+c m",
+    "key": "ctrl+l ctrl+m",
     "command": "markdown.showPreviewToSide"
   },
   {
