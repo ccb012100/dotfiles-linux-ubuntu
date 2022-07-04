@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+ #!/usr/bin/zsh
 # custom Zsh functions
 
 # functions to cd then ls in one step
@@ -45,6 +45,23 @@ function cg() {
         ;;
         * )
             cargo "$@"
+        ;;
+    esac
+}
+
+# find in personal notes
+function fn() {
+    case $1 in
+        i ) # case-insensitive
+            shift
+            rg -i "$@" ~notes
+        ;;
+        f ) # verbatim
+            shift
+            rg -F "$@" ~notes
+        ;;
+        * )
+            rg "$@" ~notes
         ;;
     esac
 }
