@@ -6,6 +6,7 @@
 # easy way to call aliased commands
 alias ,='command'
 alias aptup='sudo apt update && sudo apt upgrade'
+alias c='cat'
 alias cls='clear'
 alias cp='cp -iv'
 alias grep='grep --color=auto'
@@ -41,7 +42,7 @@ alias llt='exa -l -t modified --sort newest'
 alias llat='exa -al -t modified --sort newest'
 
 ### external tools
-
+alias b='batcat'
 alias bat='batcat'
 # open current directory in VS Code
 alias c.='code .'
@@ -62,8 +63,10 @@ alias jq='jq -C'
 alias npm="echo 'use \"pnpm\"'"
 alias py='python3'
 alias r='ranger'
-# make ripgrep searches case insensitive by default
-alias rg='rg -i'
+# case-insensitive search
+alias rgi='rg -i'
+# verbatim search (i.e. disable regex)
+alias rgf='rg -F'
 # keep making this mistake for some reason
 alias rust='echo think you mean _rush_'
 alias sesh='tmux new-session -A -s sesh'
@@ -82,5 +85,9 @@ export notes="$HOME"/ccb012100/notes
 export zshell="$HOME"/zsh
 
 ## global aliases
+# pipe into rg
+alias -g g,rg='| rg'
+alias -g g,rgi='| rg -i'
+alias -g g,rgf='| rg -F'
 # pipe into fzf
-alias -g zf='| fzf'
+alias -g g,fzf='| fzf'
