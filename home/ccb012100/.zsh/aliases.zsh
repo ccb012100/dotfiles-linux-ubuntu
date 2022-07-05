@@ -84,7 +84,7 @@ export zshell="$HOME"/zsh
 
 ## global aliases
 # pipe into rg
-alias -g g,rg='| rg'
-alias -g g,rgf='| rg -F'
+alias -g ,rg='| rg'
+alias -g ,rgf='| rg -F'
 # pipe into fzf
-alias -g g,fzf='| fzf'
+alias -g ,fzf='| fzf'

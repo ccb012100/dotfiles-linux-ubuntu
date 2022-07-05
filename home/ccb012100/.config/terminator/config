@@ -13,16 +13,16 @@
   title_font = Ubuntu Mono 10
 [keybindings]
   new_tab = <Primary><Shift>t
-  cycle_next = <Primary><Shift>n
-  cycle_prev = <Primary><Shift>p
+  cycle_next = None
+  cycle_prev = None
   go_next = None
   go_prev = None
   go_up = <Primary><Shift>k
   go_down = <Primary><Shift>j
   go_left = <Primary><Shift>h
   go_right = <Primary><Shift>l
-  rotate_cw = <Primary><Shift>u
-  rotate_ccw = <Primary><Shift>y
+  rotate_cw = <Primary><Shift>n
+  rotate_ccw = <Primary><Shift>p
   split_horiz = <Primary><Shift>o
   split_vert = <Primary><Shift>i
   close_term = None
@@ -32,8 +32,8 @@
   page_down = Page_Up
   page_up_half = <Shift>Page_Up
   page_down_half = <Shift>Page_Down
-  line_up = None
-  line_down = None
+  line_up = <Primary><Shift>u
+  line_down = <Primary><Shift>d
   close_window = <Primary><Shift>q
   resize_up = <Primary><Shift>Up
   resize_down = <Primary><Shift>Down
@@ -55,8 +55,8 @@
   switch_to_tab_8 = None
   switch_to_tab_9 = None
   switch_to_tab_10 = None
-  reset = None
-  reset_clear = <Primary><Shift>r
+  reset = <Primary><Shift>r
+  reset_clear = None
   hide_window = None
   group_all = None
   group_all_toggle = None
@@ -84,6 +84,8 @@
     use_system_font = False
   [[Candy]]
     visible_bell = True
+    background_darkness = 0.9
+    background_type = transparent
     cursor_shape = ibeam
     cursor_color = "#aaaaaa"
     cursor_color_fg = False
