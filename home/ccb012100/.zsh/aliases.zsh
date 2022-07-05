@@ -62,6 +62,7 @@ alias jq='jq -C'
 # prevent accidentally using npn instead of pnpm
 alias npm="echo 'use \"pnpm\"'"
 alias py='python3'
+alias ran='ranger'
 # verbatim search (i.e. disable regex)
 alias rgf='rg -F'
 # keep making this mistake for some reason
