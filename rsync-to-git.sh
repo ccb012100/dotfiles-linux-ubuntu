@@ -133,3 +133,11 @@ sync_from_home \
     ".bashrc" \
     ""
 
+sync_from_home \
+    ".local/share/konsole/Custom.profile" \
+    ".local/share/konsole"
+
+sync_from_home \
+    ".local/share/konsole/Jellybeans.colorscheme" \
+    ".local/share/konsole"
+
