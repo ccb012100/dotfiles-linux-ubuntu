@@ -1,0 +1,4 @@
+# ripgrep configuration file
+# ripgrep uses the RIPGREP_CONFIG_PATH environment variable to set the name/
+# location of the config file
+--smart-case

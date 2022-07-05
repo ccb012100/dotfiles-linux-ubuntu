@@ -62,9 +62,6 @@ alias jq='jq -C'
 # prevent accidentally using npn instead of pnpm
 alias npm="echo 'use \"pnpm\"'"
 alias py='python3'
-alias r='ranger'
-# case-insensitive search
-alias rgi='rg -i'
 # verbatim search (i.e. disable regex)
 alias rgf='rg -F'
 # keep making this mistake for some reason
@@ -87,7 +84,6 @@ export zshell="$HOME"/zsh
 ## global aliases
 # pipe into rg
 alias -g g,rg='| rg'
-alias -g g,rgi='| rg -i'
 alias -g g,rgf='| rg -F'
 # pipe into fzf
 alias -g g,fzf='| fzf'

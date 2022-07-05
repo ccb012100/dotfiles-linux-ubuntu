@@ -44,5 +44,8 @@ export PATH=$HOME/.nodenv/bin:$PATH
 eval "$(nodenv init -)"
 
 # pnpm
-export PNPM_HOME="/home/cbocardo/.local/share/pnpm"
+export PNPM_HOME="$HOME/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
+
+# set Ripgrep configuration file
+export RIPGREP_CONFIG_PATH="$HOME/.config/ripgreprc"
