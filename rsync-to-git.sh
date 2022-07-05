@@ -62,7 +62,7 @@ sync_from_home \
     ".config/kitty"
 
 sync_from_home \
-    ".config/ranger/ranger.conf" \
+    ".config/ranger/rc.conf" \
     ".config/ranger"
 
 sync_from_home \
@@ -87,6 +87,10 @@ sync_from_home \
 
 sync_from_home \
     ".config/pavucontrol.ini" \
+    ".config"
+
+sync_from_home \
+    ".config/ripgreprc" \
     ".config"
 
 sync_from_home \
