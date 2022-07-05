@@ -17,7 +17,7 @@
     dts     = difftool --staged
     f       = fetch -v
     fp      = push -v --force
-    l       = log --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
+    l       = log -n25 --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
     l1      = l -1 --stat
     last    = log -1 HEAD --stat
     main    = checkout main
