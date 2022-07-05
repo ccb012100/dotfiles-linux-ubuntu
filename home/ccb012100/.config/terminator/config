@@ -35,10 +35,10 @@
   line_up = None
   line_down = None
   close_window = <Primary><Shift>q
-  resize_up = None
-  resize_down = None
-  resize_left = None
-  resize_right = None
+  resize_up = <Primary><Shift>Up
+  resize_down = <Primary><Shift>Down
+  resize_left = <Primary><Shift>Left
+  resize_right = <Primary><Shift>Right
   move_tab_right = None
   move_tab_left = None
   toggle_zoom = <Primary><Shift>z
@@ -74,6 +74,7 @@
   edit_tab_title = None
   edit_terminal_title = None
   layout_launcher = None
+  help = ""
 [profiles]
   [[default]]
     visible_bell = True
