@@ -3579,5 +3579,9 @@
     "key": "alt+p",
     "command": "scrollLineUp",
     "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+x f",
+    "command": "workbench.action.files.openFile"
   }
 ]
