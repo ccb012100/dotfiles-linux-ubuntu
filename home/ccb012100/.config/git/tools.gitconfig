@@ -1,6 +1,6 @@
 ## diff/merge tools
 [merge]
-	tool = meld
+	tool = vscode
 [diff]
     tool = difftastic
 [difftool]
