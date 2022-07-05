@@ -42,6 +42,7 @@ set laststatus=2                " always show statusline
 set lazyredraw
 set nolist                      " show whitespace
 set nostartofline
+set noswapfile
 set number relativenumber       " toggle hybrid line numbers
 set number
 set rtp+=/usr/local/opt/fzf     " add fzf to runtimepath
@@ -57,15 +58,16 @@ set tabstop=4
 set termguicolors               " true color terminal
 set title
 set ttimeoutlen=50              " keycode timeout length
+set undofile
 set viminfo+=n~/.vim/viminfo
 set visualbell
 set wildmenu                    " visual autocomplete for the command menu
 set ww=<,>,[,],h,l,b,s          " allow cursor to wrap to previous/next line
 
 "" set tmp file directories
-set backupdir=.backup/,~/.vim/.backup/,/tmp//
-set directory=.swp/,~/.vim/.swp/,/tmp//
-set undodir=.undo/,~/.vim/.undo/,/tmp//
+set backupdir=~/.vim/.backup/,/tmp//
+set directory=~/.vim/.swp/,/tmp//
+set undodir=~/.vim/.undo/,/tmp//
 
 "" Only use cursor line and column line in Insert mode
 "" Only use relative line numbers in Normal Mode
