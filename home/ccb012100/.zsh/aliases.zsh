@@ -48,7 +48,9 @@ alias bat='batcat'
 alias c.='code .'
 alias difftastic='difft'
 alias e='emacs'
+# start emacs server if it's not already running
 alias emacs='emacsclient -nc -a=""'
+alias etty='emacsclient -nw'
 # show hidden files when doing fd search
 alias fd='fd -H'
 alias g='git'
@@ -83,8 +85,11 @@ export notes="$HOME"/ccb012100/notes
 export zshell="$HOME"/zsh
 
 ## global aliases
-# pipe into rg
+alias -g ,b='| batcat'
+alias -g ,bat='| batcat'
+alias -g ,c='| cat'
+alias -g ,cat='| cat'
+alias -g ,less='| less'
 alias -g ,rg='| rg'
 alias -g ,rgf='| rg -F'
-# pipe into fzf
 alias -g ,fzf='| fzf'

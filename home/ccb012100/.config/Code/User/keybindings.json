@@ -869,7 +869,7 @@
   {
     "key": "ctrl+s",
     "command": "actions.find",
-    "when": "editorFocus || editorIsOpen"
+    "when": "(editorFocus || editorIsOpen) && !findInputFocussed"
   },
   {
     "key": "ctrl+f",
@@ -3040,7 +3040,7 @@
     "command": "-workbench.action.replaceInFiles"
   },
   {
-    "key": "alt+s",
+    "key": "alt+r",
     "command": "editor.action.startFindReplaceAction"
   },
   {
@@ -3583,5 +3583,30 @@
   {
     "key": "ctrl+x f",
     "command": "workbench.action.files.openFile"
+  },
+  {
+    "key": "alt+r",
+    "command": "-toggleFindRegex",
+    "when": "editorFocus"
+  },
+  {
+    "key": "alt+r",
+    "command": "-toggleSearchRegex",
+    "when": "searchViewletFocus"
+  },
+  {
+    "key": "alt+r",
+    "command": "-workbench.action.terminal.toggleFindRegex",
+    "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "alt+r",
+    "command": "-toggleSearchEditorRegex",
+    "when": "inSearchEditor && searchInputBoxFocus"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "editor.action.nextMatchFindAction",
+    "when": "editorFocus && findInputFocussed"
   }
 ]
