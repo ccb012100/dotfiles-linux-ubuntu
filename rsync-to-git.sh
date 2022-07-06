@@ -5,17 +5,16 @@ gitdir="$HOME/.dotfiles"
 # add -n,--dry-run flag if testing
 
 sync_file() {
-    # rsync arg1 to arg2
-    rsync --recursive --times --progress --protect-args "$1" "$gitdir/$2"
+    rsync --recursive --times --progress --protect-args "$1" "$gitdir/root/$2"
 }
 
 sync_from_home() {
-    rsync --recursive --times --progress --protect-args "$HOME/$1" "$gitdir/home/ccb012100/$2"
+    rsync --recursive --times --progress --protect-args "$HOME/$1" "$gitdir/root/home/ccb012100/$2"
 }
 
-sync_file "etc/logid.cfg" "etc"
-sync_file "etc/keyd/default.conf" "etc/keyd"
-sync_file "etc/udev/rules.d/50-wally.rules" "etc/udev/rules.d"
+sync_file "/etc/logid.cfg" "etc"
+sync_file "/etc/keyd/default.conf" "etc/keyd"
+sync_file "/etc/udev/rules.d/50-wally.rules" "etc/udev/rules.d"
 
 sync_from_home \
     ".config/Code/User/keybindings.json" \
@@ -94,10 +93,6 @@ sync_from_home \
     ".config"
 
 sync_from_home \
-    ".config/monitors.xml" \
-    ".config/"
-
-sync_from_home \
     ".config/pavucontrol.ini" \
     ".config"
 
@@ -144,12 +139,4 @@ sync_from_home \
 sync_from_home \
     ".bashrc" \
     ""
-
-sync_from_home \
-    ".local/share/konsole/Custom.profile" \
-    ".local/share/konsole"
-
-sync_from_home \
-    ".local/share/konsole/Jellybeans.colorscheme" \
-    ".local/share/konsole"
 
