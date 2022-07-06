@@ -3608,5 +3608,17 @@
     "key": "ctrl+s",
     "command": "editor.action.nextMatchFindAction",
     "when": "editorFocus && findInputFocussed"
+  },
+  {
+    "key": "ctrl+x s",
+    "command": "workbench.action.files.saveAll"
+  },
+  {
+    "key": "ctrl+l u",
+    "command": "editor.action.transformToUppercase"
+  },
+  {
+    "key": "ctrl+l l",
+    "command": "editor.action.transformToLowercase"
   }
 ]
