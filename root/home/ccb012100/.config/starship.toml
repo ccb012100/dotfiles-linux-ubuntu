@@ -5,7 +5,7 @@ $directory\
 $git_branch\
 $git_state\
 $git_status\
- $cmd_duration\
+$cmd_duration\
 $line_break\
 $character"""
 
@@ -40,5 +40,5 @@ format = '\([$state( $progress_current/$progress_total)]($style)\) '
 style = "bright-black"
 
 [cmd_duration]
-format = "[$duration]($style) "
+format = " [$duration]($style) "
 style = "yellow"
