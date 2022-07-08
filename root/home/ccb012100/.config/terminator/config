@@ -23,8 +23,8 @@
   go_right = <Primary><Shift>l
   rotate_cw = <Primary>parenleft
   rotate_ccw = <Primary>parenright
-  split_horiz = <Primary><Shift>o
-  split_vert = <Primary><Shift>i
+  split_horiz = <Primary>underscore
+  split_vert = <Primary>bar
   close_term = ""
   copy = <Primary><Shift>c
   toggle_scrollbar = ""
