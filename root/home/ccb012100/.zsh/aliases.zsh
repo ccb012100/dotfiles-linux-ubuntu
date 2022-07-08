@@ -5,7 +5,8 @@
 
 # easy way to call aliased commands
 alias ,='command'
-alias aptup='sudo apt update && sudo apt upgrade'
+alias ali='apt list --installed'
+alias aptup='sudo apt update && sudo apt upgrade && sudo apt autoremove'
 alias c='cat'
 alias cls='clear'
 alias cp='cp -iv'
@@ -18,9 +19,12 @@ alias mv='mv -nv'
 # print $PATH formatted as one entry per line
 alias path='sed "s/:/\n/g" <<< "$PATH"'
 alias paths='path | sort'
+alias ppc='powerprofilesctl'
 alias rm='rm -v'
 alias rmi='rm -i'
 alias rmdir='rmdir -v'
+alias slu='systemctl list-units'
+alias sy='systemctl'
 alias trash='gio trash'
 
 ## cd
@@ -89,6 +93,7 @@ alias -g ,b='| batcat'
 alias -g ,bat='| batcat'
 alias -g ,c='| cat'
 alias -g ,cat='| cat'
+alias -g ,l='| less'
 alias -g ,less='| less'
 alias -g ,rg='| rg'
 alias -g ,rgf='| rg -F'
