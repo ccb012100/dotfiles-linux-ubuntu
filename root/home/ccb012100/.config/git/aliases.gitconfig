@@ -15,7 +15,7 @@
     ds      = diff --staged
     dt      = difftool
     dts     = difftool --staged
-    f       = fetch -v
+    f       = fetch
     fp      = push -v --force
     l       = log -n25 --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
     l1      = l -1 --stat
