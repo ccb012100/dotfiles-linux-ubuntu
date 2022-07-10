@@ -66,7 +66,7 @@
     visible_bell = True
     icon_bell = False
     cursor_color = "#aaaaaa"
-    font = Hack Nerd Font Mono 10
+    font = BlexMono Nerd Font Mono 10
     use_system_font = False
   [[Candy]]
     visible_bell = True
@@ -75,7 +75,7 @@
     cursor_shape = ibeam
     cursor_color = "#aaaaaa"
     cursor_color_fg = False
-    font = Hack Nerd Font Mono 10
+    font = BlexMono Nerd Font Mono 10
     scrollback_lines = 10000
     palette = "#2e3436:#fa2573:#a6e32d:#fc951e:#c48dff:#fa2573:#67d9f0:#f2f2f2:#555753:#fa2573:#8ae234:#fce94f:#729fcf:#fa2573:#34e2e2:#eeeeec"
     use_system_font = False
