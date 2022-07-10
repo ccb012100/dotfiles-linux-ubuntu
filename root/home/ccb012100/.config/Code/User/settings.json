@@ -9,7 +9,7 @@
 	"editor.fontLigatures": true,
 	"editor.letterSpacing": 1,
 	"editor.minimap.maxColumn": 60,
-	"editor.renderWhitespace": "none",
+	"editor.renderWhitespace": "all",
 	"editor.suggest.localityBonus": true,
 	"editor.wordWrap": "on",
 	"files.associations": {
@@ -67,7 +67,7 @@
 	"typescript.updateImportsOnFileMove.enabled": "always",
 	"window.titleBarStyle": "custom",
 	"workbench.editor.highlightModifiedTabs": true,
-	"workbench.iconTheme": "vscode-icons",
+	"workbench.iconTheme": "material-icon-theme",
 	"zenMode.hideStatusBar": false,
 	"yaml.format.enable": true,
 	"[markdown]": {
@@ -99,7 +99,6 @@
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"git.autoStash": true,
-	"editor.acceptSuggestionOnCommitCharacter": false,
 	"explorer.incrementalNaming": "smart",
 	"editor.cursorSurroundingLines": 5,
 	"git.supportCancellation": true,
@@ -328,9 +327,7 @@
 		"**/*.svg": true,
 		"**/pnpm-lock.yaml": true
 	},
-	"workbench.colorTheme": "Monokai Vibrant",
 	"settingsSync.ignoredSettings": [
-		"editor.fontFamily",
 		"editor.fontSize"
 	],
 	"[editorconfig]": {
@@ -417,5 +414,20 @@
 			"background": "purple"
 		}
 	},
-	"todo-tree.highlights.useColourScheme": true
+	"todo-tree.highlights.useColourScheme": true,
+	"workbench.colorTheme": "Gruvbox Material Dark",
+	"material-icon-theme.saturation": 1,
+	"material-icon-theme.activeIconPack": "nest",
+	"material-icon-theme.hidesExplorerArrows": true,
+	"workbench.preferredDarkColorTheme": "GitHub Dark",
+	"workbench.preferredLightColorTheme": "GitHub Light Default",
+	"window.enableMenuBarMnemonics": false,
+	"window.commandCenter": true,
+	"git.mergeEditor": true,
+	"merge-conflict.autoNavigateNextConflict.enabled": true,
+	"merge-conflict.diffViewPosition": "Below",
+	"git.enableCommitSigning": true,
+	"git-graph.repository.sign.commits": true,
+	"git-graph.repository.sign.tags": true,
+	"git-graph.repository.commits.mute.commitsThatAreNotAncestorsOfHead": true
 }
