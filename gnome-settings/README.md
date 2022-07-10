@@ -10,11 +10,3 @@ Command to get keybindings:
 gsettings list-recursively | rg "wm\.keybindings|shell\.keybindings" | sort
 ```
 
-## `dash-to-panel.conf`
-
-The (dash-to-panel)[https://github.com/home-sweet-gnome/dash-to-panel] extension uses dconf, but you can export the settings to a file from _Settings_ -> _About_
-
-## `tilix.conf`
-
-Keybindings and Preferences for the [Tilix](https://github.com/gnunn1/tilix) terminal emulator
-
