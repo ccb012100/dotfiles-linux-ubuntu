@@ -52,4 +52,4 @@ source "$HOME"/.zsh/fzf_config.zsh
 source "$HOME"/.zsh/tools.zsh
 source "$HOME"/.zsh/unalias.zsh
 source "$HOME"/.local/local_config.zsh
-source "$HOME"/ccb012100/starred_music/search.sh
+source "$HOME"/ccb012100/starred-music/search.sh
