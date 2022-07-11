@@ -48,14 +48,6 @@
     "command": "-editor.action.startFindReplaceAction"
   },
   {
-    "key": "ctrl+f",
-    "command": "cursorRight"
-  },
-  {
-    "key": "ctrl+b",
-    "command": "cursorLeft"
-  },
-  {
     "key": "ctrl+m",
     "command": "-editor.action.toggleTabFocusMode"
   },
@@ -2123,18 +2115,14 @@
     "when": "scmInputIsInFirstPosition && scmRepository && !suggestWidgetVisible"
   },
   {
-    "key": "ctrl+shift+u",
-    "command": "cursorWordLeftSelect",
-    "when": "textInputFocus && !accessibilityModeEnabled"
-  },
-  {
     "key": "shift+alt+i",
     "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
     "when": "editorTextFocus"
   },
   {
     "key": "ctrl+t",
-    "command": "editor.action.transpose"
+    "command": "editor.action.transpose",
+    "when": "editorTextFocus"
   },
   {
     "key": "ctrl+k g",
@@ -2236,7 +2224,8 @@
   },
   {
     "key": "ctrl+e",
-    "command": "cursorLineEnd"
+    "command": "cursorLineEnd",
+    "when": "textInputFocus"
   },
   {
     "key": "cmd+w",
@@ -2472,7 +2461,7 @@
     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   },
   {
-    "key": "ctrl+shift+left",
+    "key": "ctrl+shift+u",
     "command": "cursorWordLeftSelect",
     "when": "textInputFocus"
   },
@@ -2490,10 +2479,6 @@
     "key": "ctrl+shift+u",
     "command": "-rust-analyzer.parentModule",
     "when": "editorTextFocus && editorLangId == 'rust'"
-  },
-  {
-    "key": "ctrl+shift+i",
-    "command": "cursorWordRightSelect"
   },
   {
     "key": "ctrl+shift+n",
@@ -2597,16 +2582,6 @@
     "key": "cmd+f",
     "command": "-problems.action.focusFilter",
     "when": "focusedView == 'workbench.panel.markers.view'"
-  },
-  {
-    "key": "alt+f",
-    "command": "cursorWordEndRight",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "alt+b",
-    "command": "cursorWordLeft",
-    "when": "textInputFocus"
   },
   {
     "key": "ctrl+,",
@@ -2959,7 +2934,8 @@
   },
   {
     "key": "ctrl+a",
-    "command": "cursorLineStart"
+    "command": "cursorLineStart",
+    "when": "textInputFocus"
   },
   {
     "key": "ctrl+x",
@@ -3636,13 +3612,73 @@
     "when": "textInputFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+i",
-    "command": "cursorWordEndRight",
+    "key": "ctrl+right",
+    "command": "-cursorWordEndRight",
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+u",
+    "key": "ctrl+left",
+    "command": "-cursorWordLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+right",
+    "command": "-cursorWordEndRightSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "cursorLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+f",
+    "command": "cursorWordRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+b",
     "command": "cursorWordLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "-editor.action.extensioneditor.showfind",
+    "when": "!editorFocus && activeEditor == 'workbench.editor.extension'"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "-editor.action.webvieweditor.showFind",
+    "when": "webviewFindWidgetEnabled && !editorFocus && activeEditor == 'WebviewEditor'"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "-notebook.find",
+    "when": "notebookEditorFocused && !editorFocus && activeEditor == 'workbench.editor.notebook'"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "-problems.action.focusFilter",
+    "when": "focusedView == 'workbench.panel.markers.view'"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "-repl.action.filter",
+    "when": "inDebugRepl && textInputFocus"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "-workbench.action.terminal.focusFind",
+    "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+shift+left",
+    "command": "-cursorWordLeftSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "cursorRight",
     "when": "textInputFocus"
   }
 ]
