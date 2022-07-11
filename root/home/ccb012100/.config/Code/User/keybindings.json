@@ -2559,11 +2559,6 @@
     "command": "editor.action.duplicateSelection"
   },
   {
-    "key": "alt+f",
-    "command": "cursorWordEndRight",
-    "when": "textInputFocus"
-  },
-  {
     "key": "cmd+f",
     "command": "-repl.action.filter",
     "when": "inDebugRepl && textInputFocus"
@@ -2604,17 +2599,12 @@
     "when": "focusedView == 'workbench.panel.markers.view'"
   },
   {
-    "key": "alt+b",
-    "command": "cursorWordLeft",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+i",
+    "key": "alt+f",
     "command": "cursorWordEndRight",
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+u",
+    "key": "alt+b",
     "command": "cursorWordLeft",
     "when": "textInputFocus"
   },
@@ -3439,14 +3429,6 @@
     "when": "textInputFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+z",
-    "command": "default:undo"
-  },
-  {
-    "key": "ctrl+shift+/",
-    "command": "default:redo"
-  },
-  {
     "key": "ctrl+shift+/",
     "command": "redo",
     "when": "textInputFocus && !editorReadonly"
@@ -3642,5 +3624,25 @@
     "key": "alt+right",
     "command": "workbench.action.navigateForward",
     "when": "canNavigateForward"
+  },
+  {
+    "key": "ctrl+shift+z",
+    "command": "redo",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+z",
+    "command": "undo",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "cursorWordEndRight",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+u",
+    "command": "cursorWordLeft",
+    "when": "textInputFocus"
   }
 ]
