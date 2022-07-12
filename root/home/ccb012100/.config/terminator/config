@@ -17,10 +17,6 @@
   cycle_prev = ""
   go_next = ""
   go_prev = ""
-  go_up = <Primary><Shift>k
-  go_down = <Primary><Shift>j
-  go_left = <Primary><Shift>h
-  go_right = <Primary><Shift>l
   rotate_cw = <Primary>parenleft
   rotate_ccw = <Primary>parenright
   split_horiz = <Primary>underscore
@@ -29,7 +25,7 @@
   copy = <Primary><Shift>c
   toggle_scrollbar = ""
   page_up = Page_Up
-  page_down = Page_Up
+  page_down = Page_Down
   page_up_half = <Shift>Page_Up
   page_down_half = <Shift>Page_Down
   line_up = <Primary><Shift>u
