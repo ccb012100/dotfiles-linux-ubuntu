@@ -413,7 +413,6 @@
 		}
 	},
 	"todo-tree.highlights.useColourScheme": true,
-	"workbench.colorTheme": "Gruvbox Material Dark",
 	"material-icon-theme.saturation": 1,
 	"material-icon-theme.activeIconPack": "nest",
 	"material-icon-theme.hidesExplorerArrows": true,
@@ -427,5 +426,6 @@
 	"git.enableCommitSigning": true,
 	"git-graph.repository.sign.commits": true,
 	"git-graph.repository.sign.tags": true,
-	"git-graph.repository.commits.mute.commitsThatAreNotAncestorsOfHead": true
+	"git-graph.repository.commits.mute.commitsThatAreNotAncestorsOfHead": true,
+	"terminal.integrated.shellIntegration.enabled": true
 }
