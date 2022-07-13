@@ -2,7 +2,7 @@
 [alias]
     acm     = ! git add -vA && git commit -m
     alias   = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
-    amend   = commit -a --amend
+    amend   = commit --amend
     a       = add -v
     ai      = add --interactive
     b       = branch -v
