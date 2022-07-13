@@ -564,11 +564,6 @@
     "command": "-workbench.action.files.newUntitledFile"
   },
   {
-    "key": "ctrl+l",
-    "command": "-editor.action.clipboardCutAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "cmd+r",
     "command": "-workbench.action.reloadWindow",
     "when": "isDevelopment"
@@ -1002,10 +997,6 @@
     "command": "workbench.action.quickOpen"
   },
   {
-    "key": "ctrl+x",
-    "command": "-editor.action.clipboardCutAction"
-  },
-  {
     "key": "ctrl+v",
     "command": "-editor.action.clipboardPasteAction"
   },
@@ -1139,10 +1130,6 @@
     "key": "ctrl+c",
     "command": "-remote.tunnel.copyAddressInline",
     "when": "tunnelViewFocus && tunnelType == 'Detected' && tunnelViewMultiSelection == 'undefined' || tunnelViewFocus && tunnelType == 'Forwarded' && tunnelViewMultiSelection == 'undefined'"
-  },
-  {
-    "key": "ctrl+w",
-    "command": "editor.action.clipboardCutAction"
   },
   {
     "key": "alt+backspace",
@@ -2361,10 +2348,6 @@
   {
     "key": "shift+cmd+n",
     "command": "-workbench.action.newWindow"
-  },
-  {
-    "key": "cmd+x",
-    "command": "-editor.action.clipboardCutAction"
   },
   {
     "key": "cmd+x",
@@ -3596,16 +3579,6 @@
     "command": "editor.action.deleteLines"
   },
   {
-    "key": "ctrl+shift+t",
-    "command": "workbench.action.terminal.new",
-    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
-  },
-  {
-    "key": "ctrl+shift+`",
-    "command": "-workbench.action.terminal.new",
-    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
-  },
-  {
     "key": "ctrl+s",
     "command": "workbench.action.terminal.findNext",
     "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
@@ -3624,10 +3597,6 @@
     "key": "ctrl+shift+u",
     "command": "workbench.action.terminal.scrollUpPage",
     "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
-  },
-  {
-    "key": "ctrl+x shift+t",
-    "command": "workbench.action.createTerminalEditor"
   },
   {
     "key": "ctrl+shift+down",
@@ -3701,14 +3670,6 @@
     "command": "editor.action.clipboardCopyAction"
   },
   {
-    "key": "ctrl+shift+x",
-    "command": "editor.action.clipboardCutAction"
-  },
-  {
-    "key": "meta+x",
-    "command": "editor.action.clipboardCutAction"
-  },
-  {
     "key": "meta+v",
     "command": "editor.action.clipboardPasteAction"
   },
@@ -3736,5 +3697,27 @@
     "key": "ctrl+shift+j",
     "command": "-workbench.action.search.toggleQueryDetails",
     "when": "inSearchEditor || searchViewletFocus"
+  },
+  {
+    "key": "ctrl+shift+enter",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
+  {
+    "key": "ctrl+shift+`",
+    "command": "-workbench.action.terminal.new",
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "editor.action.clipboardCutAction"
+  },
+  {
+    "key": "ctrl+shift+x",
+    "command": "editor.action.clipboardCutAction"
+  },
+  {
+    "key": "shift+delete",
+    "command": "editor.action.clipboardCutAction"
   }
 ]

@@ -416,7 +416,7 @@
 	"material-icon-theme.saturation": 1,
 	"material-icon-theme.activeIconPack": "nest",
 	"material-icon-theme.hidesExplorerArrows": true,
-	"workbench.preferredDarkColorTheme": "GitHub Dark",
+	"workbench.preferredDarkColorTheme": "Gruvbox Dark Hard",
 	"workbench.preferredLightColorTheme": "GitHub Light Default",
 	"window.enableMenuBarMnemonics": false,
 	"window.commandCenter": true,
@@ -427,5 +427,6 @@
 	"git-graph.repository.sign.commits": true,
 	"git-graph.repository.sign.tags": true,
 	"git-graph.repository.commits.mute.commitsThatAreNotAncestorsOfHead": true,
-	"terminal.integrated.shellIntegration.enabled": true
+	"terminal.integrated.shellIntegration.enabled": true,
+	"workbench.colorTheme": "Codesong"
 }
