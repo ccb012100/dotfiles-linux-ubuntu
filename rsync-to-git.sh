@@ -89,10 +89,6 @@ sync_from_home \
     ".config"
 
 sync_from_home \
-    ".config/mimeapps.list" \
-    ".config"
-
-sync_from_home \
     ".config/pavucontrol.ini" \
     ".config"
 
