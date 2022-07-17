@@ -73,6 +73,10 @@ sync_from_home \
     ".config/kitty"
 
 sync_from_home \
+    ".config/pulse/client.conf" \
+    ".config/pulse"
+
+sync_from_home \
     ".config/ranger/rc.conf" \
     ".config/ranger"
 
