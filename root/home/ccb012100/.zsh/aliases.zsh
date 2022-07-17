@@ -1,18 +1,19 @@
 #!/usr/bin/zsh
-# zsh aliass
+# zsh aliases
 
 ### built-in tools
 
 # easy way to call aliased commands
-alias ,='command'
+alias ,=command
 alias ali='apt list --installed'
 alias aptup='sudo apt update && sudo apt upgrade && sudo apt autoremove'
-alias c='cat'
-alias cls='clear'
+alias c=cat
+alias cls=clear
 alias cp='cp -iv'
 alias ez='exec zsh'
 alias grep='grep --color=auto'
-alias his='history'
+alias his=history
+alias jctl=journalctl
 # last exit code
 alias lec='echo $?'
 alias mkdir='mkdir -v'
@@ -20,12 +21,12 @@ alias mv='mv -iv'
 # print $PATH formatted as one entry per line
 alias path='sed "s/:/\n/g" <<< "$PATH"'
 alias paths='path | sort'
-alias ppc='powerprofilesctl'
+alias ppc=powerprofilesctl
 alias rm='rm -v'
 alias rmi='rm -i'
 alias rmdir='rmdir -v'
 alias slu='systemctl list-units'
-alias sy='systemctl'
+alias sctl=systemctl
 alias trash='gio trash'
 
 ## cd
@@ -38,7 +39,7 @@ alias ......='cd ../../../../..'
 # replace ls with exa
 alias ls='exa --git --icons'
 alias tree='exa --tree'
-alias l='ls'
+alias l=ls
 alias la='ls -a'
 alias ll='ls -l'
 alias lal='ls -al'
@@ -47,18 +48,18 @@ alias llt='exa -l -t modified --sort newest'
 alias llat='exa -al -t modified --sort newest'
 
 ### external tools
-alias b='batcat'
-alias bat='batcat'
+alias b=batcat
+alias bat=batcat
 # open current directory in VS Code
 alias c.='code .'
-alias difftastic='difft'
-alias e='emacs'
+alias difftastic=difft
+alias e=emacs
 # start emacs server if it's not already running
 alias emacs='emacsclient -nc -a=""'
 alias etty='emacsclient -nw'
 # show hidden files when doing fd search
 alias fd='fd -H'
-alias g='git'
+alias g=git
 # build the go project in the cwd
 alias gob='go build .'
 # run the go project in the cwd
@@ -68,14 +69,14 @@ alias gitconfig='vim ~/.gitconfig'
 alias jq='jq -C'
 # prevent accidentally using npn instead of pnpm
 alias npm="echo 'use \"pnpm\"'"
-alias py='python3'
-alias ran='ranger'
+alias py=python3
+alias ran=ranger
 # verbatim search (i.e. disable regex)
 alias rgf='rg -F'
 # keep making this mistake for some reason
 alias rust='echo think you mean _rush_'
 alias sesh='tmux new-session -A -s sesh'
-alias v='vim'
+alias v=vim
 
 ## .zshrc
 alias zedit="$EDITOR $HOME/.zshrc"
