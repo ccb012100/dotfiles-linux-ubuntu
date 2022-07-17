@@ -17,6 +17,10 @@
   cycle_prev = ""
   go_next = ""
   go_prev = ""
+  go_up = <Primary><Shift>k
+  go_down = <Primary><Shift>j
+  go_left = <Primary><Shift>h
+  go_right = <Primary><Shift>l
   rotate_cw = <Primary>parenleft
   rotate_ccw = <Primary>parenright
   split_horiz = <Primary>underscore
