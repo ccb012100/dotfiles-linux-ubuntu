@@ -43,7 +43,7 @@
 	"git.fetchOnPull": true,
 	"git.promptToSaveFilesBeforeCommit": "always",
 	"git.rebaseWhenSync": true,
-	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
 	"markdown.preview.fontFamily": "Hack, Roboto Mono, JetBrains Mono, Ubuntu Mono, Monospace",
 	"markdownlint.config": {
 		"MD013": false,
@@ -55,7 +55,6 @@
 	"prettier.printWidth": 140,
 	"prettier.singleQuote": true,
 	"search.showLineNumbers": true,
-	"tslint.alwaysShowRuleFailuresAsWarnings": true,
 	"typescript.suggest.completeFunctionCalls": true,
 	"typescript.format.insertSpaceAfterConstructor": true,
 	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
@@ -82,7 +81,13 @@
 	"editor.suggestSelection": "first",
 	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 	"[typescript]": {
-		"editor.defaultFormatter": "ms-vscode.vscode-typescript-tslint-plugin"
+		"editor.defaultFormatter": "ms-vscode.vscode-typescript-tslint-plugin",
+		"editor.codeActionsOnSave": {
+			"source.fixAll": true
+		},
+		"editor.rulers": [
+			120
+		]
 	},
 	"[html]": {
 		"editor.defaultFormatter": "vscode.html-language-features"
@@ -194,8 +199,6 @@
 	"debug.onTaskErrors": "showErrors",
 	"workbench.startupEditor": "none",
 	"editor.parameterHints.enabled": false,
-	"rust-analyzer.lens.methodReferences": true,
-	"rust-analyzer.lens.references": true,
 	"omnisharp.enableRoslynAnalyzers": true,
 	"scm.defaultViewMode": "tree",
 	"scm.inputFontFamily": "Hack",
@@ -205,7 +208,6 @@
 	"javascript.updateImportsOnFileMove.enabled": "always",
 	"emmet.showSuggestionsAsSnippets": true,
 	"editor.guides.bracketPairs": true,
-	"errorLens.messageEnabled": false,
 	"path-intellisense.showHiddenFiles": true,
 	"git.suggestSmartCommit": false,
 	"editor.hover.above": false,
@@ -231,7 +233,7 @@
 		80,
 		120
 	],
-	"[csharp][markdown][javascript][typescript][json][html][rust]": {
+	"[csharp][markdown][javascript][json][html][rust]": {
 		"editor.rulers": [
 			120
 		]
@@ -316,7 +318,6 @@
 	"problems.defaultViewMode": "table",
 	"debug.console.fontSize": 12,
 	"terminal.integrated.fontSize": 12,
-	"commit-message-editor.view.useMonospaceEditor": true,
 	"terminal.integrated.fontFamily": "Hack Nerd Font",
 	"terminal.integrated.customGlyphs": false,
 	"workbench.sideBar.location": "right",
@@ -334,15 +335,6 @@
 		]
 	},
 	"explorer.confirmDelete": false,
-	"gitlens.currentLine.enabled": false,
-	"gitlens.hovers.currentLine.over": "line",
-	"gitlens.codeLens.enabled": false,
-	"gitlens.defaultDateFormat": "YYYY-MM-DD hh:mma Z",
-	"gitlens.defaultDateShortFormat": "YYYY-MM-DD",
-	"gitlens.defaultTimeFormat": null,
-	"gitlens.defaultGravatarsStyle": "retro",
-	"gitlens.plusFeatures.enabled": false,
-	"gitlens.virtualRepositories.enabled": false,
 	"debug.console.fontFamily": "Hack",
 	"workbench.colorCustomizations": {
 		// active tab
@@ -389,8 +381,6 @@
 			80
 		]
 	},
-	"gitlens.hovers.avatars": false,
-	"gitlens.hovers.enabled": false,
 	"editor.find.autoFindInSelection": "multiline",
 	"todo-tree.highlights.foregroundColourScheme": [
 		"white"
@@ -428,5 +418,30 @@
 	"git-graph.repository.sign.tags": true,
 	"git-graph.repository.commits.mute.commitsThatAreNotAncestorsOfHead": true,
 	"terminal.integrated.shellIntegration.enabled": true,
-	"workbench.colorTheme": "Codesong"
+	"workbench.colorTheme": "Gruvbox Dark Hard",
+	"githubIssues.queries": [
+		{
+			"label": "My Issues",
+			"query": "default"
+		},
+		{
+			"label": "Created Issues",
+			"query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+		},
+		{
+			"label": "Recent Issues",
+			"query": "state:open repo:${owner}/${repository} sort:updated-desc"
+		}
+	],
+	"openInGitHub.remote.name": "main",
+	"githubPullRequests.assignCreated": "${user}",
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
+	"testExplorer.showOnRun": true,
+	"testExplorer.useNativeTesting": true,
+	"testExplorer.addToEditorContextMenu": true,
+	"testExplorer.sort": "byLocationWithSuitesFirst",
+	"mocha-snippets.glob": "**/*.spec.ts",
+	"mochaExplorer.optsFile": "",
+	"mochaExplorer.parallel": true,
+	"mochaExplorer.pruneFiles": true,
 }

@@ -410,7 +410,7 @@
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+x ;",
+    "key": "ctrl+x /",
     "command": "editor.action.blockComment",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -2816,11 +2816,6 @@
     "command": "editor.action.selectionClipboardPaste"
   },
   {
-    "key": "ctrl+a",
-    "command": "cursorLineStart",
-    "when": "textInputFocus"
-  },
-  {
     "key": "ctrl+shift+f",
     "command": "-solutionExplorer.createFolder",
     "when": "view == 'slnexpl' && viewItem == 'project-cps'"
@@ -2962,7 +2957,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+c l",
+    "key": "ctrl+c ",
     "command": "workbench.action.focusRightGroup",
     "when": "editorTextFocus"
   },
@@ -3029,10 +3024,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+l a",
-    "command": "editor.action.goToSelectionAnchor"
-  },
-  {
     "key": "shift+alt+q",
     "command": "rewrap.rewrapCommentAt"
   },
@@ -3054,7 +3045,7 @@
     "command": "editor.action.sortLinesDescending"
   },
   {
-    "key": "ctrl+l ctrl+a",
+    "key": "ctrl+l c",
     "command": "editor.action.goToSelectionAnchor"
   },
   {
@@ -3719,5 +3710,69 @@
   {
     "key": "shift+delete",
     "command": "editor.action.clipboardCutAction"
+  },
+  {
+    "key": "ctrl+l a",
+    "command": "editor.action.autoFix"
+  },
+  {
+    "key": "ctrl+l shift+a",
+    "command": "editor.action.fixAll"
+  },
+  {
+    "key": "ctrl+8",
+    "command": "-workbench.action.focusEighthEditorGroup"
+  },
+  {
+    "key": "ctrl+5",
+    "command": "-workbench.action.focusFifthEditorGroup"
+  },
+  {
+    "key": "ctrl+4",
+    "command": "-workbench.action.focusFourthEditorGroup"
+  },
+  {
+    "key": "ctrl+2",
+    "command": "-workbench.action.focusSecondEditorGroup"
+  },
+  {
+    "key": "ctrl+7",
+    "command": "-workbench.action.focusSeventhEditorGroup"
+  },
+  {
+    "key": "ctrl+6",
+    "command": "-workbench.action.focusSixthEditorGroup"
+  },
+  {
+    "key": "ctrl+3",
+    "command": "-workbench.action.focusThirdEditorGroup"
+  },
+  {
+    "key": "ctrl+x e",
+    "command": "workbench.action.focusActiveEditorGroup"
+  },
+  {
+    "key": "ctrl+a",
+    "command": "cursorHome",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+a",
+    "command": "cursorHomeSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+a",
+    "command": "-editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+x ;",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+k",
+    "command": "deleteAllRight"
   }
 ]
