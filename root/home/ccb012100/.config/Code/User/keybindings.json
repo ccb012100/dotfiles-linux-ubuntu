@@ -3117,10 +3117,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+shift+k",
-    "command": "deleteAllRight"
-  },
-  {
     "key": "alt+/",
     "command": "-gitlens.gitCommands",
     "when": "!gitlens:disabled && config.gitlens.keymap == 'alternate'"
@@ -3670,7 +3666,7 @@
     "when": "viewContainer.workbench.view.debug.enabled"
   },
   {
-    "key": "ctrl+shift+d",
+    "key": "ctrl+shift+k",
     "command": "deleteInsideWord",
     "when": "textInputFocus && !editorReadonly"
   },
@@ -3774,5 +3770,13 @@
   {
     "key": "alt+k",
     "command": "deleteAllRight"
+  },
+  {
+    "key": "ctrl+x shift+enter",
+    "command": "workbench.action.createTerminalEditorSide"
+  },
+  {
+    "key": "ctrl+x enter",
+    "command": "workbench.action.createTerminalEditor"
   }
 ]

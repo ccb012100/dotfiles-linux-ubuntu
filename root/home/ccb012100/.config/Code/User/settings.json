@@ -436,12 +436,5 @@
 	"openInGitHub.remote.name": "main",
 	"githubPullRequests.assignCreated": "${user}",
 	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
-	"testExplorer.showOnRun": true,
-	"testExplorer.useNativeTesting": true,
-	"testExplorer.addToEditorContextMenu": true,
-	"testExplorer.sort": "byLocationWithSuitesFirst",
 	"mocha-snippets.glob": "**/*.spec.ts",
-	"mochaExplorer.optsFile": "",
-	"mochaExplorer.parallel": true,
-	"mochaExplorer.pruneFiles": true,
 }
