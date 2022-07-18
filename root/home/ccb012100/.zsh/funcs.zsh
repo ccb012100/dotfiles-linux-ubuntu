@@ -8,6 +8,9 @@ function cll { cd "$@" && ls -l }
 function clal { cd "$@" && ls -al }
 function clla { cd "$@" && ls -la }
 
+# cd into the directory the file is located in
+function cdf { cd `dirname $1` }
+
 # open new emacs-frame
 function new-frame { emacsclient -e "(new-frame)" }
 
