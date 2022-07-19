@@ -204,11 +204,6 @@
     "command": "-undo"
   },
   {
-    "key": "ctrl+k ctrl+m",
-    "command": "-editor.foldAll",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "ctrl+k ctrl+d",
     "command": "-editor.action.formatDocument"
   },
@@ -378,21 +373,6 @@
     "key": "ctrl+x ctrl+;",
     "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "cmd+k cmd+0",
-    "command": "-editor.foldAll",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+cmd+]",
-    "command": "-editor.unfold",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "cmd+k cmd+j",
-    "command": "-editor.unfoldAll",
-    "when": "editorTextFocus"
   },
   {
     "key": "enter",
@@ -648,16 +628,6 @@
   {
     "key": "ctrl+x 2",
     "command": "workbench.action.splitEditorDown"
-  },
-  {
-    "key": "alt+cmd+[",
-    "command": "-editor.fold",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-    "key": "alt+cmd+]",
-    "command": "-editor.unfold",
-    "when": "editorTextFocus && foldingEnabled"
   },
   {
     "key": "cmd+v",
@@ -1257,11 +1227,6 @@
     "command": "-workbench.action.files.saveWithoutFormatting"
   },
   {
-    "key": "ctrl+k ctrl+0",
-    "command": "-editor.foldAll",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
     "key": "ctrl+k ctrl+/",
     "command": "-editor.foldAllBlockComments",
     "when": "editorTextFocus && foldingEnabled"
@@ -1269,11 +1234,6 @@
   {
     "key": "ctrl+k ctrl+8",
     "command": "-editor.foldAllMarkerRegions",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-    "key": "ctrl+k ctrl+-",
-    "command": "-editor.foldAllExcept",
     "when": "editorTextFocus && foldingEnabled"
   },
   {
@@ -1309,11 +1269,6 @@
   {
     "key": "ctrl+k ctrl+7",
     "command": "-editor.foldLevel7",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-    "key": "ctrl+k ctrl+[",
-    "command": "-editor.foldRecursively",
     "when": "editorTextFocus && foldingEnabled"
   },
   {
@@ -1371,26 +1326,6 @@
     "key": "ctrl+k ctrl+x",
     "command": "-editor.action.trimTrailingWhitespace",
     "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+k ctrl+j",
-    "command": "-editor.unfoldAll",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-    "key": "ctrl+k ctrl+9",
-    "command": "-editor.unfoldAllMarkerRegions",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-    "key": "ctrl+k ctrl+=",
-    "command": "-editor.unfoldAllExcept",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-    "key": "ctrl+k ctrl+]",
-    "command": "-editor.unfoldRecursively",
-    "when": "editorTextFocus && foldingEnabled"
   },
   {
     "key": "ctrl+k ctrl+w",
@@ -1663,16 +1598,6 @@
     "when": "debuggersAvailable && editorTextFocus"
   },
   {
-    "key": "ctrl+shift+[",
-    "command": "-editor.fold",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-    "key": "ctrl+shift+]",
-    "command": "-editor.unfold",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
     "key": "alt+-",
     "command": "-decreaseSearchEditorContextLines",
     "when": "inSearchEditor"
@@ -1697,62 +1622,6 @@
     "key": "alt+=",
     "command": "-increaseSearchEditorContextLines",
     "when": "inSearchEditor"
-  },
-  {
-    "key": "shift+alt+numpad_add",
-    "command": "editor.unfoldAllExcept"
-  },
-  {
-    "key": "ctrl+=",
-    "command": "editor.unfoldRecursively"
-  },
-  {
-    "key": "alt+numpad_subtract",
-    "command": "editor.foldRecursively"
-  },
-  {
-    "key": "ctrl+alt+-",
-    "command": "editor.foldAll"
-  },
-  {
-    "key": "ctrl+alt+numpad_subtract",
-    "command": "editor.foldAll"
-  },
-  {
-    "key": "ctrl+alt+=",
-    "command": "editor.unfoldAll"
-  },
-  {
-    "key": "ctrl+alt+numpad_add",
-    "command": "editor.unfoldAll"
-  },
-  {
-    "key": "alt+=",
-    "command": "editor.unfoldRecursively"
-  },
-  {
-    "key": "ctrl+-",
-    "command": "editor.fold"
-  },
-  {
-    "key": "ctrl+numpad_add",
-    "command": "editor.fold"
-  },
-  {
-    "key": "shift+alt+-",
-    "command": "editor.foldAllExcept"
-  },
-  {
-    "key": "shift+alt+numpad_subtract",
-    "command": "editor.foldAllExcept"
-  },
-  {
-    "key": "alt+-",
-    "command": "editor.foldRecursively"
-  },
-  {
-    "key": "shift+alt+=",
-    "command": "editor.unfoldAllExcept"
   },
   {
     "key": "ctrl+r t",
@@ -2051,10 +1920,6 @@
     "key": "ctrl+k g",
     "command": "-textPowerTools.filterLinesIncludingString",
     "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+l ctrl+u",
-    "command": "textPowerTools.changeCaseToSwapCase"
   },
   {
     "key": "ctrl+k v",
@@ -2426,10 +2291,6 @@
     "key": "ctrl+c k",
     "command": "workbench.action.focusAboveGroup",
     "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+x ctrl+o",
-    "command": "textPowerTools.removeSurplusBlankLines"
   },
   {
     "key": "ctrl+x w",
@@ -3313,7 +3174,7 @@
     "command": "workbench.action.files.saveAll"
   },
   {
-    "key": "ctrl+l u",
+    "key": "ctrl+l ctrl+u",
     "command": "editor.action.transformToUppercase"
   },
   {
@@ -3778,5 +3639,44 @@
   {
     "key": "ctrl+x enter",
     "command": "workbench.action.createTerminalEditor"
+  },
+  {
+    "key": "ctrl+shift+-",
+    "command": "-workbench.action.navigateForward",
+    "when": "canNavigateForward"
+  },
+  {
+    "key": "ctrl+shift+-",
+    "command": "editor.unfold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "editor.fold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "alt+-",
+    "command": "editor.foldAll",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "shift+alt+-",
+    "command": "editor.unfoldAll",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+j",
+    "command": "-editor.unfoldAll",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+0",
+    "command": "-editor.foldAll",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+l shift+u",
+    "command": "editor.action.transformToTitlecase"
   }
 ]
