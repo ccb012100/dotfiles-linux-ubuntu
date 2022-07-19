@@ -133,7 +133,6 @@
   [[Jellybeans]]
     visible_bell = True
     icon_bell = False
-    background_color = "#121212"
     cursor_color = "#ffa560"
     font = Hack Nerd Font Mono 10
     foreground_color = "#dedede"
