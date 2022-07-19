@@ -43,6 +43,8 @@ autoload -U edit-command-line
 zle -N edit-command-line
 bindkey '^x^e' edit-command-line
 
+stty -ixon # disable XON/XOFF control flow
+
 ## additional personal config files
 source "$HOME"/.zsh/aliases.zsh
 source "$HOME"/.zsh/completions.zsh
