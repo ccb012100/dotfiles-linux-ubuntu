@@ -3,7 +3,7 @@
 
 if git-diff-index -p -M --cached HEAD -- |
     rg '^+' |
-    rg -i 'console|xxx:|only'; then
+    rg -i 'console\.|xxx:|\.only\('; then
     echo "Blocking commit: a disallowed string was found"
     exit 1
 fi
