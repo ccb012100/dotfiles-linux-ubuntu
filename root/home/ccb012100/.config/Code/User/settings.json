@@ -379,7 +379,8 @@
 		"files.eol": "\n",
 		"editor.rulers": [
 			80
-		]
+		],
+		"editor.defaultFormatter": "foxundermoon.shell-format"
 	},
 	"editor.find.autoFindInSelection": "multiline",
 	"todo-tree.highlights.foregroundColourScheme": [

@@ -730,16 +730,6 @@
     "when": "editorHasSignatureHelpProvider && editorTextFocus"
   },
   {
-    "key": "ctrl+enter",
-    "command": "editor.action.quickFix",
-    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+enter",
-    "command": "problems.action.showQuickFixes",
-    "when": "problemFocus"
-  },
-  {
     "key": "cmd+w",
     "command": "-workbench.action.terminal.killEditor",
     "when": "terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
@@ -861,16 +851,6 @@
     "key": "alt+p",
     "command": "-toggleSearchPreserveCase",
     "when": "searchViewletFocus"
-  },
-  {
-    "key": "ctrl+.",
-    "command": "-editor.action.quickFix",
-    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+.",
-    "command": "-problems.action.showQuickFixes",
-    "when": "problemFocus"
   },
   {
     "key": "ctrl+s",
@@ -3678,5 +3658,25 @@
   {
     "key": "ctrl+l shift+u",
     "command": "editor.action.transformToTitlecase"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "problems.action.showQuickFixes",
+    "when": "problemFocus"
+  },
+  {
+    "key": "ctrl+.",
+    "command": "-problems.action.showQuickFixes",
+    "when": "problemFocus"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+.",
+    "command": "-editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
   }
 ]
