@@ -4,6 +4,7 @@
     autocrlf = input
     filemode = false
 	excludesfile = ~/.config/git/ignore
+	hooksPath = ~/.config/git/hooks
 [gpg]
     program = gpg
 [commit]
