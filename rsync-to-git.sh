@@ -17,18 +17,6 @@ sync_file "/etc/keyd/default.conf" "etc/keyd"
 sync_file "/etc/udev/rules.d/50-wally.rules" "etc/udev/rules.d"
 
 sync_from_home \
-    ".config/Code/User/keybindings.json" \
-    ".config/Code/User"
-
-sync_from_home \
-    ".config/Code/User/settings.json" \
-    ".config/Code/User"
-
-sync_from_home \
-    ".config/Code/User/snippets" \
-    ".config/Code/User"
-
-sync_from_home \
     ".zshrc" \
     ""
 
