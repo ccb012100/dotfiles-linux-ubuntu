@@ -67,8 +67,6 @@ alias gor='go run .'
 alias gitconfig='vim ~/.gitconfig'
 # colorize json
 alias jq='jq -C'
-# prevent accidentally using npn instead of pnpm
-alias npm="echo 'use \"pnpm\"'"
 alias py=python3
 alias ran=ranger
 # verbatim search (i.e. disable regex)
