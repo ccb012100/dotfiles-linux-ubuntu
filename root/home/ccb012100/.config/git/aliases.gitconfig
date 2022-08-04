@@ -27,6 +27,7 @@
     ps      = push -v
     pl      = pull -v
     pub     = !git push -v --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
+    publish = !git push -v --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
     ri      = rebase  -v --interactive
     ruo     = remote update origin --prune # update local list of remote branches
     s       = status
