@@ -14,7 +14,7 @@
     reflog = delta
     show = delta
 [mergetool "vscode"]
-    cmd = code --wait $MERGED
+    cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
 [difftool "difftastic"]
     cmd = difft "$LOCAL" "$REMOTE"
 [delta]
