@@ -55,3 +55,9 @@ source "$HOME"/.zsh/tools.zsh
 source "$HOME"/.zsh/unalias.zsh
 source "$HOME"/.local/local_config.zsh
 source "$HOME"/ccb012100/starred-music/search.sh
+
+# VTE fix for Tilix
+# https://gnunn1.github.io/tilix-web/manual/vteconfig/
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+    source /etc/profile.d/vte-2.91.sh
+fi

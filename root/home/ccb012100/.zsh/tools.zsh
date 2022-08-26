@@ -4,7 +4,13 @@
 # GPG (GNU Privacy Guard or GnuPG)
 export GPG_TTY=$(tty)
 
+# Put homebrew first because some tools are in the homebrew path
+
+# homebrew
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 ## zsh-completions
+
 fpath=(/usr/local/share/zsh-completions $fpath) # activate zsh-completions
 fpath=($HOME/.zsh/zsh-completions $fpath)       # activate zsh-completions
 
@@ -12,14 +18,14 @@ fpath=($HOME/.zsh/zsh-completions $fpath)       # activate zsh-completions
 source $HOME/.config/broot/launcher/bash/br
 
 ## zsh-autosuggestions
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /home/linuxbrew/.linuxbrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=213"
 
 ## zsh-syntax-highlighting
 # dracula theme; must come before sourcing the main package
-source $HOME/tools/dracula-theme/dracula-zsh-syntax-highlighting/zsh-syntax-highlighting.sh
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/share/zsh-syntax-highlighting/highlighters
+source $HOME/tools/dracula-zsh-syntax-highlighting/zsh-syntax-highlighting.sh
+source /home/linuxbrew/.linuxbrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/home/linuxbrew/.linuxbrew/share/zsh-syntax-highlighting/highlighters
 
 ## starship
 eval "$(starship init zsh)"
@@ -30,10 +36,6 @@ function set_win_title(){
 }
 
 precmd_functions+=(set_win_title)
-
-# homebrew
-export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # nodenv
 export PATH=$HOME/.nodenv/bin:$PATH
@@ -66,10 +68,3 @@ function ranger {
     fi
     command rm -f -- "$tempfile" 2>/dev/null
 }
-
-# bun
-# bun completions
-[ -s "/home/cbocardo/.bun/_bun" ] && source "/home/cbocardo/.bun/_bun"
-
-export BUN_INSTALL="/home/cbocardo/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
