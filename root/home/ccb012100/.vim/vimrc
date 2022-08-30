@@ -8,10 +8,11 @@ inoremap jj <Esc>
 inoremap jk <Esc>
 inoremap kj <Esc>
 
-"" Clipboard functionality (paste from system)
-vnoremap <leader>y "+y
+"" Clipboard functionality (yank/paste from system)
+"" (alternate way is to set clipboard=unnamedplus or clipboard=unnamed)
+vnoremap <leader>Y "*y
 nnoremap <leader>y "+y
-nnoremap <leader>p "+p
+nnoremap <leader>P "*p
 vnoremap <leader>p "+p
 
 "" https://vim.fandom.com/wiki/Insert_newline_without_entering_insert_mode
