@@ -1,7 +1,7 @@
 # $HOME/.gitconfig
 [core]
     editor = vim
-    autocrlf = input
+    autocrlf = false
     filemode = false
 	excludesfile = ~/.config/git/ignore
     #hooksPath = ~/.config/git/hooks
