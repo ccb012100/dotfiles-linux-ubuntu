@@ -41,26 +41,6 @@ sync_from_home \
     ".config"
 
 sync_from_home \
-    ".config/gtk-4.0/settings.ini" \
-    ".config/gtk-4.0"
-
-sync_from_home \
-    ".config/lf/colors" \
-    ".config/"
-
-sync_from_home \
-    ".config/lf/icons" \
-    ".config/"
-
-sync_from_home \
-    ".config/lf/lfrc" \
-    ".config/"
-
-sync_from_home \
-    ".config/kitty/kitty.conf" \
-    ".config/kitty"
-
-sync_from_home \
     ".config/pulse/client.conf" \
     ".config/pulse"
 
