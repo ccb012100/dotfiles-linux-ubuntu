@@ -71,6 +71,8 @@ alias py=python3
 alias ran=ranger
 # verbatim search (i.e. disable regex)
 alias rgf='rg -F'
+# case-insensitive search
+alias rgi='rg -i'
 # keep making this mistake for some reason
 alias rust='echo think you mean _rush_'
 alias sesh='tmux new-session -A -s sesh'
