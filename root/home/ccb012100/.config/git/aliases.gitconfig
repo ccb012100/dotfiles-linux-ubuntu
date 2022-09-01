@@ -19,6 +19,7 @@
     fp      = push -v --force
     l       = log -n25 --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
     lu      = log -u
+    lu1     = log -u -1
     l1      = l -1 --stat
     last    = log -1 HEAD --stat
     main    = checkout main
