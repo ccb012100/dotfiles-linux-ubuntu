@@ -73,8 +73,8 @@ alias ran=ranger
 alias rgf='rg -F'
 # case-insensitive search
 alias rgi='rg -i'
-# keep making this mistake for some reason
-alias rust='echo think you mean _rush_'
+# keep making this typo for some reason
+alias rust='echo -e "\nthink you mean _rusH_"'
 alias sesh='tmux new-session -A -s sesh'
 alias v=vim
 
