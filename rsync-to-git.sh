@@ -41,6 +41,10 @@ sync_from_home \
     ".config"
 
 sync_from_home \
+    ".config/kitty" \
+    ".config"
+
+sync_from_home \
     ".config/pulse/client.conf" \
     ".config/pulse"
 
@@ -107,4 +111,3 @@ sync_from_home \
 sync_from_home \
     ".bashrc" \
     ""
-
