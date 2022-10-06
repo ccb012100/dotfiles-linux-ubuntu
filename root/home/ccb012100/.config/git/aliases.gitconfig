@@ -11,6 +11,7 @@
     cb      = checkout -B
     cm      = commit -m
     co      = checkout
+    cof     = checkout --force
     d       = diff
     ds      = diff --staged
     dt      = difftool
