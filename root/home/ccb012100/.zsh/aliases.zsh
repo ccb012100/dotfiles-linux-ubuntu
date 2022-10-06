@@ -67,6 +67,10 @@ alias gor='go run .'
 alias gitconfig='vim ~/.gitconfig'
 # colorize json
 alias jq='jq -C'
+alias nrb='npm run build'
+alias nrl='npm run lint'
+alias nrs='npm run start'
+alias nrt='npm run test'
 # run local version of ts-node
 alias nts='npx ts-node'
 alias py=python3

@@ -14,6 +14,9 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fpath=(/usr/local/share/zsh-completions $fpath) # activate zsh-completions
 fpath=($HOME/.zsh/zsh-completions $fpath)       # activate zsh-completions
 
+## kitty
+export PATH=$HOME/.local/kitty.app/bin:$PATH
+
 ## broot
 source $HOME/.config/broot/launcher/bash/br
 
