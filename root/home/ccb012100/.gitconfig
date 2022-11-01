@@ -17,7 +17,7 @@
     ff = only
     rebase = true
 [push]
-	default = simple
+	default = current
 [fetch]
     prune = false
 [rebase]
