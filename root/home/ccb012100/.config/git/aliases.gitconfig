@@ -1,14 +1,21 @@
 ## aliases
 [alias]
+    a       = add -v
+    # add all and commit
     acm     = ! git add -vA && git commit -m
+    ai      = add --interactive
     alias   = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
     amend   = commit --amend
-    a       = add -v
-    ai      = add --interactive
-    b       = branch -v
-    br      = branch --remote -v
+    b       = branch
+    bd      = branch --delete
+    bl      = branch --list
+    blv     = branch --list -v
+    blr     = branch --list --remote
+    blrv    = branch --list --remote -v
+    br      = branch --remote
     c       = commit
-    cb      = checkout -B
+    # create and checkout a new branch
+    cb      = checkout -b
     cm      = commit -m
     co      = checkout
     cof     = checkout --force
@@ -19,19 +26,27 @@
     f       = fetch
     fp      = push -v --force
     l       = log -n25 --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
-    lu      = log -u
-    lu1     = log -u -1
+    # show last commit with diffstat
     l1      = l -1 --stat
     last    = log -1 HEAD --stat
+    # show diffs
+    lp      = log --patch
+    # show last commit with diff
+    lp1     = log --patch -1
     main    = checkout main
     master  = checkout master
     pf      = push -v --force
-    ps      = push -v
     pl      = pull -v
-    pub     = !git push -v --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
-    publish = !git push -v --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
+    ps      = push -v
+    # bypass pre-push hook
+    psnv    = push -v --no-verify
+    pub     = push -v --set-upstream origin HEAD
+    # publish = !git push -v --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
     ri      = rebase  -v --interactive
-    ruo     = remote update origin --prune # update local list of remote branches
+    # update local list of remote branches
+    ruo     = remote update origin --prune
     s       = status
+    # create new branch and switch to it
+    sc      = switch --create
     # resets the previous commit but keep all the changes from that commit in the working directory
     undo = reset HEAD~1 --mixed
