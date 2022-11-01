@@ -72,6 +72,7 @@ alias nrs='npm run start'
 alias nrt='npm run test'
 # run local version of ts-node
 alias nts='npx ts-node'
+alias prc='gh pr checkout'
 alias py=python3
 alias ran=ranger
 # verbatim search (i.e. disable regex)
