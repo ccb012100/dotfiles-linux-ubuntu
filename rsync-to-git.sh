@@ -45,6 +45,10 @@ sync_from_home \
     ".config"
 
 sync_from_home \
+    ".config/pgcli/config" \
+    ".config/pgcli"
+
+sync_from_home \
     ".config/pulse/client.conf" \
     ".config/pulse"
 
