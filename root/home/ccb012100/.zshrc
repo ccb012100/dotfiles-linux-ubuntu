@@ -4,6 +4,11 @@
 export PATH="$PATH:$HOME/bin"
 export EDITOR="vim"             # $EDITOR opens in terminal
 
+# -X leaves file contents on the screen when less exits.
+# -F makes less quit if the entire output can be displayed on one screen.
+# -R displays ANSI color escape sequences in "raw" form.
+export LESS="-XFR"
+
 ## zsh options
 setopt auto_cd
 setopt cdable_vars              # directory aliases for cd command
