@@ -27,6 +27,7 @@ alias rmdir='rmdir -v'
 alias slu='systemctl list-units'
 alias sctl=systemctl
 alias trash='gio trash'
+alias uuid='uuidgen'
 
 ## cd
 alias ...='cd ../..'
