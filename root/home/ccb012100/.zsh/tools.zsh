@@ -16,6 +16,10 @@ fpath=($HOME/.zsh/zsh-completions $fpath)       # activate zsh-completions
 
 ## kitty
 export PATH=$HOME/.local/kitty.app/bin:$PATH
+# convenience function
+function update-kitty(){
+    curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+}
 
 ## broot
 source $HOME/.config/broot/launcher/bash/br
