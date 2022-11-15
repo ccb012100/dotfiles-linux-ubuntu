@@ -37,7 +37,7 @@ alias ......='cd ../../../../..'
 
 ## ls
 # replace ls with exa
-alias ls='exa --git --icons'
+alias ls='exa --git --icons --group-directories-first'
 alias tree='exa --tree'
 alias l=ls
 alias la='ls -a'
@@ -60,6 +60,7 @@ alias etty='emacsclient -nw'
 # show hidden files when doing fd search
 alias fd='fd -H'
 alias g=git
+alias j=git # easier to type
 # build the go project in the cwd
 alias gob='go build .'
 # run the go project in the cwd
@@ -67,6 +68,7 @@ alias gor='go run .'
 alias gitconfig='vim ~/.gitconfig'
 # colorize json
 alias jq='jq -C'
+alias kc='kubectl'
 alias nrb='npm run build'
 alias nrl='npm run lint'
 alias nrs='npm run start'
@@ -95,7 +97,7 @@ export conf="$HOME"/.config
 export dotf="$HOME"/.dotfiles
 export dotemacs="$HOME"/.emacs.d
 export notes="$HOME"/ccb012100/notes
-export zshell="$HOME"/zsh
+export zshell="$HOME"/.zsh
 
 ## global aliases
 alias -g ,b='| batcat'
