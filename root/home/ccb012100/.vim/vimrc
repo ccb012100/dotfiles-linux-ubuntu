@@ -22,6 +22,9 @@ nmap <CR> o<Esc>
 " F3 - toggle list (display whitespace)
 nnoremap <F3> :set list!<CR>
 
+" toggle search highlighting
+nnoremap <C-l> :set hlsearch!<CR>
+
 "" Map Ctrl+i to insert a single character
 nnoremap <C-i> i_<Esc>r
 "" Map Ctrl+a to append a single character
@@ -77,9 +80,10 @@ autocmd InsertLeave * set nocursorline nocursorcolumn relativenumber
 
 "" Dracula theme
 "" https://draculatheme.com/vim
-packadd! dracula
+" packadd! dracula
 syntax enable
-colorscheme dracula
+colorscheme lunaperche
+" colorscheme dracula
 
 """ The rest of these are copied straight from
 """ https://github.com/vim/vim/blob/master/runtime/defaults.vim
