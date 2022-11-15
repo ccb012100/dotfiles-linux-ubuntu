@@ -35,8 +35,8 @@
     lp1     = log --patch -1
     main    = checkout main
     master  = checkout master
-    pf      = push -v --force
-    pl      = pull 
+    pf      = push -v --force-with-lease
+    pl      = pull
     ps      = push
     # bypass pre-push hook
     psnv    = push -v --no-verify
