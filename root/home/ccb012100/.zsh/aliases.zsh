@@ -91,13 +91,13 @@ alias v=vim
 alias zedit="$EDITOR $HOME/.zshrc"
 alias zsource="source $HOME/.zshrc"
 
-## directory aliases
-export ccb="$HOME"/ccb012100
-export conf="$HOME"/.config
-export dotf="$HOME"/.dotfiles
-export dotemacs="$HOME"/.emacs.d
-export notes="$HOME"/ccb012100/notes
-export zshell="$HOME"/.zsh
+## cd to directories 
+alias ccb="cd $HOME/ccb012100"
+alias conf="cd $HOME/.config"
+alias dotf="cd $HOME/.dotfiles"
+alias dotemacs="cd $HOME/.emacs.d"
+alias notes="cd $HOME/ccb012100/notes"
+alias zshell="cd $HOME/.zsh"
 
 ## global aliases
 alias -g ,b='| batcat'
