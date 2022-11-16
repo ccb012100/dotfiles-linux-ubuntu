@@ -14,12 +14,14 @@
     blrv    = branch --list --remote -v
     br      = branch --remote
     c       = commit
+    can     = commit --amend --no-edit
     # create and checkout a new branch
-    cb      = checkout -b
-    cm      = commit -m
     co      = checkout
+    cob     = checkout -b
     cof     = checkout --force
+    com     = commit -m
     d       = diff
+    df      = ! git --no-pager diff | delta --side-by-side
     ds      = diff --staged
     dt      = difftool
     dts     = difftool --staged
