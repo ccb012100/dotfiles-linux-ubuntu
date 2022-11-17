@@ -7,7 +7,8 @@
 alias ,=command
 alias ali='apt list --installed'
 alias aptup='sudo apt update && sudo apt upgrade && sudo apt autoremove'
-alias c=cat
+alias back='cd -'
+alias c=cd
 alias cls=clear
 alias cp='cp -iv'
 alias ez='exec zsh'
@@ -61,7 +62,6 @@ alias etty='emacsclient -nw'
 # show hidden files when doing fd search
 alias fd='fd -H'
 alias g=git
-alias j=git # easier to type
 # build the go project in the cwd
 alias gob='go build .'
 # run the go project in the cwd
@@ -100,13 +100,3 @@ alias dotemacs="cd $HOME/.emacs.d"
 alias notes="cd $HOME/ccb012100/notes"
 alias zshell="cd $HOME/.zsh"
 
-## global aliases
-alias -g ,b='| batcat'
-alias -g ,bat='| batcat'
-alias -g ,c='| cat'
-alias -g ,cat='| cat'
-alias -g ,l='| less'
-alias -g ,less='| less'
-alias -g ,rg='| rg'
-alias -g ,rgf='| rg -F'
-alias -g ,fzf='| fzf'
