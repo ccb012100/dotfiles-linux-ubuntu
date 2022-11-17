@@ -14,12 +14,13 @@
     blrv    = branch --list --remote -v
     br      = branch --remote
     c       = commit
+    ca      = commit --amend
     can     = commit --amend --no-edit
+    cm      = commit -m
     # create and checkout a new branch
     co      = checkout
     cob     = checkout -b
     cof     = checkout --force
-    com     = commit -m
     d       = diff
     df      = ! git --no-pager diff | delta --side-by-side
     ds      = diff --staged
@@ -37,9 +38,9 @@
     lp1     = log --patch -1
     main    = checkout main
     master  = checkout master
-    pf      = push -v --force-with-lease
     pl      = pull
     ps      = push
+    psf     = push -v --force-with-lease
     # bypass pre-push hook
     psnv    = push -v --no-verify
     pub     = push -v --set-upstream origin HEAD

@@ -18,6 +18,7 @@
 [difftool "difftastic"]
     cmd = difft "$LOCAL" "$REMOTE"
 [delta]
+    features = decorations
     syntax-theme = TwoDark
     keep-plus-minus-markers = true
     line-numbers = true
