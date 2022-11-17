@@ -50,6 +50,7 @@ alias llat='exa -al -t modified --sort newest'
 ### external tools
 alias b=batcat
 alias bat=batcat
+alias brewup='brew upgrade'
 # open current directory in VS Code
 alias c.='code .'
 alias difftastic=difft
