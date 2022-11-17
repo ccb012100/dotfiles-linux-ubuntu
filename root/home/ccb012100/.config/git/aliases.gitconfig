@@ -6,13 +6,12 @@
     ai      = add --interactive
     alias   = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
     amend   = commit --amend
-    b       = branch
+    b       = branch --list
+    back    = checkout -
     bd      = branch --delete
-    bl      = branch --list
-    blv     = branch --list -v
-    blr     = branch --list --remote
-    blrv    = branch --list --remote -v
+    bv      = branch -v
     br      = branch --remote
+    brv     = branch --remote -v
     c       = commit
     ca      = commit --amend
     can     = commit --amend --no-edit
@@ -22,7 +21,10 @@
     cob     = checkout -b
     cof     = checkout --force
     d       = diff
+    # delete local branches that have been merged into main (adapted from https://stackoverflow.com/a/16906759)
+    delete  = ! git fetch --prune && git branch --merged main | rg -v '^[ *]*main$' | xargs --no-run-if-empty git branch -d
     df      = ! git --no-pager diff | delta --side-by-side
+    dfs     = ! git --no-pager diff --staged | delta --side-by-side
     ds      = diff --staged
     dt      = difftool
     dts     = difftool --staged
