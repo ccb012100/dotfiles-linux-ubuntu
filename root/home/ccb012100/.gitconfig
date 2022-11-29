@@ -19,7 +19,7 @@
 [push]
 	default = simple
 [fetch]
-    prune = false
+    prune = true
 [rebase]
     autoStash = false
 [init]
