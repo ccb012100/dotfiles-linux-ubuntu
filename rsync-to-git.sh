@@ -49,10 +49,6 @@ sync_from_home \
     ".config/pgcli"
 
 sync_from_home \
-    ".config/pulse/client.conf" \
-    ".config/pulse"
-
-sync_from_home \
     ".config/ranger/rc.conf" \
     ".config/ranger"
 
@@ -66,10 +62,6 @@ sync_from_home \
 
 sync_from_home \
     ".config/kdiff3rc" \
-    ".config"
-
-sync_from_home \
-    ".config/pavucontrol.ini" \
     ".config"
 
 sync_from_home \

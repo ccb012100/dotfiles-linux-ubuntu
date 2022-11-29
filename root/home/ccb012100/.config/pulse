@@ -1,4 +1,0 @@
-# pulseaudio config file
-# $HOME/.config/pulse/client.conf
-set-default_source alsa_output.usb-Logitech_Inc_Logitech_USB_Headset_H540_00000000-00.analog-stereo.monitor
-set-default_sink alsa_input.pci-0000_00_1f.3.analog-stereo
