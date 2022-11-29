@@ -6,9 +6,10 @@
     ai      = add --interactive
     alias   = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
     amend   = commit --amend
-    b       = branch --list
+    b       = branch 
     back    = checkout -
     bd      = branch --delete
+    bl      = branch --list
     bv      = branch -v
     br      = branch --remote
     brv     = branch --remote -v
