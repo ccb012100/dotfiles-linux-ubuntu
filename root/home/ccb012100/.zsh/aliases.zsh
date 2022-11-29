@@ -57,7 +57,7 @@ alias c.='code .'
 alias difftastic=difft
 alias e=emacs
 # start emacs server if it's not already running
-alias emacs='emacsclient -nc -a=""'
+# alias emacs='emacsclient -nc -a=""'
 alias etty='emacsclient -nw'
 # show hidden files when doing fd search
 alias fd='fd -H'
