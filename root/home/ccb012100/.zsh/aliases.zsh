@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/usr/bin/env zsh
 # zsh aliases
 
 ### built-in tools
@@ -94,7 +94,7 @@ alias v=vim
 alias zedit="$EDITOR $HOME/.zshrc"
 alias zsource="source $HOME/.zshrc"
 
-## cd to directories 
+## cd to directories
 alias ccb="cd $HOME/ccb012100"
 alias conf="cd $HOME/.config"
 alias dotf="cd $HOME/.dotfiles"

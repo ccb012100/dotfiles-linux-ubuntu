@@ -1,4 +1,4 @@
- #!/usr/bin/zsh
+#!/usr/bin/env zsh
 # custom Zsh functions
 
 # functions to cd then ls in one step

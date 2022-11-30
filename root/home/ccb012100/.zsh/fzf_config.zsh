@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/usr/bin/env zsh
 # fzf
 # https://github.com/junegunn/fzf
 

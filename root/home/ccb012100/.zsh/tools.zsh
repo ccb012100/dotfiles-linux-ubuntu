@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/usr/bin/env zsh
 # External Zsh tools
 
 # GPG (GNU Privacy Guard or GnuPG)
