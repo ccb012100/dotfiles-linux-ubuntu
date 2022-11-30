@@ -50,7 +50,8 @@
     # publish = !git push -v --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
     ri      = rebase --interactive
     s       = status
+    st      = stash
     # create new branch and switch to it
-    sc      = switch --create
+    swc     = switch --create
     # resets the previous commit but keep all the changes from that commit in the working directory
     undo = reset HEAD~1 --mixed
