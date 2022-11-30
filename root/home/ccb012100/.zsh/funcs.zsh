@@ -14,6 +14,9 @@ function cdf { cd `dirname $1` }
 # open new emacs-frame
 function new-frame { emacsclient -e "(new-frame)" }
 
+# set display brightness
+function bright { xrandr --output DP-1-2 --brightness $1 }
+
 # dotnet cli commands
 function dot() {
     case $1 in
