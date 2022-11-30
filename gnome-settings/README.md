@@ -7,6 +7,5 @@ GNOME saves some settings in binaries/databases (particularly `~/.config/dconf/u
 Command to get keybindings:
 
 ```bash
-gsettings list-recursively | rg "wm\.keybindings|shell\.keybindings" | sort
+gsettings list-recursively | rg "keybindings" | sort >| keybindings
 ```
-
