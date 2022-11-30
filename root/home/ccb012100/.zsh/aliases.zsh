@@ -27,6 +27,8 @@ alias rm='rm -I'
 alias rmdir='rmdir -v'
 alias slu='systemctl list-units'
 alias sctl=systemctl
+# upgrade snap-store snap
+alias snap-store-refresh='pkill snap-store && sudo snap refresh snap-store'
 alias trash='gio trash'
 alias uuid='uuidgen --random'
 
@@ -62,6 +64,7 @@ alias etty='emacsclient -nw'
 # show hidden files when doing fd search
 alias fd='fd -H'
 alias g=git
+alias ghp='gh pr'
 # build the go project in the cwd
 alias gob='go build .'
 # run the go project in the cwd
@@ -76,7 +79,6 @@ alias nrs='npm run start'
 alias nrt='npm run test'
 # run local version of ts-node
 alias nts='npx ts-node'
-alias prc='gh pr checkout'
 alias py=python3
 alias ran=ranger
 # verbatim search (i.e. disable regex)
