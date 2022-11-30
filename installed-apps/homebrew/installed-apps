@@ -1,8 +1,10 @@
 broot
 btop
 difftastic
+emacs
 exa
 fd
+fzf
 gh
 git-delta
 go
@@ -11,9 +13,11 @@ jd
 jq
 lazygit
 micro
+perl
 sqlite
 starship
 tealdeer
 vim
+zsh
 zsh-autosuggestions
 zsh-syntax-highlighting
