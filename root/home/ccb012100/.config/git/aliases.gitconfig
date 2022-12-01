@@ -1,9 +1,9 @@
 ## aliases
 [alias]
-    a       = add
+    a       = add -A
     # add all tracked and untracked files and commit
-    acm     = ! git add --all && git commit -m
-    ai      = add --interactive
+    acm     = ! git add -A && git commit -m
+    ai      = add -A --interactive
     alias   = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
     amend   = commit --amend
     b       = branch 
@@ -30,6 +30,8 @@
     dt      = difftool
     dts     = difftool --staged
     f       = fetch
+    # update local main branch to match origin
+    fm      = fetch origin main:main
     fp      = fetch --prune
     l       = log -n25 --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
     # show last commit with diffstat
