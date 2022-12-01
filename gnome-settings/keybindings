@@ -5,17 +5,17 @@ com.gexperts.Tilix.Keybindings app-shortcuts 'disabled'
 com.gexperts.Tilix.Keybindings nautilus-open 'disabled'
 com.gexperts.Tilix.Keybindings session-add-auto '<Primary><Shift>space'
 com.gexperts.Tilix.Keybindings session-add-down '<Primary>question'
-com.gexperts.Tilix.Keybindings session-add-right '<Primary>quotedbl'
-com.gexperts.Tilix.Keybindings session-close '<Alt>q'
+com.gexperts.Tilix.Keybindings session-add-right '<Primary>colon'
+com.gexperts.Tilix.Keybindings session-close '<Super>q'
 com.gexperts.Tilix.Keybindings session-name 'disabled'
 com.gexperts.Tilix.Keybindings session-open 'disabled'
 com.gexperts.Tilix.Keybindings session-resize-terminal-down '<Primary><Shift>Down'
 com.gexperts.Tilix.Keybindings session-resize-terminal-left '<Primary><Shift>Left'
 com.gexperts.Tilix.Keybindings session-resize-terminal-right '<Primary><Shift>Right'
 com.gexperts.Tilix.Keybindings session-resize-terminal-up '<Primary><Shift>Up'
-com.gexperts.Tilix.Keybindings session-save 'disabled'
 com.gexperts.Tilix.Keybindings session-save-as 'disabled'
-com.gexperts.Tilix.Keybindings session-switch-to-next-terminal '<Primary>colon'
+com.gexperts.Tilix.Keybindings session-save 'disabled'
+com.gexperts.Tilix.Keybindings session-switch-to-next-terminal 'disabled'
 com.gexperts.Tilix.Keybindings session-switch-to-previous-terminal 'disabled'
 com.gexperts.Tilix.Keybindings session-switch-to-terminal-0 'disabled'
 com.gexperts.Tilix.Keybindings session-switch-to-terminal-1 'disabled'
@@ -34,9 +34,9 @@ com.gexperts.Tilix.Keybindings session-switch-to-terminal-up '<Primary><Shift>k'
 com.gexperts.Tilix.Keybindings session-synchronize-input 'disabled'
 com.gexperts.Tilix.Keybindings terminal-add-bookmark 'disabled'
 com.gexperts.Tilix.Keybindings terminal-advanced-paste 'disabled'
-com.gexperts.Tilix.Keybindings terminal-close '<Alt>w'
-com.gexperts.Tilix.Keybindings terminal-copy '<Super>c'
+com.gexperts.Tilix.Keybindings terminal-close '<Super>w'
 com.gexperts.Tilix.Keybindings terminal-copy-as-html 'disabled'
+com.gexperts.Tilix.Keybindings terminal-copy '<Super>c'
 com.gexperts.Tilix.Keybindings terminal-file-browser 'disabled'
 com.gexperts.Tilix.Keybindings terminal-find 'disabled'
 com.gexperts.Tilix.Keybindings terminal-find-next '<Ctrl><Shift>g'
@@ -49,13 +49,13 @@ com.gexperts.Tilix.Keybindings terminal-monitor-silence 'disabled'
 com.gexperts.Tilix.Keybindings terminal-next-prompt 'disabled'
 com.gexperts.Tilix.Keybindings terminal-page-down '<Primary><Shift>Page_Down'
 com.gexperts.Tilix.Keybindings terminal-page-up '<Primary><Shift>Page_Up'
-com.gexperts.Tilix.Keybindings terminal-paste '<Super>v'
 com.gexperts.Tilix.Keybindings terminal-paste-primary '<Shift>Insert'
+com.gexperts.Tilix.Keybindings terminal-paste '<Super>v'
 com.gexperts.Tilix.Keybindings terminal-previous-prompt 'disabled'
 com.gexperts.Tilix.Keybindings terminal-profile-preference 'disabled'
 com.gexperts.Tilix.Keybindings terminal-read-only 'disabled'
-com.gexperts.Tilix.Keybindings terminal-reset 'disabled'
 com.gexperts.Tilix.Keybindings terminal-reset-and-clear 'disabled'
+com.gexperts.Tilix.Keybindings terminal-reset 'disabled'
 com.gexperts.Tilix.Keybindings terminal-save 'disabled'
 com.gexperts.Tilix.Keybindings terminal-scroll-down '<Primary><Shift>n'
 com.gexperts.Tilix.Keybindings terminal-scroll-up '<Primary><Shift>p'
@@ -84,73 +84,6 @@ com.gexperts.Tilix.Keybindings win-switch-to-session-7 '<Ctrl><Alt>7'
 com.gexperts.Tilix.Keybindings win-switch-to-session-8 '<Ctrl><Alt>8'
 com.gexperts.Tilix.Keybindings win-switch-to-session-9 '<Ctrl><Alt>9'
 com.gexperts.Tilix.Keybindings win-view-sidebar '<Primary>F12'
-org.gnome.Terminal.Legacy.Keybindings close-tab '<Control><Shift>w'
-org.gnome.Terminal.Legacy.Keybindings close-window '<Control><Shift>q'
-org.gnome.Terminal.Legacy.Keybindings copy '<Control><Shift>c'
-org.gnome.Terminal.Legacy.Keybindings copy-html 'disabled'
-org.gnome.Terminal.Legacy.Keybindings detach-tab 'disabled'
-org.gnome.Terminal.Legacy.Keybindings export 'disabled'
-org.gnome.Terminal.Legacy.Keybindings find '<Control><Shift>F'
-org.gnome.Terminal.Legacy.Keybindings find-clear '<Control><Shift>J'
-org.gnome.Terminal.Legacy.Keybindings find-next '<Control><Shift>G'
-org.gnome.Terminal.Legacy.Keybindings find-previous '<Primary><Shift>r'
-org.gnome.Terminal.Legacy.Keybindings full-screen 'F11'
-org.gnome.Terminal.Legacy.Keybindings header-menu 'disabled'
-org.gnome.Terminal.Legacy.Keybindings help 'disabled'
-org.gnome.Terminal.Legacy.Keybindings move-tab-left '<Control><Shift>Page_Up'
-org.gnome.Terminal.Legacy.Keybindings move-tab-right '<Control><Shift>Page_Down'
-org.gnome.Terminal.Legacy.Keybindings new-tab '<Control><Shift>t'
-org.gnome.Terminal.Legacy.Keybindings new-window '<Primary><Shift>Return'
-org.gnome.Terminal.Legacy.Keybindings next-tab '<Primary>greater'
-org.gnome.Terminal.Legacy.Keybindings paste '<Control><Shift>v'
-org.gnome.Terminal.Legacy.Keybindings preferences 'disabled'
-org.gnome.Terminal.Legacy.Keybindings prev-tab '<Primary>less'
-org.gnome.Terminal.Legacy.Keybindings print 'disabled'
-org.gnome.Terminal.Legacy.Keybindings read-only 'disabled'
-org.gnome.Terminal.Legacy.Keybindings reset 'disabled'
-org.gnome.Terminal.Legacy.Keybindings reset-and-clear 'disabled'
-org.gnome.Terminal.Legacy.Keybindings save-contents 'disabled'
-org.gnome.Terminal.Legacy.Keybindings select-all 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-1 '<Alt>1'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-10 '<Alt>0'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-11 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-12 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-13 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-14 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-15 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-16 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-17 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-18 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-19 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-2 '<Alt>2'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-20 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-21 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-22 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-23 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-24 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-25 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-26 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-27 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-28 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-29 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-3 '<Alt>3'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-30 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-31 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-32 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-33 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-34 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-35 'disabled'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-4 '<Alt>4'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-5 '<Alt>5'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-6 '<Alt>6'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-7 '<Alt>7'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-8 '<Alt>8'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-9 '<Alt>9'
-org.gnome.Terminal.Legacy.Keybindings switch-to-tab-last 'disabled'
-org.gnome.Terminal.Legacy.Keybindings toggle-menubar 'disabled'
-org.gnome.Terminal.Legacy.Keybindings zoom-in '<Primary><Shift>KP_Add'
-org.gnome.Terminal.Legacy.Keybindings zoom-normal '<Primary><Shift>KP_Enter'
-org.gnome.Terminal.Legacy.Keybindings zoom-out '<Primary><Shift>KP_Subtract'
 org.gnome.desktop.wm.keybindings activate-window-menu @as []
 org.gnome.desktop.wm.keybindings always-on-top @as []
 org.gnome.desktop.wm.keybindings begin-move @as []
@@ -180,10 +113,10 @@ org.gnome.desktop.wm.keybindings move-to-side-e @as []
 org.gnome.desktop.wm.keybindings move-to-side-n @as []
 org.gnome.desktop.wm.keybindings move-to-side-s @as []
 org.gnome.desktop.wm.keybindings move-to-side-w @as []
-org.gnome.desktop.wm.keybindings move-to-workspace-1 @as []
 org.gnome.desktop.wm.keybindings move-to-workspace-10 @as []
 org.gnome.desktop.wm.keybindings move-to-workspace-11 @as []
 org.gnome.desktop.wm.keybindings move-to-workspace-12 @as []
+org.gnome.desktop.wm.keybindings move-to-workspace-1 @as []
 org.gnome.desktop.wm.keybindings move-to-workspace-2 @as []
 org.gnome.desktop.wm.keybindings move-to-workspace-3 @as []
 org.gnome.desktop.wm.keybindings move-to-workspace-4 @as []
@@ -203,18 +136,18 @@ org.gnome.desktop.wm.keybindings raise @as []
 org.gnome.desktop.wm.keybindings raise-or-lower ['<Super>apostrophe']
 org.gnome.desktop.wm.keybindings set-spew-mark @as []
 org.gnome.desktop.wm.keybindings show-desktop ['<Shift><Super>h']
-org.gnome.desktop.wm.keybindings switch-applications ['<Super>Tab']
 org.gnome.desktop.wm.keybindings switch-applications-backward ['<Shift><Super>Tab']
+org.gnome.desktop.wm.keybindings switch-applications ['<Super>Tab']
 org.gnome.desktop.wm.keybindings switch-group ['<Alt>grave']
 org.gnome.desktop.wm.keybindings switch-group-backward ['<Shift><Alt>grave']
 org.gnome.desktop.wm.keybindings switch-input-source @as []
 org.gnome.desktop.wm.keybindings switch-input-source-backward @as []
 org.gnome.desktop.wm.keybindings switch-panels @as []
 org.gnome.desktop.wm.keybindings switch-panels-backward @as []
-org.gnome.desktop.wm.keybindings switch-to-workspace-1 @as []
 org.gnome.desktop.wm.keybindings switch-to-workspace-10 @as []
 org.gnome.desktop.wm.keybindings switch-to-workspace-11 @as []
 org.gnome.desktop.wm.keybindings switch-to-workspace-12 @as []
+org.gnome.desktop.wm.keybindings switch-to-workspace-1 @as []
 org.gnome.desktop.wm.keybindings switch-to-workspace-2 @as []
 org.gnome.desktop.wm.keybindings switch-to-workspace-3 @as []
 org.gnome.desktop.wm.keybindings switch-to-workspace-4 @as []
@@ -243,10 +176,10 @@ org.gnome.mutter.keybindings tab-popup-select @as []
 org.gnome.mutter.keybindings toggle-tiled-left @as []
 org.gnome.mutter.keybindings toggle-tiled-right @as []
 org.gnome.mutter.wayland.keybindings restore-shortcuts @as []
-org.gnome.mutter.wayland.keybindings switch-to-session-1 ['<Primary><Alt>F1']
 org.gnome.mutter.wayland.keybindings switch-to-session-10 ['<Primary><Alt>F10']
 org.gnome.mutter.wayland.keybindings switch-to-session-11 ['<Primary><Alt>F11']
 org.gnome.mutter.wayland.keybindings switch-to-session-12 ['<Primary><Alt>F12']
+org.gnome.mutter.wayland.keybindings switch-to-session-1 ['<Primary><Alt>F1']
 org.gnome.mutter.wayland.keybindings switch-to-session-2 ['<Primary><Alt>F2']
 org.gnome.mutter.wayland.keybindings switch-to-session-3 ['<Primary><Alt>F3']
 org.gnome.mutter.wayland.keybindings switch-to-session-4 ['<Primary><Alt>F4']
@@ -276,3 +209,70 @@ org.gnome.shell.keybindings switch-to-application-9 ['<Super>9']
 org.gnome.shell.keybindings toggle-application-view @as []
 org.gnome.shell.keybindings toggle-message-tray ['<Super>semicolon']
 org.gnome.shell.keybindings toggle-overview @as []
+org.gnome.Terminal.Legacy.Keybindings close-tab '<Control><Shift>w'
+org.gnome.Terminal.Legacy.Keybindings close-window '<Control><Shift>q'
+org.gnome.Terminal.Legacy.Keybindings copy '<Control><Shift>c'
+org.gnome.Terminal.Legacy.Keybindings copy-html 'disabled'
+org.gnome.Terminal.Legacy.Keybindings detach-tab 'disabled'
+org.gnome.Terminal.Legacy.Keybindings export 'disabled'
+org.gnome.Terminal.Legacy.Keybindings find-clear '<Control><Shift>J'
+org.gnome.Terminal.Legacy.Keybindings find '<Control><Shift>F'
+org.gnome.Terminal.Legacy.Keybindings find-next '<Control><Shift>G'
+org.gnome.Terminal.Legacy.Keybindings find-previous '<Primary><Shift>r'
+org.gnome.Terminal.Legacy.Keybindings full-screen 'F11'
+org.gnome.Terminal.Legacy.Keybindings header-menu 'disabled'
+org.gnome.Terminal.Legacy.Keybindings help 'disabled'
+org.gnome.Terminal.Legacy.Keybindings move-tab-left '<Control><Shift>Page_Up'
+org.gnome.Terminal.Legacy.Keybindings move-tab-right '<Control><Shift>Page_Down'
+org.gnome.Terminal.Legacy.Keybindings new-tab '<Control><Shift>t'
+org.gnome.Terminal.Legacy.Keybindings new-window '<Primary><Shift>Return'
+org.gnome.Terminal.Legacy.Keybindings next-tab '<Primary>greater'
+org.gnome.Terminal.Legacy.Keybindings paste '<Control><Shift>v'
+org.gnome.Terminal.Legacy.Keybindings preferences 'disabled'
+org.gnome.Terminal.Legacy.Keybindings prev-tab '<Primary>less'
+org.gnome.Terminal.Legacy.Keybindings print 'disabled'
+org.gnome.Terminal.Legacy.Keybindings read-only 'disabled'
+org.gnome.Terminal.Legacy.Keybindings reset-and-clear 'disabled'
+org.gnome.Terminal.Legacy.Keybindings reset 'disabled'
+org.gnome.Terminal.Legacy.Keybindings save-contents 'disabled'
+org.gnome.Terminal.Legacy.Keybindings select-all 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-10 '<Alt>0'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-11 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-12 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-13 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-14 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-15 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-16 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-17 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-18 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-19 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-1 '<Alt>1'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-20 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-21 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-22 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-23 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-24 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-25 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-26 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-27 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-28 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-29 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-2 '<Alt>2'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-30 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-31 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-32 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-33 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-34 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-35 'disabled'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-3 '<Alt>3'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-4 '<Alt>4'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-5 '<Alt>5'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-6 '<Alt>6'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-7 '<Alt>7'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-8 '<Alt>8'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-9 '<Alt>9'
+org.gnome.Terminal.Legacy.Keybindings switch-to-tab-last 'disabled'
+org.gnome.Terminal.Legacy.Keybindings toggle-menubar 'disabled'
+org.gnome.Terminal.Legacy.Keybindings zoom-in '<Primary><Shift>KP_Add'
+org.gnome.Terminal.Legacy.Keybindings zoom-normal '<Primary><Shift>KP_Enter'
+org.gnome.Terminal.Legacy.Keybindings zoom-out '<Primary><Shift>KP_Subtract'
