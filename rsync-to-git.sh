@@ -30,7 +30,7 @@ sync_from_home \
 
 sync_from_home \
     ".config/bat/bat.conf" \
-    ".config/bat"
+    ".config/bat/"
 
 sync_from_home \
     ".config/broot/conf.hjson" \
@@ -38,63 +38,71 @@ sync_from_home \
 
 sync_from_home \
     ".config/git" \
-    ".config"
+    ".config/"
 
 sync_from_home \
     ".config/kitty" \
-    ".config"
+    ".config/"
+
+sync_from_home \
+    ".config/micro/bindings.json" \
+    ".config/micro/"
+
+sync_from_home \
+    ".config/micro/settings.json" \
+    ".config/micro/"
 
 sync_from_home \
     ".config/pgcli/config" \
-    ".config/pgcli"
+    ".config/pgcli/"
 
 sync_from_home \
     ".config/ranger/rc.conf" \
-    ".config/ranger"
+    ".config/ranger/"
 
 sync_from_home \
     ".config/systemd/user/emacsd.service" \
-    ".config/systemd/user"
+    ".config/systemd/user/"
 
 sync_from_home \
     ".config/terminator/config" \
-    ".config/terminator"
+    ".config/terminator/"
 
 sync_from_home \
     ".config/kdiff3rc" \
-    ".config"
+    ".config/"
 
 sync_from_home \
     ".config/ripgreprc" \
-    ".config"
+    ".config/"
 
 sync_from_home \
     ".config/starship.toml" \
-    ".config"
+    ".config/"
 
 sync_from_home \
     ".vim/vimrc" \
-    ".vim"
+    ".vim/"
 
 sync_from_home \
     ".zsh/aliases.zsh" \
-    ".zsh"
+    ".zsh/"
 
 sync_from_home \
     ".zsh/completions.zsh" \
-    ".zsh"
+    ".zsh/"
 
 sync_from_home \
     ".zsh/fd.zsh" \
-    ".zsh"
+    ".zsh/"
 
 sync_from_home \
     ".zsh/funcs.zsh" \
-    ".zsh"
+    ".zsh/"
 
 sync_from_home \
     ".zsh/fzf_config.zsh" \
-    ".zsh"
+    ".zsh/"
 
 sync_from_home \
     ".zsh/tools.zsh" \
@@ -102,7 +110,7 @@ sync_from_home \
 
 sync_from_home \
     ".zsh/unalias.zsh" \
-    ".zsh"
+    ".zsh/"
 
 sync_from_home \
     ".bashrc" \
