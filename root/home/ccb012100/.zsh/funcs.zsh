@@ -71,3 +71,18 @@ function fn() {
         ;;
     esac
 }
+
+# set system-wide text size
+function text-scaling() {
+	case $1 in
+		get )
+			gsettings get org.gnome.desktop.interface text-scaling-factor
+		;;
+		set )
+			gsettings set org.gnome.desktop.interface text-scaling-factor $2
+		;;
+		* )
+			echo 'usage: text-scaling [ get | set <SCALING_FACTOR> ]'
+		;;
+	esac
+}
