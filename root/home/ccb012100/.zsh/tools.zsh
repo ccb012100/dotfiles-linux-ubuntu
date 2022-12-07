@@ -17,7 +17,7 @@ fpath=($HOME/.zsh/zsh-completions $fpath)       # activate zsh-completions
 ## kitty
 export PATH=$HOME/.local/kitty.app/bin:$PATH
 # convenience function
-function update-kitty(){
+function update-kitty() {
     curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 }
 
@@ -38,7 +38,7 @@ export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/home/linuxbrew/.linuxbrew/share/zsh-synta
 eval "$(starship init zsh)"
 
 # set window title via starship
-function set_win_title(){
+function set_win_title() {
     echo -ne "\033]0; $(realpath .) \007"
 }
 
@@ -70,7 +70,7 @@ function ranger {
     )
 
     ${ranger_cmd[@]} "$@"
-    if [[ -f "$tempfile" ]] && [[ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]]; then
+    if [[ -f "$tempfile" ]] && [[ "$(cat -- "$tempfile")" != "$(echo -n $(pwd))" ]]; then
         cd -- "$(cat "$tempfile")" || return
     fi
     command rm -f -- "$tempfile" 2>/dev/null
