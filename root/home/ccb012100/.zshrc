@@ -19,8 +19,6 @@ setopt ignoreeof                # Ctrl-D won't kill the session
 setopt no_case_glob             # case-insensitive globbing
 setopt noclobber                # don't overwrite existing files
 
-DISABLE_AUTO_TITLE="true"
-
 ## zsh history
 HISTFILE="$HOME"/.zsh_history
 HISTSIZE=50000
