@@ -61,7 +61,7 @@ source "$HOME"/ccb012100/starred-music/search.sh
 
 # VTE fix for Tilix
 # https://gnunn1.github.io/tilix-web/manual/vteconfig/
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+if [ "$TILIX_ID" ] || [ "$VTE_VERSION" ]; then
     source /etc/profile.d/vte-2.91.sh
 fi
 
