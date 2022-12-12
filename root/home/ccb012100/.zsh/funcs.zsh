@@ -77,8 +77,10 @@ function text-scaling() {
 	case $1 in
         laptop )
 			gsettings get org.gnome.desktop.interface text-scaling-factor .9
+        ;;
         desktop )
 			gsettings get org.gnome.desktop.interface text-scaling-factor 1.25
+        ;;
 		get )
 			gsettings get org.gnome.desktop.interface text-scaling-factor
 		;;
