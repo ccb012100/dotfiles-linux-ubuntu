@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [[ "$ALLOW_BLOCKED_STRINGS" = true ]]; then
+if [[ "$CHECK_BLOCKED_STRINGS" = true ]]; then
     :
 elif git-diff-index -pM --cached HEAD |
     # new additions only
