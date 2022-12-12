@@ -1,7 +1,7 @@
 # Zsh configuration file
 # $HOME/.zshrc
 
-export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$HOME/bin:$HOME/.local/bin"
 export EDITOR="vim"             # $EDITOR opens in terminal
 
 # -X leaves file contents on the screen when less exits.
