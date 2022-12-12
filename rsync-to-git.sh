@@ -45,6 +45,10 @@ sync_from_home \
     ".config/"
 
 sync_from_home \
+    ".config/kmonad" \
+    ".config/"
+
+sync_from_home \
     ".config/micro/bindings.json" \
     ".config/micro/"
 
