@@ -42,6 +42,9 @@
   cps (tap-hold-next-release 200 esc lctl)
   ;; hold space for l-ctrl
   spc (tap-hold-next-release 200 spc lctl)
+  ;; how to do hyper?
+  ;; lhy (tap-hold-next-release 200 f S-M-A-C)
+  ;; hyp (tap-hold-next-release 200 f (around alt (around lsft (around lmet))))
 )
 
 
