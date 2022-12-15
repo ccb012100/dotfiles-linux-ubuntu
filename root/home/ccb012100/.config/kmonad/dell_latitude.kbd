@@ -22,8 +22,8 @@
 (deflayer default
   _    _    _    _    _    _    _    _    _    _    _    _    _    _   _   pp
   _    _    _    _    _    _    _    _    _    _    _    _    _    _       _    _    _    _
-  _    _    _    _    _    _    _    _    _    _    _    _    _    _       _    _    _    _
-  @cps _    _    _    @f_h _    _    @j_h _    _    _    _    _            _    _    _
+  @hyp _    _    _    _    _    _    _    _    _    _    _    _    _       _    _    _    _
+  @cap _    _    _    _    _    _    _    _    _    _    _    _            _    _    _
   @lsh _    _    _    @v_l _    _    @m_l _    _    _    @rsh              _    _    _    _
   _    _    _              @spc           _    _    _      _       _            _         _
                                                            _
@@ -39,12 +39,13 @@
   rsh (around (layer-toggle shift_layer) rsft)
 
   ;; hold caps for l-ctrl; tap for esc
-  cps (tap-hold-next-release 200 esc lctl)
+  cap (tap-hold-next-release 200 esc lctl)
   ;; hold space for l-ctrl
   spc (tap-hold-next-release 200 spc lctl)
   ;; hyper key
-  f_h (tap-hold-next-release 200 f C-M-S-lalt)
-  j_h (tap-hold-next-release 200 j C-M-S-ralt)
+  ;; f_h (tap-hold-next-release 200 f C-M-S-lalt)
+  ;; j_h (tap-hold-next-release 200 j C-M-S-ralt)
+  hyp (tap-hold-next-release 200 tab C-M-S-lalt)
 )
 
 
