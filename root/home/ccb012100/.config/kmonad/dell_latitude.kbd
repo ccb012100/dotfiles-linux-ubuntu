@@ -23,7 +23,7 @@
   _    _    _    _    _    _    _    _    _    _    _    _    _    _   _   pp
   _    _    _    _    _    _    _    _    _    _    _    _    _    _       _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _       _    _    _    _
-  @cps _    _    _    _    _    _    _    _    _    _    _    _            _    _    _
+  @cps _    _    _    @f_h _    _    @j_h _    _    _    _    _            _    _    _
   @lsh _    _    _    @v_l _    _    @m_l _    _    _    @rsh              _    _    _    _
   _    _    _              @spc           _    _    _      _       _            _         _
                                                            _
@@ -42,9 +42,9 @@
   cps (tap-hold-next-release 200 esc lctl)
   ;; hold space for l-ctrl
   spc (tap-hold-next-release 200 spc lctl)
-  ;; how to do hyper?
-  ;; lhy (tap-hold-next-release 200 f S-M-A-C)
-  ;; hyp (tap-hold-next-release 200 f (around alt (around lsft (around lmet))))
+  ;; hyper key
+  f_h (tap-hold-next-release 200 f C-M-S-lalt)
+  j_h (tap-hold-next-release 200 j C-M-S-ralt)
 )
 
 
