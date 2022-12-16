@@ -43,11 +43,10 @@
   ;; hold space for l-ctrl
   spc (tap-hold-next-release 200 spc lctl)
   ;; hyper key
-  ;; f_h (tap-hold-next-release 200 f C-M-S-lalt)
-  ;; j_h (tap-hold-next-release 200 j C-M-S-ralt)
+  ;; f_h (tap-hold-next-release 200 f C-M-lalt)
+  ;; j_h (tap-hold-next-release 200 j C-M-ralt)
   hyp (tap-hold-next-release 200 tab C-M-S-lalt)
 )
-
 
 (deflayer v_layer
   _    _    _    _    _    _    _    _    _    _    _    _    _    _   _   _
