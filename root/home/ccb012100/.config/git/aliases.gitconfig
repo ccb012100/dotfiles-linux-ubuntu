@@ -32,7 +32,6 @@
     f       = fetch
     # update local main branch to match origin
     fm      = fetch origin main:main
-    fp      = fetch --prune
     l       = log -n25 --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
     # show last commit with diffstat
     l1      = l -1 --stat
@@ -49,6 +48,7 @@
     # bypass pre-push hook
     psnv    = push -v --no-verify
     pub     = push -v --set-upstream origin HEAD
+    puf     = push -v --force-with-lease
     # publish = !git push -v --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
     ri      = rebase --interactive
     s       = status
