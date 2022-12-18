@@ -45,7 +45,7 @@
   ;; hyper key
   ;; f_h (tap-hold-next-release 200 f C-M-lalt)
   ;; j_h (tap-hold-next-release 200 j C-M-ralt)
-  hyp (tap-hold-next-release 200 tab C-M-S-lalt)
+  hyp (tap-hold-next-release 200 tab C-M-lalt)
 )
 
 (deflayer v_layer
