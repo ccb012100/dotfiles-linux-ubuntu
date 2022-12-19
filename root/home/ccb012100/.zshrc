@@ -18,6 +18,7 @@ setopt correct                  # spelling correction for commands
 setopt ignoreeof                # Ctrl-D won't kill the session
 setopt no_case_glob             # case-insensitive globbing
 setopt noclobber                # don't overwrite existing files
+ENABLE_CORRECTION="true"
 
 ## zsh history
 HISTFILE="$HOME"/.zsh_history
@@ -57,7 +58,7 @@ source "$HOME"/.zsh/fzf_config.zsh
 source "$HOME"/.zsh/tools.zsh
 source "$HOME"/.zsh/unalias.zsh
 source "$HOME"/.local/zsh-local-config.zsh
-source "$HOME"/ccb012100/starred-music/search.sh
+source "$HOME"/ccb012100/music/search.sh
 
 # VTE fix for Tilix
 # https://gnunn1.github.io/tilix-web/manual/vteconfig/

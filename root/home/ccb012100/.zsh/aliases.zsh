@@ -103,3 +103,4 @@ alias dotlocal="cd $HOME/.local"
 alias notes="cd $HOME/ccb012100/notes"
 alias zshell="cd $HOME/.zsh"
 
+alias sp="$HOME/ccb012100/playlist-search/search.py"
