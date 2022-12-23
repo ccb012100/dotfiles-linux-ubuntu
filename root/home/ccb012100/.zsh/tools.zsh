@@ -1,14 +1,15 @@
 #!/usr/bin/env zsh
 # External Zsh tools
 
-# GPG (GNU Privacy Guard or GnuPG)
-export GPG_TTY=$(tty)
-
 # Put homebrew first because some tools are in the homebrew path
 
-# homebrew
+## homebrew
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+## GPG (GNU Privacy Guard or GnuPG)
+export GPG_TTY=$(tty)
+
 ## zsh-completions
 
 fpath=(/usr/local/share/zsh-completions $fpath) # activate zsh-completions
@@ -44,15 +45,15 @@ function set_win_title() {
 
 precmd_functions+=(set_win_title)
 
-# nodenv
+## nodenv
 export PATH=$HOME/.nodenv/bin:$PATH
 eval "$(nodenv init -)"
 
-# pnpm
+## pnpm
 export PNPM_HOME="$HOME/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 
-# set Ripgrep configuration file
+## set Ripgrep configuration file
 export RIPGREP_CONFIG_PATH="$HOME/.config/ripgreprc"
 
 ## ranger
@@ -75,3 +76,6 @@ function ranger {
     fi
     command rm -f -- "$tempfile" 2>/dev/null
 }
+
+## https://github.com/agkozak/zsh-z
+source "$HOME/.zsh-z/zsh-z.plugin.zsh"
