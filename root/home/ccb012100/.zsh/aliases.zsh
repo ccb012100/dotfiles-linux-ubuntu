@@ -80,6 +80,8 @@ alias nrt='npm run test'
 # run local version of ts-node
 alias nts='npx ts-node'
 alias py=python3
+alias pym='python3 -m'
+alias python=python3
 alias ran=ranger
 # verbatim search (i.e. disable regex)
 alias rgf='rg -F'
