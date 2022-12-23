@@ -58,7 +58,7 @@ source "$HOME"/.zsh/fzf_config.zsh
 source "$HOME"/.zsh/tools.zsh
 source "$HOME"/.zsh/unalias.zsh
 source "$HOME"/.local/zsh-local-config.zsh
-source "$HOME"/ccb012100/music/search.sh
+source "$HOME"/ccb012100/playlist-search/search.sh
 
 # VTE fix for Tilix
 # https://gnunn1.github.io/tilix-web/manual/vteconfig/
