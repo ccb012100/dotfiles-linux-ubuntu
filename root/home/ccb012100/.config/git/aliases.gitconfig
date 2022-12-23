@@ -6,7 +6,7 @@
     ai      = add -A --interactive
     alias   = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
     amend   = commit --amend
-    b       = branch 
+    b       = branch
     back    = checkout -
     bd      = branch --delete
     bl      = branch --list
@@ -36,10 +36,14 @@
     # show last commit with diffstat
     l1      = l -1 --stat
     last    = log -1 HEAD --stat
+    ln      = log -n
     # show diffs
     lp      = log --patch
     # show last commit with diff
     lp1     = log --patch -1
+    m       = merge
+    ma      = merge --abort
+    mc      = merge --continue
     main    = checkout main
     master  = checkout master
     pl      = pull
@@ -50,6 +54,9 @@
     pub     = push -v --set-upstream origin HEAD
     puf     = push -v --force-with-lease
     # publish = !git push -v --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
+    r       = rebase
+    ra      = rebase --abort
+    rc      = rebase --continue5 --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
     ri      = rebase --interactive
     s       = status
     st      = stash
