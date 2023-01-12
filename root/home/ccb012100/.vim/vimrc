@@ -81,7 +81,7 @@ autocmd InsertLeave * set nocursorline nocursorcolumn relativenumber
 "" https://draculatheme.com/vim
 " packadd! dracula
 syntax enable
-colorscheme lunaperche
+colorscheme murphy
 " colorscheme dracula
 
 """ The rest of these are copied straight from
