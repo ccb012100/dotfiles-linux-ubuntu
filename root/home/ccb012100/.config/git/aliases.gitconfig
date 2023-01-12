@@ -51,15 +51,16 @@
     psf     = push -v --force-with-lease
     # bypass pre-push hook
     psnv    = push -v --no-verify
-    pub     = push -v --set-upstream origin HEAD
-    puf     = push -v --force-with-lease
-    # publish = !git push -v --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
+    publish = push -v --set-upstream origin HEAD
     r       = rebase
     ra      = rebase --abort
-    rc      = rebase --continue5 --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
+    rc      = rebase --continue
     ri      = rebase --interactive
+    resets  = reset --soft
+    reseth  = reset --hard
+    rest    = restore
+    rests   = restore --staged
     s       = status
-    st      = stash
     # create new branch and switch to it
     swc     = switch --create
     # resets the previous commit but keep all the changes from that commit in the working directory
