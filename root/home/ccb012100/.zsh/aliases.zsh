@@ -96,13 +96,4 @@ alias v=vim
 alias zedit="$EDITOR $HOME/.zshrc"
 alias zsource="source $HOME/.zshrc"
 
-## cd to directories
-alias ccb="cd $HOME/ccb012100"
-alias conf="cd $HOME/.config"
-alias dotf="cd $HOME/.dotfiles"
-alias dotemacs="cd $HOME/.emacs.d"
-alias dotlocal="cd $HOME/.local"
-alias notes="cd $HOME/ccb012100/notes"
-alias zshell="cd $HOME/.zsh"
-
 alias sp="$HOME/ccb012100/playlist-search/search.py"
