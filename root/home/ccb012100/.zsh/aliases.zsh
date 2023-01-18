@@ -5,10 +5,8 @@
 
 # easy way to call aliased commands
 alias ,=command
-alias ali='apt list --installed'
 alias aptup='sudo apt update && sudo apt upgrade && sudo apt autoremove'
 alias back='cd -'
-alias c=cd
 alias cls=clear
 alias cp='cp -iv'
 alias ez='exec zsh'
@@ -21,12 +19,8 @@ alias mkdir='mkdir -v'
 alias mv='mv -iv'
 # print $PATH formatted as one entry per line
 alias path='sed "s/:/\n/g" <<< "$PATH"'
-alias paths='path | sort'
-alias ppc=powerprofilesctl
 alias rm='rm -I'
 alias rmdir='rmdir -v'
-alias slu='systemctl list-units'
-alias sctl=systemctl
 # upgrade snap-store snap
 alias snap-store-refresh='pkill snap-store && sudo snap refresh snap-store'
 alias trash='gio trash'
@@ -42,7 +36,6 @@ alias ......='cd ../../../../..'
 # replace ls with exa
 alias ls='exa --git --icons --group-directories-first'
 alias tree='exa --tree'
-alias l=ls
 alias la='ls -a'
 alias ll='ls -l'
 alias lal='ls -al'
@@ -51,7 +44,6 @@ alias llt='exa -l -t modified --sort newest'
 alias llat='exa -al -t modified --sort newest'
 
 ### external tools
-alias b=batcat
 alias bat=batcat
 alias brewup='brew upgrade'
 # open current directory in VS Code
@@ -69,10 +61,10 @@ alias ghp='gh pr'
 alias gob='go build .'
 # run the go project in the cwd
 alias gor='go run .'
-alias gitconfig='vim ~/.gitconfig'
 # colorize json
 alias jq='jq -C'
 alias kc='kubectl'
+# npm
 alias nrb='npm run build'
 alias nrl='npm run lint'
 alias nrs='npm run start'
@@ -82,7 +74,6 @@ alias nts='npx ts-node'
 alias py=python3
 alias pym='python3 -m'
 alias python=python3
-alias ran=ranger
 # verbatim search (i.e. disable regex)
 alias rgf='rg -F'
 # case-insensitive search
@@ -91,9 +82,5 @@ alias rgi='rg -i'
 alias rust='echo -e "\nthink you mean _rusH_"'
 alias sesh='tmux new-session -A -s sesh'
 alias v=vim
-
-## .zshrc
-alias zedit="$EDITOR $HOME/.zshrc"
-alias zsource="source $HOME/.zshrc"
 
 alias sp="$HOME/ccb012100/playlist-search/search.py"
