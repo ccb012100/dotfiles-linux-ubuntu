@@ -120,4 +120,3 @@ fi
 
 source "$HOME/.config/broot/launcher/bash/br"
 source "$HOME/.local/bash-local-machine-config.sh"
-
