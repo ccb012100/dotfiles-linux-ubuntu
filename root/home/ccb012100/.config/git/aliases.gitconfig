@@ -1,10 +1,10 @@
 ## aliases
 [alias]
     aa      = add --all
+    # add all tracked files and commit
+    acm     = ! git add --update && git commit -m
     # add all tracked and untracked files and commit
     aacm    = ! git add --all && git commit -m
-    # add all tracked files and commit
-    aucm    = ! git add --update && git commit -m
     ai      = add --all --interactive
     alias   = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
     au      = add --update
