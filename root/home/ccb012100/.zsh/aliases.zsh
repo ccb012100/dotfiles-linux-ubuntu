@@ -56,6 +56,10 @@ alias etty='emacsclient -nw'
 # show hidden files when doing fd search
 alias fd='fd -H'
 alias g=git
+alias gd='git d'
+alias gf='git f'
+alias gs='git s'
+alias gl='git l'
 # build the go project in the cwd
 alias gob='go build .'
 # run the go project in the cwd
