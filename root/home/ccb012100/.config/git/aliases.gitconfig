@@ -24,6 +24,7 @@
     co      = checkout
     cob     = checkout -b
     cof     = checkout --force
+    cp      = cherry-pick
     d       = diff
     # delete local branches that have been merged into main (adapted from https://stackoverflow.com/a/16906759)
     delete  = ! git fetch --prune && git branch --merged main | rg -v '^[ *]*main$' | xargs --no-run-if-empty git branch -d
@@ -49,7 +50,10 @@
     mc      = merge --continue
     main    = checkout main
     master  = checkout master
-    pl      = pull
+    pa      = pull --autostash
+    p       = pull
+    pr      = pull --rebase
+    pra     = pull --rebase --autostash
     ps      = push
     psf     = push -v --force-with-lease
     # bypass pre-push hook
@@ -68,3 +72,5 @@
     swc     = switch --create
     # resets the previous commit but keep all the changes from that commit in the working directory
     undo = reset HEAD~1 --mixed
+    # update local branch from origin without checking it out
+    update = ! git fetch origin $1:$1
