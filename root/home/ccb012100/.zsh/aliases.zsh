@@ -64,12 +64,10 @@ alias gl='git l'
 alias gob='go build .'
 # run the go project in the cwd
 alias gor='go run .'
-# github cli
-alias gp='gh pr'
-alias gpc='gh pr checkout'
 # colorize json
 alias jq='jq -C'
 alias kc='kubectl'
+alias kmonad-reload='pkill kmonad && nohup kmonad /home/cbocardo/.config/kmonad/dell_latitude.kbd &'
 # npm
 alias nrb='npm run build'
 alias nrl='npm run lint'
