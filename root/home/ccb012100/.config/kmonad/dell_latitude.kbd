@@ -20,10 +20,10 @@
                                                            down
 )
 (deflayer default
-  @hyp _    _    _    _    _    _    _    _    _    _    _    _    _   _   pp
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _   _   pp
   _    _    _    _    _    _    _    _    _    _    _    _    _    _       _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _       _    _    _    _
-  @cap _    _    _    _    _    _    _    _    _    _    _    _            _    _    _
+  @meh _    _    _    _    _    _    _    _    _    _    _    _            _    _    _
   @lsh _    _    _    @v_l _    _    @m_l _    _    _    @rsh              _    _    _    _
   _    _    _              @spc           _    _    _      _       _            _         _
                                                            _
@@ -45,7 +45,7 @@
   ;; hyper key
   ;; f_h (tap-hold-next-release 200 f C-M-lalt)
   ;; j_h (tap-hold-next-release 200 j C-M-ralt)
-  hyp (tap-hold-next-release 200 esc C-M-lalt)
+  meh (tap-hold-next-release 200 esc S-C-lalt)
 )
 
 (deflayer v_layer
