@@ -5,7 +5,6 @@
 
 # easy way to call aliased commands
 alias ,=command
-alias aptup='sudo apt update && sudo apt upgrade && sudo apt autoremove'
 alias back='cd -'
 alias cls=clear
 alias cp='cp -iv'
@@ -21,8 +20,6 @@ alias mv='mv -iv'
 alias path='sed "s/:/\n/g" <<< "$PATH"'
 alias rm='rm -I'
 alias rmdir='rmdir -v'
-# upgrade snap-store snap
-alias snap-store-refresh='pkill snap-store && sudo snap refresh snap-store'
 alias trash='gio trash'
 alias uuid='uuidgen --random'
 
@@ -67,7 +64,6 @@ alias gor='go run .'
 # colorize json
 alias jq='jq -C'
 alias kc='kubectl'
-alias kmonad-reload='pkill kmonad && nohup kmonad /home/cbocardo/.config/kmonad/dell_latitude.kbd &'
 # npm
 alias nrb='npm run build'
 alias nrl='npm run lint'
@@ -88,3 +84,10 @@ alias sesh='tmux new-session -A -s sesh'
 alias v=vim
 
 alias sp="$HOME/ccb012100/playlist-search/search.py"
+
+alias aptup='sudo apt update && sudo apt upgrade && sudo apt autoremove'
+# upgrade snap-store snap
+alias snap-store-refresh='pkill snap-store && sudo snap refresh snap-store'
+alias audio-reload='systemctl --user restart pipewire pipewire-pulse'
+alias kmonad-reload='pkill kmonad && nohup kmonad /home/cbocardo/.config/kmonad/dell_latitude.kbd &'
+alias update='sudo apt update && sudo apt upgrade && sudo apt autoremove && brew upgrade'
