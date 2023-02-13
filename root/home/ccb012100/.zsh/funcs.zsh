@@ -73,13 +73,13 @@ function fn() {
 }
 
 # set system-wide text size
-function text-scaling() {
+function textscale() {
 	case $1 in
         laptop )
-			gsettings get org.gnome.desktop.interface text-scaling-factor .9
+			gsettings set org.gnome.desktop.interface text-scaling-factor .9
         ;;
         desktop )
-			gsettings get org.gnome.desktop.interface text-scaling-factor 1.25
+			gsettings set org.gnome.desktop.interface text-scaling-factor 1.25
         ;;
 		get )
 			gsettings get org.gnome.desktop.interface text-scaling-factor
