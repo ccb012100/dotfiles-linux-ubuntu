@@ -83,6 +83,16 @@ alias rust='echo -e "\nthink you mean _rusH_"'
 alias sesh='tmux new-session -A -s sesh'
 alias v=vim
 
+## zsh-z
+alias za='z --add' # add directory to db
+alias zc='z -c'    # only match subdirs of pwd
+alias ze='z -e'    # echo best match without jumping
+alias zl='z -l'    # list matches without jumping
+alias zr='z -r'    # match by rank
+alias zt='z -t'    # match by time
+alias zt='z -x'    # remove directory from db (defaults to pwd)
+alias zxr='x -xR'  # remove dir and all subdirs from db (defaults to pwd)
+
 alias sp="$HOME/ccb012100/playlist-search/search.py"
 
 alias aptup='sudo apt update && sudo apt upgrade && sudo apt autoremove'

@@ -77,5 +77,4 @@ function ranger {
     command rm -f -- "$tempfile" 2>/dev/null
 }
 
-## https://github.com/agkozak/zsh-z
-source "$HOME/.zsh-z/zsh-z.plugin.zsh"
+eval "$(zoxide init zsh)"

@@ -65,4 +65,3 @@ source "$HOME"/ccb012100/playlist-search/search.sh
 if [ "$TILIX_ID" ] || [ "$VTE_VERSION" ]; then
     source /etc/profile.d/vte-2.91.sh
 fi
-
