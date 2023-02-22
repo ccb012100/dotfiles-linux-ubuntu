@@ -94,8 +94,6 @@ alias zt='z -t'    # match by time
 alias zt='z -x'    # remove directory from db (defaults to pwd)
 alias zxr='x -xR'  # remove dir and all subdirs from db (defaults to pwd)
 
-alias sp="$HOME/ccb012100/playlist-search/search.py"
-
 alias aptup='sudo apt update && sudo apt upgrade && sudo apt autoremove'
 # upgrade snap-store snap
 alias snap-store-refresh='pkill snap-store && sudo snap refresh snap-store'
