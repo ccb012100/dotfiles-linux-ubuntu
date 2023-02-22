@@ -92,3 +92,5 @@ function textscale() {
 		;;
 	esac
 }
+alias laptop='textscale laptop'
+alias desktop='textscale desktop'
