@@ -31,7 +31,7 @@ alias ......='cd ../../../../..'
 
 ## ls
 # replace ls with exa
-alias ls='exa --git --icons --group-directories-first'
+alias ls='exa --git --icons --group-directories-first -F'
 alias tree='exa --tree'
 alias la='ls -a'
 alias ll='ls -l'
