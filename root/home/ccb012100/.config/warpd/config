@@ -5,7 +5,7 @@ indicator: topright
 # hints
 hint_activation_key: A-M-h
 hint_bgcolor: #282828
-hint_chars: wersdfxcvuiojklm,.
+hint_chars: asdfjkl;weruio
 hint_fgcolor: #FFB000
 hint_font: DEC Terminal Modern
 hint: h
