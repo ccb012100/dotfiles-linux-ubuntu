@@ -1,22 +1,16 @@
-activation_key: A-M-w
-drag: d
-indicator: topright
+history: ; h
+indicator: toprightk
 
 # hints
-hint_activation_key: A-M-h
 hint_bgcolor: #282828
-hint_chars: asdfjkl;weruio
+hint_chars: asdfjkl;
 hint_fgcolor: #FFB000
 hint_font: DEC Terminal Modern
-hint: h
-
-# history
-history: ;
-history_activation_key: A-M-;
+hint: H x
 
 # scroll
-scroll_down: f
-scroll_up: b
+scroll_down: f d n
+scroll_up: b u p
 
 # cursor movement in Normal mode
 down: k
