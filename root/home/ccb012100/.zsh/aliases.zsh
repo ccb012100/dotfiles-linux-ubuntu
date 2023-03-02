@@ -77,6 +77,11 @@ alias v=vim
 
 ##git
 alias g=git
+alias ga='git a'
+alias gaa='git aa'
+alias gacm='git acm'
+alias gc='git c'
+alias gcm='git cm'
 alias gd='git d'
 alias gds='git ds'
 alias gf='git f'
