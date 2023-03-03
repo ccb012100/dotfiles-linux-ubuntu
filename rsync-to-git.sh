@@ -57,6 +57,10 @@ sync_from_home \
     ".config/micro/"
 
 sync_from_home \
+    ".config/neofetch/config.conf" \
+    ".config/neofetch/"
+
+sync_from_home \
     ".config/pgcli/config" \
     ".config/pgcli/"
 
