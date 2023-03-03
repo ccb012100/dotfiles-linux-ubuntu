@@ -45,7 +45,7 @@ alias bat=batcat
 alias brewup='brew upgrade'
 # open current directory in VS Code
 alias c.='code .'
-alias c='cd'
+alias c=cd
 alias difftastic=difft
 alias e=emacs
 # start emacs server if it's not already running
@@ -59,7 +59,8 @@ alias gob='go build .'
 alias gor='go run .'
 # colorize json
 alias jq='jq -C'
-alias kc='kubectl'
+alias kc=kubectl
+alias md=mdcat
 
 # run local version of ts-node
 alias nts='npx ts-node'
