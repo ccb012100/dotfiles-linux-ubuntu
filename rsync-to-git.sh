@@ -8,7 +8,7 @@ home="$root/home/ccb012100"
 
 # --verbose --dry-run
 rsync --dirs --recursive --times --progress \
-    --files-from=files-to-sync-from-home "$HOME" "$home"
+    --include-from=files-to-sync-from-home "$HOME" "$home"
 
 rsync --dirs --recursive --times --progress \
-    --files-from=files-to-sync-from-root "/" "$root"
+    --include-from=files-to-sync-from-root "/" "$root"

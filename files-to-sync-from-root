@@ -1,3 +1,2 @@
-/etc/logid.cfg
-/etc/keyd/default.conf
-/etc/udev/rules.d/50-wally.rules
++ /etc/{logid.cfg,keyd/default.conf,udev/rules.d/50-wally.rules}
+- *
