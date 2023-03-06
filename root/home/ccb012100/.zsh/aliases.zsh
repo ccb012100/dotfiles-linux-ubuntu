@@ -60,6 +60,7 @@ alias gor='go run .'
 # colorize json
 alias jq='jq -C'
 alias kc=kubectl
+alias m=micro
 alias md=mdcat
 
 # run local version of ts-node
