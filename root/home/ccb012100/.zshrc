@@ -2,7 +2,7 @@
 # $HOME/.zshrc
 
 export PATH="$PATH:$HOME/bin:$HOME/.local/bin"
-export EDITOR="vim"             # $EDITOR opens in terminal
+export EDITOR="/home/linuxbrew/.linuxbrew/bin/micro" # $EDITOR opens in terminal
 
 # -X leaves file contents on the screen when less exits.
 # -F makes less quit if the entire output can be displayed on one screen.
