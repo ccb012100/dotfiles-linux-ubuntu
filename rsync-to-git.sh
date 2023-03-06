@@ -1,129 +1,14 @@
 #!/usr/bin/env bash
 
 gitdir="$HOME/.dotfiles"
+root="$gitdir/root"
+home="$root/home/ccb012100"
 
 # add -n,--dry-run flag if testing
 
-sync_file() {
-    rsync --recursive --times --progress --protect-args "$1" "$gitdir/root/$2"
-}
+# --verbose --dry-run
+rsync --dirs --recursive --times --progress \
+    --files-from=files-to-sync-from-home "$HOME" "$home"
 
-sync_from_home() {
-    rsync --recursive --times --progress --protect-args "$HOME/$1" "$gitdir/root/home/ccb012100/$2"
-}
-
-sync_file "/etc/logid.cfg" "etc"
-sync_file "/etc/keyd/default.conf" "etc/keyd"
-sync_file "/etc/udev/rules.d/50-wally.rules" "etc/udev/rules.d"
-
-sync_from_home \
-    ".zshrc" \
-    ""
-
-sync_from_home \
-    ".gitconfig" \
-    ""
-
-sync_from_home \
-    ".dircolors" \
-    ""
-
-sync_from_home \
-    ".config/bat/bat.conf" \
-    ".config/bat/"
-
-sync_from_home \
-    ".config/broot/conf.hjson" \
-    ".config/broot"
-
-sync_from_home \
-    ".config/git" \
-    ".config/"
-
-sync_from_home \
-    ".config/kitty" \
-    ".config/"
-
-sync_from_home \
-    ".config/kmonad" \
-    ".config/"
-
-sync_from_home \
-    ".config/micro/bindings.json" \
-    ".config/micro/"
-
-sync_from_home \
-    ".config/micro/settings.json" \
-    ".config/micro/"
-
-sync_from_home \
-    ".config/neofetch/config.conf" \
-    ".config/neofetch/"
-
-sync_from_home \
-    ".config/pgcli/config" \
-    ".config/pgcli/"
-
-sync_from_home \
-    ".config/ranger/rc.conf" \
-    ".config/ranger/"
-
-sync_from_home \
-    ".config/systemd/user/emacsd.service" \
-    ".config/systemd/user/"
-
-sync_from_home \
-    ".config/terminator/config" \
-    ".config/terminator/"
-
-sync_from_home \
-    ".config/kdiff3rc" \
-    ".config/"
-
-sync_from_home \
-    ".config/ripgreprc" \
-    ".config/"
-
-sync_from_home \
-    ".config/starship.toml" \
-    ".config/"
-
-sync_from_home \
-    ".config/warpd/config" \
-    ".config/warpd/"
-
-sync_from_home \
-    ".vim/vimrc" \
-    ".vim/"
-
-sync_from_home \
-    ".zsh/aliases.zsh" \
-    ".zsh/"
-
-sync_from_home \
-    ".zsh/completions.zsh" \
-    ".zsh/"
-
-sync_from_home \
-    ".zsh/fd.zsh" \
-    ".zsh/"
-
-sync_from_home \
-    ".zsh/funcs.zsh" \
-    ".zsh/"
-
-sync_from_home \
-    ".zsh/fzf_config.zsh" \
-    ".zsh/"
-
-sync_from_home \
-    ".zsh/tools.zsh" \
-    ".zsh"
-
-sync_from_home \
-    ".zsh/unalias.zsh" \
-    ".zsh/"
-
-sync_from_home \
-    ".bashrc" \
-    ""
+rsync --dirs --recursive --times --progress \
+    --files-from=files-to-sync-from-root "/" "$root"

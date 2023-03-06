@@ -1,0 +1,3 @@
+/etc/logid.cfg
+/etc/keyd/default.conf
+/etc/udev/rules.d/50-wally.rules
