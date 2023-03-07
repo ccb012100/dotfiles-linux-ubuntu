@@ -94,6 +94,7 @@ alias gps='git push'
 alias gs='git s'
 
 ## npm
+alias nr='npm run'
 alias nrb='npm run build'
 alias nrl='npm run lint'
 alias nrs='npm run start'
