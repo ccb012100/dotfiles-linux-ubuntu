@@ -11,7 +11,10 @@ hint_bgcolor: #282828
 hint_chars: asdfjkl;
 hint_fgcolor: #FFB000
 hint_font: DEC Terminal Modern
-hint: H x
+hint: H X
+hint2: x
+hint_activation_key: A-M-X
+hint2_activation_key: A-M-x
 
 # scroll
 scroll_down: f d n
@@ -30,3 +33,4 @@ grid_down: k
 grid_left: j
 grid_right: l
 grid_up: i
+grid_keys: e r d f

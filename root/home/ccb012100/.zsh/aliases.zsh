@@ -75,7 +75,8 @@ alias rgi='rg -i'
 # keep making this typo for some reason
 alias rust='echo -e "\nthink you mean _rusH_"'
 alias sesh='tmux new-session -A -s sesh'
-alias v=vim
+alias vi=micro
+alias vim=micro
 
 ##git
 alias g=git
