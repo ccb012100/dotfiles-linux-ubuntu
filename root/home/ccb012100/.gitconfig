@@ -1,6 +1,6 @@
 # $HOME/.gitconfig
 [core]
-    editor = vim
+    editor = micro
 	autocrlf = input
     filemode = false
 	excludesfile = ~/.config/git/ignore
