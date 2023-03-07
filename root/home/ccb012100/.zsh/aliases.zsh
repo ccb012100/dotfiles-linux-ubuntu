@@ -99,6 +99,16 @@ alias nrl='npm run lint'
 alias nrs='npm run start'
 alias nrt='npm run test'
 
+## zsh-z
+alias za='z --add' # add directory to db
+alias zc='z -c'    # only match subdirs of pwd
+alias ze='z -e'    # echo best match without jumping
+alias zl='z -l'    # list matches without jumping
+alias zr='z -r'    # match by rank
+alias zt='z -t'    # match by time
+alias zt='z -x'    # remove directory from db (defaults to pwd)
+alias zxr='x -xR'  # remove dir and all subdirs from db (defaults to pwd)
+
 alias aptup='sudo apt update && sudo apt upgrade && sudo apt autoremove'
 # upgrade snap-store snap
 alias snap-store-refresh='pkill snap-store && sudo snap refresh snap-store'

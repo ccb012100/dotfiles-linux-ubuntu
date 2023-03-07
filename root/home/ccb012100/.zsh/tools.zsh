@@ -56,25 +56,5 @@ export PATH="$PNPM_HOME:$PATH"
 ## set Ripgrep configuration file
 export RIPGREP_CONFIG_PATH="$HOME/.config/ripgreprc"
 
-## ranger
-# show when running in a shell that was spawned by ranger
-if [ -n "$RANGER_LEVEL" ]; then export PS1="[ranger]$PS1"; fi
-
-# C-g to quit and cd into directory
-function ranger {
-    local IFS=$'\t\n'
-    local tempfile="$(mktemp -t tmp.XXXXXX)"
-    local ranger_cmd=(
-        command
-        ranger
-        --cmd="map <c-g> chain shell echo %d > "$tempfile"; quitall"
-    )
-
-    ${ranger_cmd[@]} "$@"
-    if [[ -f "$tempfile" ]] && [[ "$(cat -- "$tempfile")" != "$(echo -n $(pwd))" ]]; then
-        cd -- "$(cat "$tempfile")" || return
-    fi
-    command rm -f -- "$tempfile" 2>/dev/null
-}
-
-eval "$(zoxide init zsh)"
+## https://github.com/agkozak/zsh-z
+source "$HOME/.zsh-z/zsh-z.plugin.zsh"
