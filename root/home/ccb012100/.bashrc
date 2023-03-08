@@ -119,4 +119,4 @@ fi
 . "$HOME/.cargo/env"
 
 source "$HOME/.config/broot/launcher/bash/br"
-source "$HOME/.local/bash-local-machine-config.sh"
+source "$HOME/.local/local-config.sh"

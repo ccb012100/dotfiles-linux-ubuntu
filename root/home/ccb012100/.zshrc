@@ -57,15 +57,9 @@ source "$HOME"/.zsh/funcs.zsh
 source "$HOME"/.zsh/fzf_config.zsh
 source "$HOME"/.zsh/tools.zsh
 source "$HOME"/.zsh/unalias.zsh
-source "$HOME"/.local/zsh-local-config.zsh
+source "$HOME"/.local/local-config.zsh
 
 source "$HOME"/ccb012100/playlist-search/search.sh
 alias sp="$HOME/ccb012100/playlist-search/search.py"
 alias spd="sp --sort date"
 alias spalb="sp --type album"
-
-# VTE fix for Tilix
-# https://gnunn1.github.io/tilix-web/manual/vteconfig/
-if [ "$TILIX_ID" ] || [ "$VTE_VERSION" ]; then
-    source /etc/profile.d/vte-2.91.sh
-fi

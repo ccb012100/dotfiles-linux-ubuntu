@@ -106,6 +106,7 @@ alias zc='z -c'    # only match subdirs of pwd
 alias ze='z -e'    # echo best match without jumping
 alias zl='z -l'    # list matches without jumping
 alias zr='z -r'    # match by rank
+alias zs='z -s'    # only match subdirs of pwd
 alias zt='z -t'    # match by time
 alias zt='z -x'    # remove directory from db (defaults to pwd)
 alias zxr='x -xR'  # remove dir and all subdirs from db (defaults to pwd)
