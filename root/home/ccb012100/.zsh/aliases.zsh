@@ -45,7 +45,7 @@ alias bat=batcat
 alias brewup='brew upgrade'
 # open current directory in VS Code
 alias c.='code .'
-alias c=cd
+alias c=code
 alias difftastic=difft
 alias e=emacs
 # start emacs server if it's not already running
