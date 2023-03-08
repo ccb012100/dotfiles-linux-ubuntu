@@ -57,12 +57,12 @@ alias fd='fd -H'
 alias gob='go build .'
 # run the go project in the cwd
 alias gor='go run .'
+alias info='pinfo'
 # colorize json
 alias jq='jq -C'
 alias kc=kubectl
 alias m=micro
 alias md=mdcat
-
 # run local version of ts-node
 alias nts='npx ts-node'
 alias py=python3
