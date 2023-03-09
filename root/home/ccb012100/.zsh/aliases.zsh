@@ -75,8 +75,6 @@ alias rgi='rg -i'
 # keep making this typo for some reason
 alias rust='echo -e "\nthink you mean _rusH_"'
 alias sesh='tmux new-session -A -s sesh'
-alias vi=micro
-alias vim=micro
 
 ##git
 alias g=git
@@ -97,6 +95,7 @@ alias gs='git s'
 alias nr='npm run'
 alias nrb='npm run build'
 alias nrl='npm run lint'
+alias nrestart='npm run build && npm run start'
 alias nrs='npm run start'
 alias nrt='npm run test'
 
