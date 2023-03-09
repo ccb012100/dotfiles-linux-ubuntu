@@ -2,6 +2,7 @@
     "*.ts": {
         "commenttype": "// *s"
     },
+    "autoclose": false,
     "colorscheme": "simple",
     "savecursor": true,
     "scrollbar": true,
