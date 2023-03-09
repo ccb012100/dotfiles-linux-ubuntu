@@ -35,7 +35,7 @@
     ds      = diff --staged
     dt      = difftool
     dts     = difftool --staged
-    f       = fetch
+    f       = fetch --all
     # update local main branch to match origin
     fm      = fetch origin main:main
     l       = log -n25 --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
