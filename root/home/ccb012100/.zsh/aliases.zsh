@@ -8,6 +8,7 @@ alias ,=command
 alias back='cd -'
 alias cls=clear
 alias cp='cp -iv'
+alias cpr='cp -r'
 alias ez='exec zsh'
 alias grep='grep --color=auto'
 alias his=history
