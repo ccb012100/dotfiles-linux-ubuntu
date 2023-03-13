@@ -42,11 +42,14 @@
     # show last commit with diffstat
     l1      = l -1 --stat
     last    = log -1 HEAD --stat
+    lm      = l --merges
+    lnm     = l --no-merges
     ln      = log -n
     # show diffs
     lp      = log --patch
     # show last commit with diff
     lp1     = log --patch -1
+    ls      = ls-files
     m       = merge
     ma      = merge --abort
     mc      = merge --continue
