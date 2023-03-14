@@ -8,13 +8,14 @@ fullscreen-hide-tabbar=false
 gtk-use-system-default-theme=true
 hide-tabs-if-one-tab=true
 history-size=1000
+lazy-losefocus=true
 load-guake-yml=true
 max-tab-name-length=100
 mouse-display=true
 new-tab-after=false
 open-tab-cwd=true
 prompt-on-close-tab=1
-prompt-on-quit=true
+prompt-on-quit=false
 quick-open-command-line='gedit %(file_path)s'
 restore-tabs-notify=true
 restore-tabs-startup=true
@@ -23,19 +24,20 @@ scroll-keystroke=true
 set-window-title=true
 start-at-login=true
 tab-close-buttons=true
+tab-ontop=false
 use-default-font=false
 use-popup=true
 use-scrollbar=true
 use-trayicon=true
 window-halignment=0
 window-height=50
-window-losefocus=false
+window-losefocus=true
 window-refocus=false
 window-tabbar=true
 window-width=71
 
 [keybindings/global]
-show-hide='<Primary><Shift><Alt>h'
+show-hide='F1'
 
 [keybindings/local]
 decrease-transparency='disabled'
