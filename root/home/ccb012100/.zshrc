@@ -50,7 +50,7 @@ bindkey '^x^e' edit-command-line
 stty -ixon # disable XON/XOFF control flow
 
 ## additional personal config files
-source <(cat "$HOME"/.config/.zsh/*.zsh)
+for f in "$HOME"/.config/.zsh/*.zsh; do source $f; done
 source "$HOME"/.local/local-config.zsh
 
 source "$HOME"/ccb012100/playlist-search/search.sh
