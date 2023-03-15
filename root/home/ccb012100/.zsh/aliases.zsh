@@ -112,8 +112,8 @@ alias zt='z -x'    # remove directory from db (defaults to pwd)
 alias zxr='x -xR'  # remove dir and all subdirs from db (defaults to pwd)
 
 alias aptup='sudo apt update && sudo apt upgrade && sudo apt autoremove'
-# upgrade snap-store snap
-alias snap-store-refresh='pkill snap-store && sudo snap refresh snap-store'
 alias audio-reload='systemctl --user restart pipewire pipewire-pulse'
+alias guake-export="guake --save-preferences ~/.dotfiles/app-exports/guake-preferences"
 alias kmonad-reload='pkill kmonad && nohup kmonad /home/cbocardo/.config/kmonad/dell_latitude.kbd &'
+alias snap-store-refresh='pkill snap-store && sudo snap refresh snap-store'
 alias update='sudo apt update && sudo apt upgrade && sudo apt autoremove && brew upgrade && flatpak update'
