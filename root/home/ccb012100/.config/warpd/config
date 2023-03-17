@@ -9,7 +9,7 @@ indicator_color: #DFFF00
 
 # hints
 hint_bgcolor: #282828
-hint_chars: asdfjkl;
+hint_chars: asdfghjkl;
 hint_fgcolor: #FFB000
 hint_font: DEC Terminal Modern
 hint: H x
