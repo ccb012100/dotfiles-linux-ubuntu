@@ -39,3 +39,5 @@
     path = .config/git/tools.gitconfig
     # local-machine.gitconfig contains username/email/gpg key configs
     path = .local/local-machine.gitconfig
+[advice]
+	addIgnoredFile = false
