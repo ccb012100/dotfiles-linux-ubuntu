@@ -1,3 +1,4 @@
+buttons: u 8 o
 cursor_color: #00FF00
 history: ; h
 
@@ -15,10 +16,11 @@ hint: H x
 hint2: z
 hint_activation_key: A-M-x
 hint2_activation_key: A-M-z
+hint2_chars: uiojklm,.
 
 # scroll
-scroll_down: f d n
-scroll_up: b u p
+scroll_down: f . n
+scroll_up: b m p
 
 # cursor movement in Normal mode
 down: k
