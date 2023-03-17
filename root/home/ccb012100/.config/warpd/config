@@ -11,10 +11,10 @@ hint_bgcolor: #282828
 hint_chars: asdfjkl;
 hint_fgcolor: #FFB000
 hint_font: DEC Terminal Modern
-hint: H X
-hint2: x
-hint_activation_key: A-M-X
-hint2_activation_key: A-M-x
+hint: H x
+hint2: z
+hint_activation_key: A-M-x
+hint2_activation_key: A-M-z
 
 # scroll
 scroll_down: f d n
