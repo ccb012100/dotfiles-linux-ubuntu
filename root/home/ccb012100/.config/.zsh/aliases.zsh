@@ -79,7 +79,7 @@ alias sesh='tmux new-session -A -s sesh'
 
 ##git
 alias g=git
-alias ga='git a'
+alias ga='git add'
 alias gaa='git aa'
 alias gacm='git acm'
 alias gc='git c'
