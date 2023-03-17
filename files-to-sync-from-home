@@ -15,6 +15,7 @@
 .config/pgcli/config
 .config/ranger/rc.conf
 .config/ripgreprc
+.config/rofi/config.rasi
 .config/starship.toml
 .config/systemd/user/emacsd.service
 .config/terminator/config
