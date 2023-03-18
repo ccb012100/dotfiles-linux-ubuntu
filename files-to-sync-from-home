@@ -16,6 +16,12 @@
 .config/ranger/rc.conf
 .config/ripgreprc
 .config/rofi/config.rasi
+.config/rofi/launch-drun.sh
+.config/rofi/launch-window.sh
+.config/rofi/launchers/type-2/style-1.rasi
+.config/rofi/launchers/type-2/style-2.rasi
+.config/rofi/powermenu/type-1/powermenu.sh
+.config/rofi/powermenu/type-1/style-3.rasi
 .config/starship.toml
 .config/systemd/user/emacsd.service
 .config/terminator/config
