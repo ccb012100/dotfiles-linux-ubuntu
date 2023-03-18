@@ -38,7 +38,7 @@ configuration {
 
 	/*---------- Misc setting ----------*/
 	terminal: "rofi-sensible-terminal";
-	font: "Cascadia Mono 18";
+	font: "IBM Plex Mono 14";
 	sort: false;
 	threads: 0;
 	click-to-exit: true;
