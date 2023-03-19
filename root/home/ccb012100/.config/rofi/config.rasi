@@ -22,13 +22,13 @@ configuration {
 	sorting-method: "fzf";
 
 	/*---------- Display setting ----------*/
-	display-combi: "Combi:";
-	display-drun: "🗿 Apps:";
-	display-filebrowser: "Files:";
+	display-combi: "🏃🏽‍♂️🗿";
+	display-drun: "🏃🏽‍♂️";
+	display-filebrowser: "🗃️";
 	display-keys: "Keybindings:";
-	display-run: "🗿 Run:";
+	display-run: "🏃🏽‍♂️";
 	display-ssh: "SSH:";
-    display-window: "🗿 Switch to:";
+    display-window: "🗿";
 	display-windowcd: "Window CD:";
 
 	/*---------- Misc setting ----------*/
