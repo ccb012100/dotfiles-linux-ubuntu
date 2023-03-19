@@ -91,7 +91,8 @@ alias gl='git l'
 alias gp='git pull'
 alias gps='git push'
 alias gs='git s'
-
+alias gsl='git sl'
+alias gsvv='git status -vv'
 ## npm
 alias nr='npm run'
 alias nrb='npm run build'

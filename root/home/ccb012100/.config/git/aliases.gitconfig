@@ -1,83 +1,103 @@
 ## aliases
 [alias]
+    ## add
     aa      = add --all
-    # add all tracked files and commit
-    acm     = ! git add --update && git commit -m
-    # add all tracked and untracked files and commit
-    aacm    = ! git add --all && git commit -m
+    acm     = ! git add --update && git commit -m # add all tracked files and commit
+    aacm    = ! git add --all && git commit -m # add all tracked and untracked files and commit
     ai      = add --all --interactive
-    alias   = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
     au      = add --update
-    amend   = commit --amend
+
+    alias   = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ / | sort
+
+    ## branch
     b       = branch
-    back    = checkout -
     bd      = branch --delete
     bl      = branch --list
     bv      = branch -v
     br      = branch --remote
     brv     = branch --remote -v
+    # delete local branches that have been merged into main (adapted from https://stackoverflow.com/a/16906759)
+    delete  = ! git fetch --prune && git branch --merged main | rg -v '^[ *]*main$' | xargs --no-run-if-empty git branch -d
+
+    ## commit
+    amend   = commit --amend
     c       = commit
     ca      = commit --amend
     call    = commit --all
     can     = commit --amend --no-edit
     cm      = commit -m
     cmnv    = commit -m --no-verify
-    # create and checkout a new branch
-    co      = checkout
+    cp      = cherry-pick
+
+    ## checkout
+    back    = checkout -
+    co      = checkout # create and checkout a new branch
     cob     = checkout -b
     cof     = checkout --force
-    cp      = cherry-pick
+    main    = checkout main
+    master  = checkout master
+
+    ## diff
     d       = diff
-    # delete local branches that have been merged into main (adapted from https://stackoverflow.com/a/16906759)
-    delete  = ! git fetch --prune && git branch --merged main | rg -v '^[ *]*main$' | xargs --no-run-if-empty git branch -d
     df      = ! git --no-pager diff | delta --side-by-side
     dfs     = ! git --no-pager diff --staged | delta --side-by-side
     ds      = diff --staged
     dt      = difftool
     dts     = difftool --staged
+
+    ## fetch
     f       = fetch --all
-    # update local main branch to match origin
-    fm      = fetch origin main:main
+    fm      = fetch origin main:main # update local main branch to match origin
+
+    ## log
     l       = log -n25 --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
-    # show last commit with diffstat
-    l1      = l -1 --stat
+    l1      = l -1 --stat # show last commit with diffstat
     last    = log -1 HEAD --stat
     lm      = l --merges
     lnm     = l --no-merges
     ln      = log -n
-    # show diffs
-    lp      = log --patch
-    # show last commit with diff
-    lp1     = log --patch -1
+    lp      = log --patch # show diffs
+    lp1     = log --patch -1 # show last commit with diff
     ls      = ls-files
+
+    ## merge
     m       = merge
     ma      = merge --abort
     mc      = merge --continue
-    main    = checkout main
-    master  = checkout master
     mt      = mergetool
+
+    ## pull
     pa      = pull --autostash
     p       = pull
-    pop     = stash pop
     pr      = pull --rebase
     pra     = pull --rebase --autostash
+
+    ## push
     ps      = push
     psf     = push -v --force-with-lease
-    # bypass pre-push hook
-    psnv    = push -v --no-verify
+    psnv    = push -v --no-verify # bypass pre-push hook
     publish = push -v --set-upstream origin HEAD
+
+    ## rebase
     r       = rebase
     ra      = rebase --abort
     rc      = rebase --continue
     ri      = rebase --interactive
+
+    ## reset
     resets  = reset --soft
     reseth  = reset --hard
+
+    ## restore
     rest    = restore
     rests   = restore --staged
-    s       = status
-    # create new branch and switch to it
-    swc     = switch --create
-    # resets the previous commit but keep all the changes from that commit in the working directory
-    undo = reset HEAD~1 --mixed
-    # update local branch from origin without checking it out
-    update = ! git fetch origin $1:$1
+
+    ## stash
+    pop     = stash pop
+
+    s       = status --short --branch
+    sl      = status --long
+    svv     = status -vv
+    swc     = switch --create # create new branch and switch to it
+    undo = reset HEAD~1 --mixed # resets the prev commit but keeps the changes from that commit in the working directory
+    update = ! git fetch origin $1:$1 # update local branch from origin without checking it out
