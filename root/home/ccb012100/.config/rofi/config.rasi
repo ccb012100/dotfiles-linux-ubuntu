@@ -1,9 +1,12 @@
 configuration {
 	/*---------- General setting ----------*/
 	case-sensitive: false;
+	click-to-exit: true;
 	cycle: true;
 	filter: "";
-	icon-theme: "Papirus";
+	font: "IBM Plex Mono 12";
+	icon-theme: "Adwaita";
+	modi: "drun,window,filebrowser,keys";
 	normalize-match: true;
 	scroll-method: 0;
 	show-icons: true;
@@ -19,18 +22,17 @@ configuration {
 	sorting-method: "fzf";
 
 	/*---------- Display setting ----------*/
-	display-combi: "Combi";
-	display-drun: "Apps";
-	display-filebrowser: "Files";
-	display-keys: "Keys";
-	display-run: "Run";
-	display-ssh: "SSH";
-	display-window: "Windows";
-	display-windowcd: "Window CD";
+	display-combi: "Combi:";
+	display-drun: "🗿 Apps:";
+	display-filebrowser: "Files:";
+	display-keys: "Keybindings:";
+	display-run: "🗿 Run:";
+	display-ssh: "SSH:";
+    display-window: "🗿 Switch to:";
+	display-windowcd: "Window CD:";
 
 	/*---------- Misc setting ----------*/
-	click-to-exit: true;
-	font: "IBM Plex Mono 12";
+	drun-display-format: "{name}";
 	sort: true;
 	terminal: "rofi-sensible-terminal";
 	threads: 0;
@@ -51,7 +53,10 @@ configuration {
 
 	/*---------- Keybindings ----------*/
 	kb-accept-entry: "Control+m,Return,KP_Enter";
+	kb-clear-line: "";
+	kb-delete-entry: "Shift+Delete,Control+w";
 	kb-mode-complete: "";
+	kb-remove-char-back: "BackSpace";
 	kb-remove-to-eol: "Alt+k";
 
 	kb-row-up: "Up,Control+p,Control+i";

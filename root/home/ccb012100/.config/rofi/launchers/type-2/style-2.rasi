@@ -9,10 +9,6 @@
 
 /*****----- Configuration -----*****/
 configuration {
-	modi:                       "drun";
-    show-icons:                 true;
-    display-drun:               "🗿";
-	drun-display-format:        "{name}";
 }
 
 /*****----- Global Properties -----*****/

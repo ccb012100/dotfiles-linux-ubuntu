@@ -15,6 +15,5 @@ dir="$HOME/.config/rofi/launchers/type-2"
 theme='style-2'
 
 ## Run
-rofi -modi "window,drun" \
-    -theme "${dir}/${theme}.rasi" \
-    -show drun
+rofi -theme "${dir}/${theme}.rasi" \
+     -show drun
