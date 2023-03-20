@@ -67,6 +67,20 @@ set visualbell
 set wildmenu                    " visual autocomplete for the command menu
 set ww=<,>,[,],h,l,b,s          " allow cursor to wrap to previous/next line
 
+"" github.com/easymotion/vim-easymotion
+let g:EasyMotion_smartcase = 1 " case-insensitive
+nmap <C-;> <Plug>(easymotion-s2)
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
+map <C-l> <Plug>(easymotion-lineforward)
+map <C-j> <Plug>(easymotion-j)
+map <C-k> <Plug>(easymotion-k)
+map <C-h> <Plug>(easymotion-linebackward)
+
+let g:EasyMotion_startofline = 0 " keep cursor column when jk motion
+
 "" set tmp file directories
 set backupdir=~/.vim/.backup/,/tmp//
 set directory=~/.vim/.swp/,/tmp//
