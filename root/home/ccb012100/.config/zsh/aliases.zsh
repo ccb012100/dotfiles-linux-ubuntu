@@ -21,6 +21,7 @@ alias mv='mv -iv'
 alias path='sed "s/:/\n/g" <<< "$PATH"'
 alias rm='rm -I'
 alias rmdir='rmdir -v'
+alias rmr='rm -r'
 alias trash='gio trash'
 alias uuid='uuidgen --random'
 
@@ -59,6 +60,7 @@ alias gob='go build .'
 # run the go project in the cwd
 alias gor='go run .'
 alias info='pinfo'
+alias jl=jless
 # colorize json
 alias jq='jq -C'
 alias kc=kubectl
