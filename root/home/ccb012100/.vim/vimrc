@@ -91,14 +91,10 @@ set undodir=~/.vim/.undo/,/tmp//
 autocmd InsertEnter * set cursorline cursorcolumn norelativenumber
 autocmd InsertLeave * set nocursorline nocursorcolumn relativenumber
 
-"" Dracula theme
-"" https://draculatheme.com/vim
-" packadd! dracula
 syntax enable
 colorscheme murphy
-" colorscheme dracula
 
-""" The rest of these are copied straight from
+"" The rest of these are copied straight from
 """ https://github.com/vim/vim/blob/master/runtime/defaults.vim
 
 " In many terminal emulators the mouse works just fine.  By enabling it you
