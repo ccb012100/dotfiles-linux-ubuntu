@@ -103,6 +103,9 @@ autocmd InsertLeave * set nocursorline nocursorcolumn relativenumber
 syntax enable
 colorscheme murphy
 
+# use https://github.com/nickeb96/fish.vim on fish scripts
+autocommand FileType fish colorscheme fish-default
+
 "" vim-specific
 if !has('nvim')
     set viminfo+=n~/.vim/viminfo
