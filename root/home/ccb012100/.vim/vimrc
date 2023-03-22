@@ -35,6 +35,7 @@ set listchars=eol:↵,tab:➝\ ,trail:~,extends:>,precedes:<,space:·
 let g:rainbow_active = 1        " turn on rainbow brackets
 set autoread                    " reload file if it's changed outside vim
 set backspace=indent,eol,start  " backspace key deletes in insert mode
+set cc=120                      " set column border
 set encoding=utf-8
 set expandtab                   " pressing <TAB> inserts spaces
 set formatoptions+=j            " remove comment leader when joining lines
@@ -44,6 +45,7 @@ set ignorecase                  " default to case insensitive searching
 set incsearch                   " search as characters are entered
 set laststatus=2                " always show statusline
 set lazyredraw
+set mouse=v                     " middle-click paste
 set nolist                      " show whitespace
 set nostartofline
 set noswapfile
@@ -61,29 +63,36 @@ set tabstop=4
 set termguicolors               " true color terminal
 set title
 set ttimeoutlen=50              " keycode timeout length
+set ttyfast
 set undofile
-set viminfo+=n~/.vim/viminfo
 set visualbell
 set wildmenu                    " visual autocomplete for the command menu
 set ww=<,>,[,],h,l,b,s          " allow cursor to wrap to previous/next line
 
 "" github.com/easymotion/vim-easymotion
-let g:EasyMotion_smartcase = 1 " case-insensitive
-nmap <C-;> <Plug>(easymotion-s2)
+let g:EasyMotion_do_mapping = 0             " disable default mappings
+let g:EasyMotion_smartcase = 1              " case-insensitive
+let g:EasyMotion_startofline = 0            " keep cursor column when jk motion
+
+nnoremap <space>; <Plug>(easymotion-s2)     " 2-char search
+nnoremap <space>F <Plug>(easymotion-bd-F)   " move to char
+nnoremap <space>f <Plug>(easymotion-bd-f)   " move to char
+nnoremap <space>h <Plug>(easymotion-linebackward)
+nnoremap <space>j <Plug>(easymotion-j)
+nnoremap <space>k <Plug>(easymotion-k)
+nnoremap <space>L <Plug>(easymotion-bd-jk)  " move to line
+nnoremap <space>l <Plug>(easymotion-lineforward)
+nnoremap <space>s <Plug>(easymotion-s2)     " 2-char search
+nnoremap <space>W <Plug>(easymotion-w)      " word motion
+nnoremap <space>w <Plug>(easymotion-bd-w)   " word motion
+""" use easymotion with searches
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
-map <C-l> <Plug>(easymotion-lineforward)
-map <C-j> <Plug>(easymotion-j)
-map <C-k> <Plug>(easymotion-k)
-map <C-h> <Plug>(easymotion-linebackward)
-
-let g:EasyMotion_startofline = 0 " keep cursor column when jk motion
 
 "" set tmp file directories
 set backupdir=~/.vim/.backup/,/tmp//
-set directory=~/.vim/.swp/,/tmp//
 set undodir=~/.vim/.undo/,/tmp//
 
 "" Only use cursor line and column line in Insert mode
@@ -93,6 +102,19 @@ autocmd InsertLeave * set nocursorline nocursorcolumn relativenumber
 
 syntax enable
 colorscheme murphy
+
+"" vim-specific
+if !has('nvim')
+    set viminfo+=n~/.vim/viminfo
+    set ttymouse=xterm2
+    "" set tmp file directories
+    set backupdir=~/.vim/.backup/,/tmp//
+    set undodir=~/.vim/.undo/,/tmp//
+else
+    "" set tmp file directories
+    set backupdir=~/.local/share/nvim//
+    set undodir=~/.local/share/nvim//
+endif
 
 "" The rest of these are copied straight from
 """ https://github.com/vim/vim/blob/master/runtime/defaults.vim
