@@ -4,6 +4,7 @@ if status is-interactive
     set EDITOR nvim
     bind \cg "git status; commandline -f repaint" # <C-g>
     bind \eg "git diff; commandline -f repaint" # <A-g>
+    bind \ea history-pager # <A-a>
 
     # source config files
     for x in "$HOME"/.config/fish/{aliases,tools,fzf,functions}.fish
