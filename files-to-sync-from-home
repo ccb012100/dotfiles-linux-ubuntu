@@ -5,6 +5,12 @@
 .zshrc
 .config/bat/bat.conf
 .config/broot/conf.hjson
+.config/fish/aliases.fish
+.config/fish/config.fish
+.config/fish/fd.fish
+.config/fish/functions.fish
+.config/fish/fzf.fish
+.config/fish/tools.fish
 .config/git
 .config/kdiff3rc
 .config/kitty

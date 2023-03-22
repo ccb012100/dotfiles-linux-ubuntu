@@ -9,6 +9,10 @@ $cmd_duration\
 $line_break\
 $character"""
 
+[env_var]
+variable = "CURRENTSHELL"
+default = "unknown"
+
 [directory]
 style = "blue"
 

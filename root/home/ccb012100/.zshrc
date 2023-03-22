@@ -1,8 +1,8 @@
 # Zsh configuration file
 # $HOME/.zshrc
-
+CURRENTSHELL=🇿
 export PATH="$PATH:$HOME/bin:$HOME/.local/bin"
-export EDITOR="vim" # $EDITOR opens in terminal
+export EDITOR="nvim" # $EDITOR opens in terminal
 
 # -X leaves file contents on the screen when less exits.
 # -F makes less quit if the entire output can be displayed on one screen.
