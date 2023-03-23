@@ -79,7 +79,7 @@ function __fish_pipeto_ripgrep -d "Pipe the current command to ripgrep"
 end
 
 ### convenience function
-function update-kitty
+function kitty-update
     curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 end
 
