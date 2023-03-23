@@ -107,4 +107,4 @@ alias audio-reload='systemctl --user restart pipewire pipewire-pulse'
 alias guake-export="guake --save-preferences ~/.dotfiles/app-exports/guake-preferences"
 alias kmonad-reload='pkill kmonad && nohup kmonad /home/cbocardo/.config/kmonad/dell_latitude.kbd &'
 alias snap-store-refresh='pkill snap-store && sudo snap refresh snap-store'
-alias update='sudo apt update && sudo apt upgrade --yes && brew upgrade && flatpak update'
+alias update='sudo apt update && sudo apt upgrade --yes && brew upgrade && flatpak update --assumeyes'
