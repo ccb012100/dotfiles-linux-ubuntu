@@ -3,16 +3,10 @@
 # https://github.com/junegunn/fzf
 
 # enable fzf keybindings for fish
-source /usr/share/doc/fzf/examples/key-bindings.fish
-
-export FZF_COMPLETION_TRIGGER=';;' # default is '**'
-bind '\ci' fzf-completion # also binds <TAB> key
+fzf_key_bindings
 
 # use ripgrep instead of find
 export FZF_DEFAULT_COMMAND="rg --files --hidden --follow --glob '!.git' --exclude node_modules"
-#export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_COMPLETION_OPTS='--border --info=inline'
-#color theme: tomasr/molokai
 export FZF_DEFAULT_OPTS="--height=75% --cycle --multi --info=inline --border \
 --tabstop=4 --header-lines=1 \
 --bind='?:toggle-preview,f12:execute(less -f {})' \
@@ -20,27 +14,27 @@ export FZF_DEFAULT_OPTS="--height=75% --cycle --multi --info=inline --border \
 --preview-window=:hidden --preview 'batcat --style=numbers --color=always {}' \
 --color=bg+:#293739,bg:#1B1D1E,border:#808080,spinner:#E6DB74,hl:#7E8E91,fg:#F8F8F2,header:#7E8E91,info:#A6E22E,pointer:#A6E22E,marker:#F92672,fg+:#F8F8F2,prompt:#F92672,hl+:#F92672"
 
-# Use fd (https://github.com/sharkdp/fd) instead of the default find
-# command for listing path candidates.
+# Use fd (https://github.com/sharkdp/fd) instead of the default find command for listing path candidates.
 # - The first argument to the function ($1) is the base path to start traversal
 # - See the source code (completion.{bash,zsh}) for the details.
 function _fzf_compgen_path
-  fd --hidden --follow --exclude ".git" . "$1"
+    fd --hidden --follow --exclude ".git" . "$1"
 end
 
 # Use fd to generate the list for directory completion
 function _fzf_compgen_dir
-  fd --type d --hidden --follow --exclude ".git" . "$1"
+    fd --type d --hidden --follow --exclude ".git" . "$1"
 end
 
 # find-in-file - usage: fif <searchTerm>
 # from https://github.com/junegunn/fzf/wiki/examples
 function fif
-  if [ ! count $argv -gt 0 ]
-    echo "Need a string to search for!"
-    return 1
-  end
-  rg --files-with-matches --no-messages "$1" | fzf --preview "highlight -O ansi -l {} 2> /dev/null | rg --colors 'match:bg:yellow' --ignore-case --pretty --context 10 '$1' || rg --ignore-case --pretty --context 10 '$1' {}"
+    if [ ! count $argv -gt 0 ]
+        echo "Need a string to search for!"
+        return 1
+    end
+    rg --files-with-matches --no-messages "$1" |
+        fzf --preview "highlight -O ansi -l {} 2> /dev/null | rg --colors 'match:bg:yellow' --ignore-case --pretty --context 10 '$1' || rg --ignore-case --pretty --context 10 '$1' {}"
 end
 
 # fzf clobbers the READLINE binding, so we rebind it here
