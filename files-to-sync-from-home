@@ -8,6 +8,7 @@
 .config/fish/aliases.fish
 .config/fish/config.fish
 .config/fish/fd.fish
+.config/fish/fish_plugins
 .config/fish/functions.fish
 .config/fish/fzf.fish
 .config/fish/tools.fish
