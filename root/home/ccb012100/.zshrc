@@ -52,8 +52,3 @@ stty -ixon # disable XON/XOFF control flow
 ## additional personal config files
 for f in "$HOME"/.config/zsh/*.zsh; do source $f; done
 source "$HOME"/.local/local-config.zsh
-
-source "$HOME"/ccb012100/playlist-search/search.sh
-alias sp="$HOME/ccb012100/playlist-search/search.py"
-alias spd="sp --sort date"
-alias spalb="sp --type album"
