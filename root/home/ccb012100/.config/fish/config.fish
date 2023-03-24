@@ -11,9 +11,9 @@ if status is-interactive
     # -R displays ANSI color escape sequences in "raw" form.
     export LESS="-XFR"
 
-    bind \cg "git status; commandline -f repaint" # <C-g>
-    bind \eg "git diff; commandline -f repaint" # <A-g>
-    bind \ea history-pager # <A-a>
+    bind \cg "git status; commandline -f repaint" # <Ctrl-g>
+    bind \eg "git diff; commandline -f repaint" # <Alt-g>
+    bind \ea history-pager # <Alt-a>
 
     stty -ixon # disable XON/XOFF control flow
 

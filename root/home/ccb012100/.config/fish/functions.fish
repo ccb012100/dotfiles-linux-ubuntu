@@ -20,7 +20,7 @@ end
 
 # cd into the directory the file is located in
 function cdf
-    cd `dirname $1`
+    cd `dirname $argv[1]`
 end
 
 # open new emacs-frame
@@ -30,12 +30,12 @@ end
 
 # set display brightness
 function bright
-    xrandr --output DP-1-2 --brightness $1
+    xrandr --output DP-1-2 --brightness $argv[1]
 end
 
 # find in personal notes
 function fn
-    switch $1
+    switch $argv[1]
         case i # case-insensitive
             shift
             rg -i "$argv" ~notes
@@ -52,7 +52,7 @@ end
 
 # set system-wide text size
 function textscale
-    switch $1
+    switch argv[1]
         case laptop
             gsettings set org.gnome.desktop.interface text-scaling-factor .9
         case desktop
@@ -60,7 +60,7 @@ function textscale
         case get
             gsettings get org.gnome.desktop.interface text-scaling-factor
         case set
-            gsettings set org.gnome.desktop.interface text-scaling-factor $2
+            gsettings set org.gnome.desktop.interface text-scaling-factor $argv[2]
         case *
             echo 'usage: text-scaling [ laptop | desktop | get | set <SCALING_FACTOR> ]'
     end
@@ -84,5 +84,5 @@ function kitty-update
 end
 
 # bind functions to keyboard shortcuts
-bind \er __fish_pipeto_ripgrep # <A-r>
-bind \co __fish_pipeto_fzf # <C-o>
+bind \er __fish_pipeto_ripgrep # <Alt-r>
+bind \co __fish_pipeto_fzf # <Ctrl-o>

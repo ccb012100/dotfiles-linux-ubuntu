@@ -14,7 +14,6 @@ alias lec='echo $status' # last exit code
 alias mkdir='mkdir -v'
 alias mv='mv -iv'
 alias path='echo $PATH | sed "s/ /\n/g"' # print 1 $PATH entry per line
-# alias path='sed "s/:/\n/g" <<< "$PATH"'
 alias rm='rm -I'
 alias rmdir='rmdir -v'
 alias rmr='rm -r'
@@ -65,8 +64,8 @@ alias sesh='tmux new-session -A -s sesh'
 alias v=nvim
 alias vi=nvim
 alias vim=nvim
-
-#git
+alias zo=zoxide
+#: git
 alias g=git
 alias ga='git add'
 alias gaa='git aa'
@@ -82,24 +81,13 @@ alias gps='git push'
 alias gs='git s'
 alias gsl='git sl'
 alias gsvv='git status -vv'
-# npm
+#: npm
 alias nr='npm run'
 alias nrb='npm run build'
 alias nrl='npm run lint'
 alias nrestart='npm run build && npm run start'
 alias nrs='npm run start'
 alias nrt='npm run test'
-
-# zsh-z
-alias za='z --add' # add directory to db
-alias zc='z -c' # only match subdirs of pwd
-alias ze='z -e' # echo best match without jumping
-alias zl='z -l' # list matches without jumping
-alias zr='z -r' # match by rank
-alias zs='z -s' # only match subdirs of pwd
-alias zt='z -t' # match by time
-alias zt='z -x' # remove directory from db (defaults to pwd)
-alias zxr='x -xR' # remove dir and all subdirs from db (defaults to pwd)
 
 # convenience aliases to run multiple commands in sequence
 alias aptup='sudo apt update && sudo apt upgrade --yes'
@@ -108,3 +96,11 @@ alias guake-export="guake --save-preferences ~/.dotfiles/app-exports/guake-prefe
 alias kmonad-reload='pkill kmonad && nohup kmonad /home/cbocardo/.config/kmonad/dell_latitude.kbd &'
 alias snap-store-refresh='pkill snap-store && sudo snap refresh snap-store'
 alias update='sudo apt update && sudo apt upgrade --yes && brew upgrade && flatpak update --assumeyes'
+
+alias cfish="code $__fish_config_dir/.config/fish" # open fish config directory in vscode
+
+# search Spotify playlists
+alias sm="$HOME/ccb012100/playlist-search/search.sh"
+alias sp="$HOME/ccb012100/playlist-search/search.py"
+alias spd="sp --sort date"
+alias spalb="sp --type album"
