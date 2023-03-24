@@ -1,6 +1,7 @@
 ## aliases
 [alias]
     ## add
+    a       = add
     aa      = add --all
     acm     = ! git add --update && git commit -m # add all tracked files and commit
     aacm    = ! git add --all && git commit -m # add all tracked and untracked files and commit
