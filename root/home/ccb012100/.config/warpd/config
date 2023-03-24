@@ -19,8 +19,8 @@ hint2_activation_key: A-M-z
 hint2_chars: uiojklm,.
 
 # scroll
-scroll_down: f . n
-scroll_up: b m p
+scroll_down: f m n
+scroll_up: b . p
 
 # cursor movement in Normal mode
 down: k
