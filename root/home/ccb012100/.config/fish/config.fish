@@ -3,8 +3,8 @@ if status is-interactive
     set CURRENTSHELL 🐟
     set EDITOR nvim
 
-    fish_add_path -a $HOME/bin
-    fish_add_path -a $HOME/.local/bin
+    set PATH $PATH $HOME/bin
+    set PATH $PATH $HOME/.local/bin
 
     # -X leaves file contents on the screen when less exits.
     # -F makes less quit if the entire output can be displayed on one screen.
