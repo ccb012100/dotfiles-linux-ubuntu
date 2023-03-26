@@ -11,9 +11,9 @@ alias grep='grep --color=auto'
 alias his=history
 alias jctl=journalctl
 alias lec='echo $status' # last exit code
+alias path='printf %s\n $PATH'
 alias mkdir='mkdir -v'
 alias mv='mv -iv'
-alias path='echo $PATH | sed "s/ /\n/g"' # print 1 $PATH entry per line
 alias rm='rm -I'
 alias rmdir='rmdir -v'
 alias rmr='rm -r'
