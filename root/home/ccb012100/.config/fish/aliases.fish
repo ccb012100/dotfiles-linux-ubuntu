@@ -41,6 +41,7 @@ alias bat=batcat
 alias brewup='brew upgrade'
 alias c.='code .' # open current directory in VS Code
 alias c=code
+alias cfish="code $__fish_config_dir" # open fish config directory in vscode
 alias difftastic=difft
 alias e=emacs
 alias etty='emacsclient -nw'
@@ -97,10 +98,12 @@ alias kmonad-reload='pkill kmonad && nohup kmonad /home/cbocardo/.config/kmonad/
 alias snap-store-refresh='pkill snap-store && sudo snap refresh snap-store'
 alias update='sudo apt update && sudo apt upgrade --yes && brew upgrade && flatpak update --assumeyes'
 
-alias cfish="code $__fish_config_dir" # open fish config directory in vscode
-
 # search Spotify playlists
 alias sm="$HOME/ccb012100/playlist-search/search.sh"
 alias sp="$HOME/ccb012100/playlist-search/search.py"
 alias spd="sp --sort date"
 alias spalb="sp --type album"
+
+# set text-scaling-factor
+alias laptop='textscale laptop'
+alias desktop='textscale desktop'
