@@ -116,7 +116,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-. "$HOME/.cargo/env"
-
-source "$HOME/.config/broot/launcher/bash/br"
 source "$HOME/.local/local-config.sh"
