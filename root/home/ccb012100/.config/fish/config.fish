@@ -27,4 +27,6 @@ if status is-interactive
     # bind \cg "git status --short --branch; commandline -f repaint" # <Ctrl-g>
     bind \eg "git diff; commandline -f repaint" # <Alt-g>
     bind \ea history-pager # <Alt-a>
+
+    set fzf_preview_file_cmd batcat # command isn't 'bat'
 end
