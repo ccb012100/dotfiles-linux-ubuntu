@@ -16,6 +16,10 @@ default = "unknown"
 
 [directory]
 style = "blue"
+truncate_to_repo = false
+repo_root_style =  'green'
+truncation_length = 4
+fish_style_pwd_dir_length = 5
 
 [character]
 success_symbol = "[\\$](purple)"
@@ -27,7 +31,7 @@ format = "[$branch]($style)"
 style = "purple"
 
 [git_status]
-format = " [[(*$conflicted$untracked$renamed$deleted$modified$staged)](218)[( $stashed)](165)( $ahead_behind)]($style)"
+format = " [[(*$conflicted$untracked$renamed$deleted)](red)[($modified$staged)](218)[( $stashed)](165)( $ahead_behind)]($style)"
 style = "cyan"
 # conflicted = "​"
 # untracked = "​"
@@ -35,7 +39,7 @@ style = "cyan"
 # staged = "​"
 # renamed = "​"
 # deleted = "​"
-stashed = "≡"
+stashed = "🥞"
 ahead = "⇡${count}"
 diverged = "⇕⇡${ahead_count}⇣${behind_count}"
 behind = "⇣${count}"
