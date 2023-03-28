@@ -1,13 +1,15 @@
 format = """
-$time\
+$shell\
 $username\
 $hostname\
 $directory\
 $git_branch\
 $git_state\
 $git_status\
+$time\
 $cmd_duration\
 $line_break\
+$sudo\
 $character"""
 
 [env_var]
@@ -31,7 +33,7 @@ format = "[$branch]($style)"
 style = "purple"
 
 [git_status]
-format = " [[(*$conflicted$untracked$renamed$deleted)](red)[($modified$staged)](218)[( $stashed)](165)( $ahead_behind)]($style)"
+format = " [[(*$conflicted$untracked$renamed$deleted)](red)[($modified$staged)](218)[( $stashed)](165)( $ahead_behind)]($style) "
 style = "cyan"
 # conflicted = "​"
 # untracked = "​"
@@ -55,3 +57,13 @@ style = "yellow"
 [time]
 disabled = false
 format = '[\[$time\]]($style) '
+
+[shell]
+disabled = false
+format = '[$indicator]($style) '
+zsh_indicator = 'zsh'
+bash_indicator = 'bash'
+fish_indicator = '🐟'
+
+[sudo]
+disabled = false
