@@ -37,7 +37,6 @@ alias llt='exa -l -t modified --sort newest'
 alias llat='exa -al -t modified --sort newest'
 
 # external tools
-alias bat=batcat
 alias brewup='brew upgrade'
 alias c.='code .' # open current directory in VS Code
 alias c=code
@@ -84,6 +83,9 @@ alias gps='git push'
 alias gs='git s'
 alias gsl='git sl'
 alias gsvv='git status -vv'
+#: GitHub CLI
+alias ghb='gh branch'
+alias ghw='gh watch'
 #: npm
 alias nr='npm run'
 alias nrb='npm run build'
