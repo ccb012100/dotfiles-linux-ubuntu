@@ -66,23 +66,24 @@ alias vi=nvim
 alias vim=nvim
 alias zo=zoxide
 #: git
-alias g=git
-alias ga='git add'
-alias gaa='git aa'
-alias gacm='git acm'
-alias gb='git branch'
-alias gbr='git branch --remote'
-alias gc='git c'
-alias gcm='git cm'
-alias gd='git d'
-alias gds='git ds'
-alias gf='git f'
-alias gl='git l'
-alias gp='git pull'
-alias gps='git push'
-alias gs='git s'
-alias gsl='git sl'
-alias gsvv='git status -vv'
+#:: k is easier to type than g
+alias k=git
+alias ka='git add'
+alias kaa='git aa'
+alias kacm='git acm'
+alias kb='git branch'
+alias kbr='git branch --remote'
+alias kc='git c'
+alias kcm='git cm'
+alias kd='git diff'
+alias kds='git ds'
+alias kf='git f'
+alias kl='git l'
+alias kp='git pull'
+alias kps='git push'
+alias ksvv='git status -vv'
+alias ks='git status --short --branch'
+alias ksl='git status'
 #: GitHub CLI
 alias ghb='gh branch'
 alias ghw='gh watch'
@@ -104,6 +105,7 @@ alias update='sudo apt update && sudo apt upgrade --yes && brew upgrade && flatp
 
 # search Spotify playlists
 alias sm="$HOME/ccb012100/playlist-search/search.sh"
+alias smsync='sm sync db && sm sync tsv'
 alias sp="$HOME/ccb012100/playlist-search/search.py"
 alias spd="sp --sort date"
 alias spalb="sp --type album"
