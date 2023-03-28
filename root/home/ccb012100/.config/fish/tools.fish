@@ -12,7 +12,7 @@ export GPG_TTY=$(tty)
 set PATH $HOME/.local/kitty.app/bin $PATH
 
 # starship
-# starship init fish | source
+starship init fish | source
 
 ## set window title via starship
 function set_win_title

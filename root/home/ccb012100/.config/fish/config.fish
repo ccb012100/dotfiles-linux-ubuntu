@@ -23,7 +23,8 @@ if status is-interactive
     # keyboard bindings
     bind \er __fish_pipe_to_ripgrep # <Alt-r>
     bind \co __fish_pipe_to_fzf # <Ctrl-o>
-    bind \cg "git status; commandline -f repaint" # <Ctrl-g>
+    # TODO: figure out why `commandline -f repaint` is buggy with `git status`
+    # bind \cg "git status --short --branch; commandline -f repaint" # <Ctrl-g>
     bind \eg "git diff; commandline -f repaint" # <Alt-g>
     bind \ea history-pager # <Alt-a>
 end
