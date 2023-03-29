@@ -23,9 +23,9 @@ if status is-interactive
     # keyboard bindings
     bind \er __fish_pipe_to_ripgrep # <Alt-r>
     bind \co __fish_pipe_to_fzf # <Ctrl-o>
-    # TODO: figure out why `commandline -f repaint` is buggy with `git status`
+    # TODO: figure out why `commandline -f repaint` is buggy with git commands
     # bind \cg "git status --short --branch; commandline -f repaint" # <Ctrl-g>
-    bind \eg "git diff; commandline -f repaint" # <Alt-g>
+    # bind \eg "git diff; commandline -f repaint" # <Alt-g>
     bind \ea history-pager # <Alt-a>
 
     set fzf_preview_file_cmd batcat # command isn't 'bat'

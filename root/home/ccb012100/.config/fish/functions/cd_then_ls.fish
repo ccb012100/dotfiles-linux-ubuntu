@@ -1,3 +1,4 @@
+# TODO: move these to separate files
 # functions to cd then ls in one step
 function cls
     cd "$argv" && ls
