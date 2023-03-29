@@ -87,6 +87,7 @@ alias ksl='git status'
 #: GitHub CLI
 alias ghb='gh branch'
 alias ghw='gh watch'
+alias hub='gh pr view --web || gh repo view --web'
 #: npm
 alias nr='npm run'
 alias nrb='npm run build'
