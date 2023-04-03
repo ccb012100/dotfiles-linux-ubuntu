@@ -117,3 +117,4 @@ if ! shopt -oq posix; then
 fi
 
 source "$HOME/.local/local-config.sh"
+

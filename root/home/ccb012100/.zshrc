@@ -52,3 +52,4 @@ stty -ixon # disable XON/XOFF control flow
 ## additional personal config files
 for f in "$HOME"/.config/zsh/*.zsh; do source $f; done
 source "$HOME"/.local/local-config.zsh
+
