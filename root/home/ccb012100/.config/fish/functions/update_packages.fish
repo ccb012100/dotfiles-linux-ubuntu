@@ -4,6 +4,7 @@ function update_packages --description 'Update various system packages'
         sudo -k &&
         brew upgrade &&
         flatpak update --assumeyes &&
+        snap refresh &&
         gh extension upgrade --all &&
         fisher update &&
         echo \t--- all done! ---
