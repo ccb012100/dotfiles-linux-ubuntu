@@ -27,6 +27,7 @@ if status is-interactive
     # bind \cg "git status --short --branch; commandline -f repaint" # <Ctrl-g>
     # bind \eg "git diff; commandline -f repaint" # <Alt-g>
     bind \ea history-pager # <Alt-a>
+    bind \cd delete-char # override default delete-or-exit for <Ctrl-d>
 
     set fzf_preview_file_cmd batcat # command isn't 'bat'
 end
