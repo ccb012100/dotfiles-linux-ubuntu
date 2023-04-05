@@ -52,10 +52,10 @@ configuration {
     }
 
 	/*---------- Keybindings ----------*/
+	/* to get keycodes, run `xmodmap -pke` | less */
 	kb-accept-entry: "Control+m,Return,KP_Enter";
 	kb-clear-line: "";
 	kb-delete-entry: "Shift+Delete,Control+w";
-	kb-mode-complete: "";
 	kb-remove-char-back: "BackSpace";
 	kb-remove-to-eol: "Alt+k";
 
@@ -63,4 +63,8 @@ configuration {
  	kb-row-down: "Down,Control+n,Control+j";
 	kb-row-left: "Control+h";
 	kb-row-right: "Control+l";
+
+	kb-mode-complete: "";
+	kb-mode-next: "Control+Tab,Control+greater";
+	kb-mode-previous: "Control+ISO_Left_Tab,Control+less";
 }
