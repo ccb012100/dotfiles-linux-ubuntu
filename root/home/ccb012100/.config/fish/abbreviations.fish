@@ -42,6 +42,7 @@ abbr --add kd git diff
 abbr --add kds git ds
 abbr --add kf git f
 abbr --add kl git l
+abbr --add kcob git cob
 abbr --add kp git pull
 abbr --add kps git push
 abbr --add ks git status --short --branch
