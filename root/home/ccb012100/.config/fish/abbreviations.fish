@@ -19,6 +19,7 @@ abbr --add rmr rm -r
 abbr --add rmrf rm -rf
 abbr --add sctl sysmtemctl
 abbr --add uuid uuidgen --random
+abbr --add zd z dotfiles
 abbr --add zo zoxide
 
 # cd
