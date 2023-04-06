@@ -5,6 +5,7 @@
 .zshrc
 .config/bat/bat.conf
 .config/broot/conf.hjson
+.config/dunst/dunstrc
 .config/fish
 .config/git
 .config/kdiff3rc
