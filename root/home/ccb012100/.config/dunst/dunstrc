@@ -39,15 +39,15 @@
     ### Geometry ###
     # necessary to prevent full-screen notifications
     # source: https://www.reddit.com/r/i3wm/comments/wndrkw/comment/iqcnmtf/?utm_source=share&utm_medium=web2x&context=3
-    geometry = "300x5-1920+50"
+    geometry = "600x600-50+50"
 
     # dynamic width from 0 to 300
     # width = (0, 300)
     # constant width of 300
-    width = 300
+    width = 600
 
     # The maximum height of a single notification, excluding the frame.
-    height = 500
+    height = 600
 
     # Position the notification in the top right corner
     origin = center
@@ -87,12 +87,12 @@
     # The transparency of the window.  Range: [0; 100].
     # This option will only work if a compositing window manager is
     # present (e.g. xcompmgr, compiz, etc.). (X11 only)
-    transparency = 5
+    transparency = 0
 
     # Draw a line of "separator_height" pixel height between two
     # notifications.
     # Set to 0 to disable.
-    separator_height = 2
+    separator_height = 5
 
     # Padding between text and separator.
     padding = 6
@@ -121,12 +121,13 @@
     # Sort messages by urgency.
     sort = no
 
-    # Don't remove messages, if the user is idle (no mouse or keyboard input)
-    # for longer than idle_threshold seconds.
+    # Don't timeout notifications if user is idle (no mouse or keyboard input)
+    # longer than this time.
+    # See TIME FORMAT for valid times.
     # Set to 0 to disable.
     # A client can set the 'transient' hint to bypass this. See the rules
     # section for how to disable this if necessary
-    idle_threshold = 5
+    idle_threshold = 10
 
     ### Text ###
 
@@ -146,16 +147,6 @@
     #        For a complete reference see
     #        <https://docs.gtk.org/Pango/pango_markup.html>.
     #
-    # strip: This setting is provided for compatibility with some broken
-    #        clients that send markup even though it's not enabled on the
-    #        server. Dunst will try to strip the markup but the parsing is
-    #        simplistic so using this option outside of matching rules for
-    #        specific applications *IS GREATLY DISCOURAGED*.
-    #
-    # no:    Disable markup parsing, incoming notifications will be treated as
-    #        plain text. Dunst will not advertise that it has the body-markup
-    #        capability if this is set as a global setting.
-    #
     # It's important to note that markup inside the format option will be parsed
     # regardless of what this is set to.
     markup = full
@@ -170,7 +161,7 @@
     #   %n  progress value if set without any extra characters
     #   %%  Literal %
     # Markup is allowed
-    format = "<b>%a\n%s</b>\n%b"
+    format = "%a: %s\n---\n%b"
 
     # Alignment of message text.
     # Possible values are "left", "center" and "right".
@@ -320,7 +311,7 @@
     # Otherwise the "#" and following would be interpreted as a comment.
     frame_color = "#3B7C87"
     foreground = "#3B7C87"
-    background = "#191311"
+    background = "#000000"
     #background = "#2B313C"
     timeout = 4
     # Icon for notifications with low urgency, uncomment to enable
@@ -328,8 +319,8 @@
 
 [urgency_normal]
     frame_color = "#5B8234"
-    foreground = "#5B8234"
-    background = "#191311"
+    foreground = "#FF10F0" # neon pink
+    background = "#000000"
     #background = "#2B313C"
     timeout = 6
     # Icon for notifications with normal urgency, uncomment to enable
@@ -338,7 +329,7 @@
 [urgency_critical]
     frame_color = "#B7472A"
     foreground = "#B7472A"
-    background = "#191311"
+    background = "#000000"
     #background = "#2B313C"
     timeout = 8
     # Icon for notifications with critical urgency, uncomment to enable
