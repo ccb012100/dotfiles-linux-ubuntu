@@ -30,5 +30,8 @@ set PATH $PNPM_HOME $PATH
 # set Ripgrep configuration file
 export RIPGREP_CONFIG_PATH="$HOME/.config/ripgreprc"
 
+# Rust
+set PATH $HOME/.cargo/bin $PATH
+
 # zoxide
 zoxide init fish | source

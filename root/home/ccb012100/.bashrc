@@ -118,3 +118,4 @@ fi
 
 source "$HOME/.local/local-config.sh"
 
+. "$HOME/.cargo/env"
