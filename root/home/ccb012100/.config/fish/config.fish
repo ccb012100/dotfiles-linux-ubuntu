@@ -23,7 +23,9 @@ if status is-interactive
     # keyboard bindings
     bind \er __fish_pipe_to_ripgrep # <Alt-r>
     bind \co __fish_pipe_to_fzf # <Ctrl-o>
+    bind \cn __fish_pipe_to_devnull # <Alt-n>
     # TODO: figure out why `commandline -f repaint` is buggy with git commands
+    #: from initial investigation in repo's issues, may be due to async functions
     # bind \cg "git status --short --branch; commandline -f repaint" # <Ctrl-g>
     # bind \eg "git diff; commandline -f repaint" # <Alt-g>
     bind \ea history-pager # <Alt-a>
