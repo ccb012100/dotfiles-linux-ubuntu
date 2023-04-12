@@ -1,5 +1,5 @@
 format = """
-$shell\
+ $shell\
 $username\
 $hostname\
 $directory\
@@ -56,7 +56,9 @@ style = "yellow"
 
 [time]
 disabled = false
-format = '[\[$time\]]($style) '
+format = '[\[$time\]](cyan)'
+time_format = "%T %e-%b"
+utc_time_offset = "local"
 
 [shell]
 disabled = false
