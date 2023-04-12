@@ -52,7 +52,8 @@ alias update update_packages
 
 # search Spotify playlists
 alias sm "$HOME/ccb012100/playlist-search/search.sh"
-alias smsync 'sm sync db && sm sync tsv'
+alias sms 'sm sync db && sm sync tsv'
+alias smsync 'use `sms`'
 alias sp "$HOME/ccb012100/playlist-search/search.py"
 
 # set text-scaling-factor

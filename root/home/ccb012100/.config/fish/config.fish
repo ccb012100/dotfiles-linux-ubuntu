@@ -21,15 +21,15 @@ if status is-interactive
     source $HOME/.local/local-config.fish
 
     # keyboard bindings
-    bind \er __fish_pipe_to_ripgrep # <Alt-r>
+    bind \cd delete-char # override default delete-or-exit for <Ctrl-d>
     bind \co __fish_pipe_to_fzf # <Ctrl-o>
-    bind \cn __fish_pipe_to_devnull # <Alt-n>
+    bind \ea history-pager # <Alt-a>
+    bind \en __fish_pipe_to_devnull # <Alt-n>
+    bind \er __fish_pipe_to_ripgrep # <Alt-r>
     # TODO: figure out why `commandline -f repaint` is buggy with git commands
     #: from initial investigation in repo's issues, may be due to async functions
     # bind \cg "git status --short --branch; commandline -f repaint" # <Ctrl-g>
     # bind \eg "git diff; commandline -f repaint" # <Alt-g>
-    bind \ea history-pager # <Alt-a>
-    bind \cd delete-char # override default delete-or-exit for <Ctrl-d>
 
     set fzf_preview_file_cmd batcat # command isn't 'bat'
 end
