@@ -94,11 +94,16 @@
     rests   = restore --staged
 
     ## stash
-    pop     = stash pop
+    pop       = stash pop
+    stash-all = stash push --include-untracked # *not* stash push --all, which includes ignored files
 
-    s       = status --short --branch
-    sl      = status --long
-    svv     = status -vv
-    swc     = switch --create # create new branch and switch to it
-    undo = reset HEAD~1 --mixed # resets the prev commit but keeps the changes from that commit in the working directory
-    update = ! git fetch origin $1:$1 # update local branch from origin without checking it out
+    ## status
+    s           = status --short --branch
+    sl          = status --long
+    svv         = status -vv
+
+    ## misc
+    swc         = switch --create # create new branch and switch to it
+    undo        = reset HEAD~1 --mixed # resets the last commit and keeps the undone changes in the working directory
+    unwind      = ! git reset HEAD~$1 --mixed # resets last $1 commits and keeps undone changes in working directory
+    update      = ! git fetch origin $1:$1 # update local branch from origin without checking it out
