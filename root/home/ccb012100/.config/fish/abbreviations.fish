@@ -37,9 +37,6 @@ abbr --add rust 'echo -e "\nthink you mean _rusH_" ' # keep making this typo for
 abbr --add sctl sysmtemctl
 abbr --add sesh 'tmux new-session -A -s sesh'
 abbr --add uuid uuidgen --random
-abbr --add v nvim
-abbr --add vi nvim
-abbr --add vim nvim
 abbr --add zd z dotfiles
 abbr --add zo zoxide
 
