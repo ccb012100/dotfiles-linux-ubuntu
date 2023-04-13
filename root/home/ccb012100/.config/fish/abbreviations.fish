@@ -22,12 +22,13 @@ abbr --add jl jless
 abbr --add kc kubectl
 abbr --add m micro
 abbr --add md mdcat
+abbr --add mdp mdcat --paginate
 abbr --add mv mv -iv
 abbr --add nts 'npx ts-node' # run local version of ts-node
 abbr --add py python3
 abbr --add pym python3 -m
 abbr --add python python3
-abbr --add readme mdcat README.md
+abbr --add readme mdcat --paginate README.md
 abbr --add rgf rg --fixed-strings # verbatim search (i.e. disable regex)
 abbr --add rgi rg --ignore-case # case-insensitive search
 abbr --add rmr rm -r
