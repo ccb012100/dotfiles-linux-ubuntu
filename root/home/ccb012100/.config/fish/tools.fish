@@ -1,4 +1,5 @@
 #!/usr/bin/env fish
+
 # Put homebrew first because some tools are in the homebrew path
 
 # homebrew
@@ -8,13 +9,18 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # GPG (GNU Privacy Guard or GnuPG)
 export GPG_TTY=$(tty)
 
+# fzf
+#: using https://github.com/PatrickF1/fzf.fish
+fzf_configure_bindings --variables=\ev # change variables binding to <Alt-v>
+set fzf_fd_opts --hidden # include hidden files
+
 # kitty
 set PATH $HOME/.local/kitty.app/bin $PATH
 
 # starship
 starship init fish | source
 
-## set window title via starship
+#: set window title via starship
 function set_win_title
     echo -ne "\033]0; $(realpath .) \007"
 end
