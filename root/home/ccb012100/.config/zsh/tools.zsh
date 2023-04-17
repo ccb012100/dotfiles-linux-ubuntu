@@ -57,4 +57,4 @@ export PATH="$PNPM_HOME:$PATH"
 export RIPGREP_CONFIG_PATH="$HOME/.config/ripgreprc"
 
 ## https://github.com/agkozak/zsh-z
-source "$HOME"/tools/.zsh-z/zsh-z.plugin.zsh
+#source "$HOME"/tools/.zsh-z/zsh-z.plugin.zsh
