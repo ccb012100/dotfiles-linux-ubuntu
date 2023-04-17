@@ -119,3 +119,4 @@ fi
 source "$HOME/.local/local-config.sh"
 
 . "$HOME/.cargo/env"
+eval "$(starship init bash)"
