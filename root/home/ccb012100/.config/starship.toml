@@ -63,8 +63,8 @@ utc_time_offset = "local"
 [shell]
 disabled = false
 format = '[$indicator]($style) '
-zsh_indicator = 'zsh'
-bash_indicator = 'bash'
+zsh_indicator = '🇿'
+bash_indicator = '👊'
 fish_indicator = '🐟'
 
 [sudo]
