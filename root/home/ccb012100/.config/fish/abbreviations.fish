@@ -5,6 +5,7 @@ abbr --add back cd -
 abbr --add c code
 abbr --add c. 'code .' # open current directory in VS Code
 abbr --add cfish "code $__fish_config_dir" # open fish config directory in vscode
+abbr --add chx chmod +x # make file executable
 abbr --add cp cp -iv
 abbr --add cpr cp -r
 abbr --add difftastic difft
