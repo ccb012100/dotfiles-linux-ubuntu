@@ -17,13 +17,8 @@ set fzf_fd_opts --hidden # include hidden files
 # kitty
 set PATH $HOME/.local/kitty.app/bin $PATH
 
-# starship
+# starship.rs
 starship init fish | source
-
-#: set window title via starship
-function set_win_title
-    echo -ne "\033]0; $(realpath .) \007"
-end
 
 # nodenv
 set PATH $HOME/.nodenv/bin $PATH
