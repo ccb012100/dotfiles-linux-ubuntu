@@ -28,6 +28,8 @@
     cmnv    = commit -m --no-verify
     cp      = cherry-pick
 
+    chx     = update-index --chmod=+x
+
     ## checkout
     back    = checkout -
     co      = checkout # create and checkout a new branch
