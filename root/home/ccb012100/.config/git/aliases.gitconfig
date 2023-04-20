@@ -2,9 +2,9 @@
 [alias]
     ## add
     a       = add
-    aa      = add --all
+    aa      = ! git add add --all && git
     ai      = add --all --interactive
-    au      = add --update
+    au      = ! git add --update && git s
 
     alias   = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ / | sort
 

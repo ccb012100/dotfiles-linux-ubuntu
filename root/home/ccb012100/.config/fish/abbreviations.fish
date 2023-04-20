@@ -32,6 +32,7 @@ abbr --add python python3
 abbr --add readme mdcat --paginate README.md
 abbr --add rgf rg --fixed-strings # verbatim search (i.e. disable regex)
 abbr --add rgi rg --ignore-case # case-insensitive search
+abbr --add rguuu rg -uuu # same as `rg --no-ignore --hidden --binary` & equiv. to `grep -r`
 abbr --add rmr rm -r
 abbr --add rmrf rm -rf
 abbr --add rust 'echo -e "\nthink you mean _rusH_" ' # keep making this typo for some reason
@@ -52,6 +53,7 @@ abbr --add ...... 'cd ../../../../..'
 abbr --add k git
 abbr --add ka git add
 abbr --add kaa git aa
+abbr --add kau git au
 abbr --add kb git branch
 abbr --add kbr git branch --remote
 abbr --add kc git c
@@ -70,7 +72,7 @@ abbr --add ksvv git status -vv
 
 #: GitHub CLI
 abbr --add ghb gh branch
-abbr --add ghv gh pr view --web || gh repo view --web
+abbr --add ghv 'gh pr view --web || gh repo view --web'
 abbr --add ghw gh watch
 
 #: npm
