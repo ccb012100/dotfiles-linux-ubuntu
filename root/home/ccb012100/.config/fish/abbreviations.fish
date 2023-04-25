@@ -54,7 +54,10 @@ abbr --add ...... 'cd ../../../../..'
 abbr --add k git
 abbr --add ka git add
 abbr --add kaa git aa
+abbr --add kaacm git aacm
+abbr --add kacm git acm
 abbr --add kau git au
+abbr --add kaucm git aucm
 abbr --add kb git branch
 abbr --add kbr git branch --remote
 abbr --add kc git c
