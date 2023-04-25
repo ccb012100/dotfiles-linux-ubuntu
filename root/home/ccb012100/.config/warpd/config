@@ -8,15 +8,15 @@ indicator_size: 20
 indicator_color: #DFFF00
 
 # hints
+hint_activation_key: A-M-x
 hint_bgcolor: #282828
-hint_chars: asdfghjkl;
+hint_chars: asdfghjkl;'qwertyuiopzxcvbnm,./
 hint_fgcolor: #FFB000
 hint_font: DEC Terminal Modern
 hint: H x
-hint2: z
-hint_activation_key: A-M-x
 hint2_activation_key: A-M-z
 hint2_chars: uiojklm,.
+hint2: z
 
 # scroll
 scroll_down: f m n
