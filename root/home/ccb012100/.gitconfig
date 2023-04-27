@@ -1,43 +1,7 @@
 # $HOME/.gitconfig
-[core]
-    editor = vim
-	autocrlf = input
-    filemode = false
-	excludesfile = ~/.config/git/ignore
-    #hooksPath = ~/.config/git/hooks
-[gpg]
-    program = gpg
-	format = ssh
-[gpg "ssh"]
-	allowedSignersFile = ~/.ssh/allowed_signers
-[commit]
-    gpgsign = true
-	verbose = true
-[pull]
-    ff = only
-    rebase = true
-[push]
-    default = simple
-    autoSetupRemote = true
-[fetch]
-    prune = true
-[rebase]
-    autoStash = false
-[init]
-	defaultBranch = main
-[filter "lfs"]
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-[credential]
-	helper = /usr/local/share/gcm-core/git-credential-manager-core
-	credentialStore = gpg
 [include]
+    path = .config/git/git.gitconfig
     path = .config/git/aliases.gitconfig
     path = .config/git/github.gitconfig
     path = .config/git/tools.gitconfig
-    # local-machine.gitconfig contains username/email/gpg key configs
-    path = .local/local-machine.gitconfig
-[advice]
-	addIgnoredFile = false
+    path = .local/local-machine.gitconfig # contains [user]/[gpg]F configs

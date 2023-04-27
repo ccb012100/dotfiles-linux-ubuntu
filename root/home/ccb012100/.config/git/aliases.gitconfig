@@ -26,12 +26,10 @@
     c       = commit
     ca      = commit --amend
     call    = commit --all
-    can     = commit --amend --no-edit
+    can     = ! git ca --no-edit
     cm      = commit -m
-    cmnv    = commit -m --no-verify
+    cmnv    = ! git cm --no-verify
     cp      = cherry-pick
-
-    chx     = update-index --chmod=+x
 
     ## checkout
     back    = checkout -
@@ -43,8 +41,6 @@
 
     ## diff
     d       = diff
-    df      = ! git --no-pager diff | delta --side-by-side
-    dfs     = ! git --no-pager diff --staged | delta --side-by-side
     ds      = diff --staged
     dt      = difftool
     dts     = difftool --staged
@@ -55,13 +51,17 @@
 
     ## log
     l       = log -n25 --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
-    l1      = l -1 --stat # show last commit with diffstat
-    last    = log -1 HEAD --stat
+    l1      = ! git l -1 --compact-summary # show last commit with summary
+    last    = log -1 HEAD --compact-summary
+    lc      = ! git l --compact-summary
     lm      = l --merges
-    lnm     = l --no-merges
+    lmc     = !git --compact-summary
     ln      = log -n
-    lp      = log --patch # show diffs
-    lp1     = log --patch -1 # show last commit with diff
+    lnc     = log --compact-summary -n
+    lnm     = l --no-merges
+    lnmc    = ! git lmn --compact-summary
+    lp      = log --patch --compact-summary # show diffs
+    lp1     = ! git lp -1 --compact-summary # show last commit with diff
     ls      = ls-files
 
     ## merge
@@ -71,8 +71,8 @@
     mt      = mergetool
 
     ## pull
-    pa      = pull --autostash
     p       = pull
+    pa      = pull --autostash
     pr      = pull --rebase
     pra     = pull --rebase --autostash
 
@@ -93,20 +93,28 @@
     reseth  = reset --hard
 
     ## restore
-    rest    = restore
-    rests   = restore --staged
+    unstage = restore --staged
+
+	sbs = ! DELTA_FEATURES=sbs git # use delta in side-by-side mode
 
     ## stash
     pop       = stash pop
     stash-all = stash push --include-untracked # *not* stash push --all, which includes ignored files
 
     ## status
-    s           = status --short --branch
+    s           = ! git ss
     sl          = status --long
+    ss          = status --short --branch
+    sv          = ! git svv
     svv         = status -vv
 
+    ## tag
+    current-tags    = tag --list --points-at HEAD
+    t               = ! git current-tags
+
     ## misc
-    swc         = switch --create # create new branch and switch to it
-    undo        = reset HEAD~1 --mixed # resets the last commit and keeps the undone changes in the working directory
-    unwind      = ! git reset HEAD~$1 --mixed # resets last $1 commits and keeps undone changes in working directory
-    update      = ! git fetch origin $1:$1 # update local branch from origin without checking it out
+    chx             = update-index --chmod=+x
+    swc             = switch --create # create new branch and switch to it
+    undo            = reset HEAD~1 --mixed # resets the last commit and keeps the undone changes in the working directory
+    unwind          = ! git reset HEAD~$1 --mixed # resets last $1 commits and keeps undone changes in working directory
+    update          = ! git fetch origin $1:$1 # update local branch from origin without checking it out

@@ -14,15 +14,24 @@
     reflog = delta
     show = delta
 [mergetool "vscode"]
-    cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
+    cmd = code --new-window --wait --merge $REMOTE $LOCAL $BASE $MERGED
 [difftool "difftastic"]
     cmd = difft "$LOCAL" "$REMOTE"
+[difftool "vscode"]
+    cmd = code --new-window --wait --diff $REMOTE $LOCAL
 [delta]
-    features = decorations
+	commit-decoration-style = magenta box ul
+	commit-regex = > [0-9a-f]{7,}
+    features = line-numbers decorations
+	file-decoration-style = yellow box
+	file-style = brightyellow italic
+	hyperlinks = true
+	line-numbers-minus-style = red
+	line-numbers-plus-style = green
+	line-numbers-zero-style = white
     syntax-theme = TwoDark
-    keep-plus-minus-markers = true
-    line-numbers = true
-    line-number-right-style = green
+	whitespace-error-style = 22 reverse
+    # keep-plus-minus-markers = true
 [delta "interactive"]
     keep-plus-minus-markers = false
 [delta "decorations"]
@@ -33,6 +42,8 @@
     hunk-header-file-style = red
     hunk-header-line-number-style = "#067a00"
     hunk-header-style = file line-number syntax
+[delta "sbs"]
+	side-by-side = true
 [difftool "meld"]
     cmd = meld "$REMOTE" "$LOCAL"
 [mergetool "meld"]

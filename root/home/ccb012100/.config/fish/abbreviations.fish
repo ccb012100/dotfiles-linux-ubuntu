@@ -70,6 +70,7 @@ abbr --add kl git l
 abbr --add kcob git cob
 abbr --add kp git pull
 abbr --add kps git push
+abbr --add krest git restore
 abbr --add ks git status --short --branch
 abbr --add ksl git status
 abbr --add ksvv git status -vv
