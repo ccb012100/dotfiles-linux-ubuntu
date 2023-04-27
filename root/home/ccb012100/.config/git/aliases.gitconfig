@@ -94,6 +94,7 @@
 
     ## restore
     unstage = restore --staged
+    rest    = restore
 
 	sbs = ! DELTA_FEATURES=sbs git # use delta in side-by-side mode
 
