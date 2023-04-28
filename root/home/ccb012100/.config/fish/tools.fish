@@ -36,3 +36,6 @@ set PATH $HOME/.cargo/bin $PATH
 
 # zoxide
 zoxide init fish | source
+
+# forgit
+set PATH $PATH $HOME/tools/forgit/bin/
