@@ -115,6 +115,7 @@
 
     ## misc
     chx             = update-index --chmod=+x
+    fg              = forgit
     swc             = switch --create # create new branch and switch to it
     undo            = reset HEAD~1 --mixed # resets the last commit and keeps the undone changes in the working directory
     unwind          = ! git reset HEAD~$1 --mixed # resets last $1 commits and keeps undone changes in working directory
