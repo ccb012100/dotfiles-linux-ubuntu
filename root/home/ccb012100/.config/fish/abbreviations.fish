@@ -75,6 +75,8 @@ abbr --add krest git restore
 abbr --add ks git status --short --branch
 abbr --add ksl git status
 abbr --add ksvv git status -vv
+abbr --add kundo git undo
+abbr --add kunstage git unstage
 
 #: GitHub CLI
 abbr --add ghb gh branch
