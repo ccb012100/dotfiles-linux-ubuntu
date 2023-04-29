@@ -26,9 +26,9 @@
     c       = commit
     ca      = commit --amend
     call    = commit --all
-    can     = ! git ca --no-edit
+    can     = ca --no-edit
     cm      = commit -m
-    cmnv    = ! git cm --no-verify
+    cmnv    = cm --no-verify
     cp      = cherry-pick
 
     ## checkout
@@ -51,17 +51,17 @@
 
     ## log
     l       = log -n25 --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
-    l1      = ! git l -1 --compact-summary # show last commit with summary
+    l1      = l -1 --compact-summary # show last commit with summary
     last    = log -1 HEAD --compact-summary
-    lc      = ! git l --compact-summary
+    lc      = l --compact-summary
     lm      = l --merges
-    lmc     = !git --compact-summary
+    lmc     = l --compact-summary
     ln      = log -n
     lnc     = log --compact-summary -n
     lnm     = l --no-merges
-    lnmc    = ! git lmn --compact-summary
+    lnmc    = lmn --compact-summary
     lp      = log --patch --compact-summary # show diffs
-    lp1     = ! git lp -1 --compact-summary # show last commit with diff
+    lp1     = lp -1 --compact-summary # show last commit with diff
     ls      = ls-files
 
     ## merge
@@ -91,8 +91,12 @@
     ## reset
     resets  = reset --soft
     reseth  = reset --hard
+    undo    = reset HEAD~1 --mixed # resets the last commit and keeps the undone changes in the working directory
+    unwind  = ! git reset HEAD~$1 --mixed # resets last $1 commits and keeps undone changes in working directory
 
     ## restore
+    uns     = unstage
+    unsall  = unstage *
     unstage = restore --staged
     rest    = restore
 
@@ -103,20 +107,18 @@
     stash-all = stash push --include-untracked # *not* stash push --all, which includes ignored files
 
     ## status
-    s           = ! git ss
-    sl          = status --long
-    ss          = status --short --branch
-    sv          = ! git svv
-    svv         = status -vv
+    s   = ss
+    sl  = status --long
+    ss  = status --short --branch
+    sv  = svv
+    svv = status -vv
 
     ## tag
     current-tags    = tag --list --points-at HEAD
-    t               = ! git current-tags
+    t               = current-tags
 
     ## misc
-    chx             = update-index --chmod=+x
-    fg              = forgit
-    swc             = switch --create # create new branch and switch to it
-    undo            = reset HEAD~1 --mixed # resets the last commit and keeps the undone changes in the working directory
-    unwind          = ! git reset HEAD~$1 --mixed # resets last $1 commits and keeps undone changes in working directory
-    update          = ! git fetch origin $1:$1 # update local branch from origin without checking it out
+    chx     = update-index --chmod=+x
+    fg      = forgit
+    swc     = switch --create # create new branch and switch to it
+    update  = ! git fetch origin $1:$1 # update local branch from origin without checking it out
