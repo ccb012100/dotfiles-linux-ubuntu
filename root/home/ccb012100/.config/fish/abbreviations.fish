@@ -13,6 +13,8 @@ abbr --add e emacs
 abbr --add ef exec fish
 abbr --add efish exec fish
 abbr --add fd 'fd -H' # show hidden files when doing fd search
+abbr --add fg git-forgit
+abbr --add forgit git-forgit
 abbr --add func functions
 abbr --add funcs functions
 abbr --add gob 'go build .' # build the go project in the cwd
@@ -40,6 +42,8 @@ abbr --add rust 'echo -e "\nthink you mean _rusH_" ' # keep making this typo for
 abbr --add sctl sysmtemctl
 abbr --add sesh 'tmux new-session -A -s sesh'
 abbr --add uuid uuidgen --random
+abbr --add v vim
+abbr --add vi vim
 abbr --add zd z dotfiles
 abbr --add zo zoxide
 
@@ -52,14 +56,14 @@ abbr --add ...... 'cd ../../../../..'
 #: git
 #:: k is easier to type than g
 abbr --add k git
-abbr --add ka git add
+abbr --add ka git a
 abbr --add kaa git aa
 abbr --add kaacm git aacm
 abbr --add kacm git acm
 abbr --add kau git au
 abbr --add kaucm git aucm
-abbr --add kb git branch
-abbr --add kbr git branch --remote
+abbr --add kb git b
+abbr --add kbr git br
 abbr --add kc git c
 abbr --add kcm git cm
 abbr --add kco git co
@@ -69,12 +73,13 @@ abbr --add kf git f
 abbr --add kfg git forgit
 abbr --add kl git l
 abbr --add kcob git cob
-abbr --add kp git pull
-abbr --add kps git push
+abbr --add kp git
+abbr --add kps git ps
 abbr --add krest git restore
-abbr --add ks git status --short --branch
-abbr --add ksl git status
-abbr --add ksvv git status -vv
+abbr --add kr git rebase
+abbr --add ks git s
+abbr --add ksl git sl
+abbr --add ksvv git svv
 abbr --add kundo git undo
 abbr --add kunstage git unstage
 

@@ -22,8 +22,6 @@ alias tree 'exa --tree'
 alias brewup 'brew upgrade'
 alias etty 'emacsclient -nw'
 alias jq 'jq -C' # colorize json
-alias v nvim
-alias vi nvim
 alias vim nvim
 
 # convenience aliases to run multiple commands in sequence
