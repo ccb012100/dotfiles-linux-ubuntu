@@ -13,13 +13,14 @@ configuration {
 	steal-focus: false;
 
 	/*---------- Matching setting ----------*/
-	matching: "fuzzy";
+	// matching: "fuzzy";
 	tokenize: true;
 
 	/*---------- History and Sorting ----------*/
 	disable-history: false;
 	max-history-size: 25;
-	sorting-method: "fzf";
+	sort: true;
+	sorting-method: "levenshtein";
 
 	/*---------- Display setting ----------*/
 	display-combi: "🏃🏽‍♂️🗿";
@@ -33,7 +34,6 @@ configuration {
 
 	/*---------- Misc setting ----------*/
 	drun-display-format: "{name}";
-	sort: true;
 	terminal: "rofi-sensible-terminal";
 	threads: 0;
 	window-format: "{n} {t}";
