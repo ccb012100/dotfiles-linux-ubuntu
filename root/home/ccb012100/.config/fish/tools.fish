@@ -38,4 +38,5 @@ set PATH $HOME/.cargo/bin $PATH
 zoxide init fish | source
 
 # forgit
-set PATH $PATH $HOME/tools/forgit/bin/
+export FORGIT_NO_ALIASES=true # disable default aliases
+set PATH $PATH $HOME/tools/forgit/bin/ # use forgit as a git command (e.g. `git forgit add`)
