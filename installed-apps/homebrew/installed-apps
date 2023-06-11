@@ -4,6 +4,7 @@ difftastic
 emacs
 exa
 fd
+forgit
 fzf
 gh
 git-delta
@@ -11,13 +12,9 @@ go
 httpie
 jd
 jq
-lazygit
-micro
-perl
+nvim
 sqlite
 starship
 tealdeer
 vim
-zsh
-zsh-autosuggestions
-zsh-syntax-highlighting
+zoxide
