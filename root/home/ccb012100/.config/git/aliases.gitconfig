@@ -59,7 +59,7 @@
     ln      = log -n
     lnc     = log --compact-summary -n
     lnm     = l --no-merges
-    lnmc    = lmn --compact-summary
+    lnmc    = lnm --compact-summary
     lp      = log --patch --compact-summary # show diffs
     lp1     = lp -1 --compact-summary # show last commit with diff
     ls      = ls-files

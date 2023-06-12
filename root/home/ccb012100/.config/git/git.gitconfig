@@ -4,7 +4,6 @@
     filemode = false
 	excludesfile = ~/.config/git/ignore
     #hooksPath = ~/.config/git/hooks
-
 [advice]
 	addIgnoredFile = false
 [commit]
