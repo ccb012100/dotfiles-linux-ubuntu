@@ -28,12 +28,6 @@ function new-frame
     emacsclient -e "(new-frame)"
 end
 
-# set display brightness
-function bright
-    xrandr --output DP-1-2 --brightness $argv[1]
-end
-
-# find in personal notes
 function fn
     switch $argv[1]
         case i # case-insensitive
@@ -49,24 +43,6 @@ function fn
 
     end
 end
-
-# set system-wide text size
-function textscale
-    switch argv[1]
-        case laptop
-            gsettings set org.gnome.desktop.interface text-scaling-factor .9
-        case desktop
-            gsettings set org.gnome.desktop.interface text-scaling-factor 1.25
-        case get
-            gsettings get org.gnome.desktop.interface text-scaling-factor
-        case set
-            gsettings set org.gnome.desktop.interface text-scaling-factor $argv[2]
-        case *
-            echo 'usage: text-scaling [ laptop | desktop | get | set <SCALING_FACTOR> ]'
-    end
-end
-alias laptop='textscale laptop'
-alias desktop='textscale desktop'
 
 function __fish_pipeto_fzf -d "Pipe the current command to fzf"
     set -l cmd fzf

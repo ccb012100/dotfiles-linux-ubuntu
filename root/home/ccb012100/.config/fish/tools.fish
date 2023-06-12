@@ -15,18 +15,18 @@ fzf_configure_bindings --variables=\ev # change variables binding to <Alt-v>
 set fzf_fd_opts --hidden # include hidden files
 
 # kitty
-set PATH $HOME/.local/kitty.app/bin $PATH
+#set PATH $HOME/.local/kitty.app/bin $PATH
 
 # starship.rs
 starship init fish | source
 
 # nodenv
-set PATH $HOME/.nodenv/bin $PATH
-eval "$(nodenv init -)"
+#set PATH $HOME/.nodenv/bin $PATH
+#eval "$(nodenv init -)"
 
 # pnpm
-export PNPM_HOME="$HOME/.local/share/pnpm"
-set PATH $PNPM_HOME $PATH
+#export PNPM_HOME="$HOME/.local/share/pnpm"
+#set PATH $PNPM_HOME $PATH
 
 # set Ripgrep configuration file
 export RIPGREP_CONFIG_PATH="$HOME/.config/ripgreprc"

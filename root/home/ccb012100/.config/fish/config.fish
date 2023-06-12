@@ -18,7 +18,7 @@ if status is-interactive
         source $x
     end
 
-    source $HOME/.local/local-config.fish
+    #source $HOME/.local/local-config.fish
 
     # keyboard bindings
     bind \cd delete-char # override default delete-or-exit for <Ctrl-d>

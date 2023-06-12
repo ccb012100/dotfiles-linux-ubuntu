@@ -26,19 +26,12 @@ alias vim nvim
 
 # convenience aliases to run multiple commands in sequence
 alias aptup 'sudo apt update && sudo apt upgrade --yes'
-alias audio-reload 'systemctl --user restart pipewire pipewire-pulse'
-alias guake-export "guake --save-preferences $HOME/.dotfiles/app-exports/guake-preferences"
-alias kmonad-reload 'pkill kmonad && nohup kmonad $HOME/.config/kmonad/dell_latitude.kbd &'
 alias snap-store-refresh 'pkill snap-store && sudo snap refresh snap-store'
 
 alias update update_packages
 
 # search Spotify playlists
-alias sm "$HOME/ccb012100/playlist-search/search.sh"
+alias sm "$HOME/src/playlist-search/search.sh"
 alias sms 'sm sync db && sm sync tsv'
 alias smsync 'use `sms`'
-alias sp "$HOME/ccb012100/playlist-search/search.py"
-
-# set text-scaling-factor
-alias desktop 'textscale desktop'
-alias laptop 'textscale laptop'
+alias sp "$HOME/src/playlist-search/search.py"

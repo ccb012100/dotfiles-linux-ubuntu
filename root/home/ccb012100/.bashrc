@@ -119,7 +119,5 @@ if ! shopt -oq posix; then
     fi
 fi
 
-source "${HOME}/.local/local-config.sh"
-
 . "${HOME}/.cargo/env"
 eval "$(starship init bash)"

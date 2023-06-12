@@ -8,5 +8,5 @@ home="$root/home/ccb012100"
 rsync --relative --dirs --recursive --times --progress \
     --files-from=files-to-sync-from-home "$HOME/" "$home"
 
-rsync --dirs --recursive --times --progress \
-    --files-from=files-to-sync-from-root "/" "$root"
+# rsync --dirs --recursive --times --progress \
+    # --files-from=files-to-sync-from-root "/" "$root"
