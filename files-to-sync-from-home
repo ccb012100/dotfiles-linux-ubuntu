@@ -22,4 +22,5 @@
 .config/zsh/fzf_config.zsh
 .config/zsh/tools.zsh
 .config/zsh/unalias.zsh
+.ssh/config
 .vim/vimrc
