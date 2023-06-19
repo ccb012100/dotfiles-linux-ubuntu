@@ -73,7 +73,7 @@ abbr --add kf git f
 abbr --add kfg git forgit
 abbr --add kl git l
 abbr --add kcob git cob
-abbr --add kp git
+abbr --add kp git p
 abbr --add kps git ps
 abbr --add krest git restore
 abbr --add kr git rebase
