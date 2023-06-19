@@ -33,11 +33,6 @@ if status is-interactive
 
     set fzf_preview_file_cmd batcat # command isn't 'bat'
 
-    # source: https://gist.github.com/josh-padnick/c90183be3d0e1feb89afd7573505cab3
-    ssh-agent
-    set -Ux SSH_AUTH_SOCK $SSH_AUTH_SOCK
-    set -Ux SSH_AGENT_PID $SSH_AGENT_PID
-
-    /usr/bin/keychain $HOME/.ssh/id_ed25519
-    source $HOME/.keychain/$HOST-sh
+    # source: https://superuser.com/a/1727657
+    keychain $HOME/.ssh/id_ed25519 | source
 end
