@@ -32,7 +32,4 @@ if status is-interactive
     # bind \eg "git diff; commandline -f repaint" # <Alt-g>
 
     set fzf_preview_file_cmd batcat # command isn't 'bat'
-
-    # source: https://superuser.com/a/1727657
-    keychain $HOME/.ssh/id_ed25519 | source
 end
