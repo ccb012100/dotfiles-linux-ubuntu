@@ -3,11 +3,11 @@
     ## add
     a       = add
     aa      = ! git add --all && git s
-    aacm    = ! git add add --all && git commit
-    acm     = ! git add --update && git commit
+    aacm    = ! git add --all && git commit -m
+    acm     = ! git add --update && git commit -m
     ai      = add --all --interactive
     au      = ! git add --update && git s
-    aucm    = ! git add --update && git commit
+    aucm    = ! git add --update && git commit -m
 
     alias   = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ / | sort
 
