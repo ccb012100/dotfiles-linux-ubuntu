@@ -13,7 +13,6 @@ abbr --add e emacs
 abbr --add ef exec fish
 abbr --add efish exec fish
 abbr --add fd 'fd -H' # show hidden files when doing fd search
-abbr --add fg git-forgit
 abbr --add forgit git-forgit
 abbr --add func functions
 abbr --add funcs functions

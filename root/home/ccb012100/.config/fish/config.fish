@@ -5,6 +5,9 @@ if status is-interactive
     set PATH $PATH $HOME/bin
     set PATH $PATH $HOME/.local/bin
 
+    # links to Edge binary in "/mnt/c/Program Files (x86)" so that we can use xdg-open from WSL
+    set BROWSER $HOME/bin/msedge.exe
+
     # less configuration
     #: -X leaves file contents on the screen when less exits.
     #: -F makes less quit if the entire output can be displayed on one screen.
