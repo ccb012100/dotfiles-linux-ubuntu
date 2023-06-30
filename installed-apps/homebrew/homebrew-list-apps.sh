@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-homebrew list >| "$HOME"/.dotfiles/installed-apps/homebrew-installed-apps.txt
+brew list >| "$HOME"/.dotfiles/installed-apps/homebrew/homebrew-installed-apps.txt
