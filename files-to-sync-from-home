@@ -1,4 +1,3 @@
-.config/git
 .bashrc
 # .dircolors
 .gitconfig
@@ -6,6 +5,7 @@
 .config/bat/bat.conf
 .config/broot/conf.hjson
 .config/fish
+.config/gh/config.yml
 .config/git
 # .config/micro/bindings.json
 # .config/micro/settings.json
