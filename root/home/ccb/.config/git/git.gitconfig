@@ -8,10 +8,6 @@
 [commit]
     gpgsign = true
 	verbose = true
-[credential]
-	helper = wincred
-[credential "https://github.com"]
-	useHttpPath = true
 [fetch]
     prune = true
 [filter "lfs"]
@@ -31,7 +27,7 @@
     ff = only
     rebase = true
 [push]
-    default = simple
+    default = current
     autoSetupRemote = true
 [rebase]
     autoStash = false
