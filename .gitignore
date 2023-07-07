@@ -1,4 +1,8 @@
-root/home/ccb/.config/fish/completions
-root/home/ccb/.config/fish/fish_variables
-root/home/ccb/.config/kmonad/nohup.out
-root/home/ccb/.config/kitty/kitty.conf.bak
+/root/home/ccb/.config/fish/completions
+/root/home/ccb/.config/fish/fish_variables
+/root/home/ccb/.config/fish/conf.d
+/root/home/ccb/.config/fish/functions/_fzf*
+/root/home/ccb/.config/fish/functions/__*
+/root/home/ccb/.config/fish/functions/fisher.fish
+/root/home/ccb/.config/fish/functions/fzf_configure_bindings.fish
+/root/home/ccb/.config/kmonad/nohup.out
