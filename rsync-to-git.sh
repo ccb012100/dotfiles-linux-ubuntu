@@ -2,7 +2,7 @@
 
 gitdir="$HOME/.dotfiles"
 root="$gitdir/root"
-home="$root/home/ccb012100"
+home="$root/home/ccb"
 
 # --verbose --dry-run
 rsync --relative --dirs --recursive --times --progress \

@@ -1,5 +1,5 @@
 [github]
-	user = ccb012100
+	user = ccb
 [url "git@github.com:"]
 	insteadof = https://github.com/
 [credential "https://github.com"]
