@@ -6,7 +6,7 @@ if status is-interactive
     set PATH $PATH $HOME/.local/bin
 
     # links to Edge binary in "/mnt/c/Program Files (x86)" so that we can use xdg-open from WSL
-    set BROWSER $HOME/bin/msedge.exe
+    set BROWSER $HOME/bin/chrome.exe
 
     # get credentials for key from running instance of ssh-agent
     eval $(keychain --eval ~/.ssh/id_ed25519)
