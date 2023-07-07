@@ -5,4 +5,5 @@
 /root/home/ccb/.config/fish/functions/__*
 /root/home/ccb/.config/fish/functions/fisher.fish
 /root/home/ccb/.config/fish/functions/fzf_configure_bindings.fish
+/root/home/ccb/.config/git/work.gitconfig
 /root/home/ccb/.config/kmonad/nohup.out

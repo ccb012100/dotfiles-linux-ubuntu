@@ -1,0 +1,8 @@
+[includeIf "gitdir:~/work/"]
+    path = work.gitconfig
+[includeIf "gitdir:~/src/"]
+    path = ccb012100.gitconfig
+[includeIf "hasconfig:remote.*.url:https://github.com/ccb012100/**"]
+	path = ccb012100.gitconfig
+[includeIf "hasconfig:remote.*.url:git@github.com:ccb012100/**"]
+	path = ccb012100.gitconfig
