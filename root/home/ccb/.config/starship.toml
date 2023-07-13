@@ -46,7 +46,7 @@ symbol = ' '
 style = 'bold green'
 
 [git_branch]
-format = "[$branch]($style)"
+format = "[$branch]($style) "
 style = "purple"
 symbol = " "
 
@@ -57,11 +57,11 @@ tag_disabled = false
 disabled = false
 
 [git_status]
-ahead = "⇡${count}"
-behind = "⇣${count}"
-diverged = "⇕⇡${ahead_count}⇣${behind_count}"
-format = "[[(*$conflicted$untracked$renamed$deleted)](red)[($modified$staged)](218)[( $stashed)](165)( $ahead_behind)]($style)"
-stashed = "🥞"
+ahead = " ⇡${count}"
+behind = " ⇣${count}"
+diverged = " ⇕⇡${ahead_count}⇣${behind_count}"
+format = "[[(*$conflicted$untracked$renamed$deleted)](red)[($modified$staged)](218)($ahead_behind)]($style)[($stashed)](165)"
+stashed = " 🥞"
 style = "cyan"
 windows_starship = "/mnt/c/Program Files/starship/bin/starship.exe"
 
