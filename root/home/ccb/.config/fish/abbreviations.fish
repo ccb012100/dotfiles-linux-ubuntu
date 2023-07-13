@@ -28,6 +28,7 @@ abbr --add md mdcat
 abbr --add mdp mdcat --paginate
 abbr --add mv mv -iv
 abbr --add nts 'npx ts-node' # run local version of ts-node
+abbr --add open xdg-open
 abbr --add py python3
 abbr --add pym python3 -m
 abbr --add python python3
@@ -76,6 +77,7 @@ abbr --add kp git p
 abbr --add kps git ps
 abbr --add krest git restore
 abbr --add kr git rebase
+abbr --add kri git ri
 abbr --add ks git s
 abbr --add ksl git sl
 abbr --add ksvv git svv
