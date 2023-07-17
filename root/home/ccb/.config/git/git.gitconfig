@@ -1,19 +1,20 @@
 [advice]
 	addIgnoredFile = false
 [core]
-    editor = vim
 	autocrlf = input
-    filemode = false
 	excludesfile = ~/.config/git/ignore
+    editor = vim
+    filemode = false
+    hooksPath = ~/.hooks
 [commit]
     gpgsign = true
 	verbose = true
 [fetch]
     prune = true
 [filter "lfs"]
+	clean = git-lfs clean -- %f
 	process = git-lfs filter-process
 	required = true
-	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 [gpg]
 	format = ssh
