@@ -22,7 +22,9 @@ gcc
 gdbm
 gettext
 gh
+git
 git-delta
+git-town
 gmp
 gnutls
 go
@@ -71,6 +73,7 @@ msgpack
 ncurses
 neovim
 nettle
+nvm
 oniguruma
 openldap
 openssl@1.1
