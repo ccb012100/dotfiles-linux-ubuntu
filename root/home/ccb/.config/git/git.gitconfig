@@ -3,7 +3,6 @@
 [core]
 	autocrlf = input
 	excludesfile = ~/.config/git/ignore
-    editor = vim
     filemode = false
     hooksPath = ~/.hooks
 [commit]
