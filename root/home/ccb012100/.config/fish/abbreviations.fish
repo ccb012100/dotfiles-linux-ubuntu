@@ -76,7 +76,6 @@ abbr --add kp git p
 abbr --add kps git ps
 abbr --add krest git restore
 abbr --add kr git rebase
-abbr --add kri git ri
 abbr --add ks git s
 abbr --add ksl git sl
 abbr --add ksvv git svv

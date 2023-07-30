@@ -35,7 +35,4 @@ if status is-interactive
     # bind \eg "git diff; commandline -f repaint" # <Alt-g>
 
     set fzf_preview_file_cmd batcat # command isn't 'bat'
-
-    # get ssh key credentials from the running instance of ssh-agent
-    eval $(keychain --eval ~/.ssh/id_ed25519)
 end

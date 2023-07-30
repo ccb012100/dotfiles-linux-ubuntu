@@ -1,5 +1,7 @@
+# $HOME/.gitconfig
 [include]
     path = .config/git/git.gitconfig
     path = .config/git/aliases.gitconfig
+    path = .config/git/github.gitconfig
     path = .config/git/tools.gitconfig
     path = .config/git/user.gitconfig

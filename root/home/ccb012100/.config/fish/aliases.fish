@@ -4,9 +4,8 @@
 alias cls clear
 alias grep 'grep --color auto'
 alias lec 'echo $status' # last exit code
-alias path "echo \"$PATH\" | tr ':' '\n'"
+alias path 'printf %s\n $PATH'
 alias trash 'gio trash'
-alias unalias 'functions --erase'
 
 # ls
 alias l ls
