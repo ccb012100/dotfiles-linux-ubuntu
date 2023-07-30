@@ -3,13 +3,12 @@
     ## add
     a       = add
     aa      = ! git add --all && git s
-    aacm    = ! git add --all && git commit -m
-    acm     = ! git add --update && git commit -m
+    aacm    = ! git add --all && git commit
+    acm     = ! git add --update && git commit
     ai      = add --all --interactive
     au      = ! git add --update && git s
-    aucm    = ! git add --update && git commit -m
+    aucm    = ! git add --update && git commit
 
-    alias   = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ / | sort
 
     ## branch
     b       = branch
@@ -18,7 +17,8 @@
     bv      = branch -v
     br      = branch --remote
     brv     = branch --remote -v
-    # delete local branches that have been merged into main (adapted from https://stackoverflow.com/a/16906759)
+    # delete local branches that have been merged into main
+    # (adapted from https://stackoverflow.com/a/16906759)
     delete  = ! git fetch --prune && git branch --merged main | rg -v '^[ *]*main$' | xargs --no-run-if-empty git branch -d
 
     ## commit
@@ -27,9 +27,8 @@
     ca      = commit --amend
     call    = commit --all
     can     = ca --no-edit
-    cm      = commit -m
-    cmnv    = cm --no-verify
-    cp      = cherry-pick
+    cnv     = commit --no-verify
+
 
     ## checkout
     back    = checkout -
@@ -100,8 +99,6 @@
     unstage = restore --staged
     rest    = restore
 
-	sbs = ! DELTA_FEATURES=sbs git # use delta in side-by-side mode
-
     ## stash
     pop       = stash pop
     stash-all = stash push --include-untracked # *not* stash push --all, which includes ignored files
@@ -118,7 +115,10 @@
     t               = current-tags
 
     ## misc
+    alias   = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ / | sort
     chx     = update-index --chmod=+x
+    cp      = cherry-pick
     fg      = forgit
+    sbs = ! DELTA_FEATURES=sbs git # use delta in side-by-side mode
     swc     = switch --create # create new branch and switch to it
     update  = ! git fetch origin $1:$1 # update local branch from origin without checking it out

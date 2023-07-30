@@ -57,14 +57,13 @@ abbr --add ...... 'cd ../../../../..'
 abbr --add k git
 abbr --add ka git a
 abbr --add kaa git aa
-abbr --add kaacm git aacm
-abbr --add kacm git acm
+abbr --add kaacm git aac
+abbr --add kacm git ac
 abbr --add kau git au
-abbr --add kaucm git aucm
+abbr --add kauc git auc
 abbr --add kb git b
 abbr --add kbr git br
 abbr --add kc git c
-abbr --add kcm git cm
 abbr --add kco git co
 abbr --add kd git diff
 abbr --add kds git ds
