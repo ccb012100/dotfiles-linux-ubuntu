@@ -1,3 +1,4 @@
+# shellcheck disable=all
 .bashrc
 # .dircolors
 .gitconfig
@@ -10,6 +11,7 @@
 # .config/micro/bindings.json
 # .config/micro/settings.json
 .config/neofetch/config.conf
+.config/nvim/init.vim
 .config/pgcli/config
 .config/ranger/rc.conf
 .config/ripgreprc

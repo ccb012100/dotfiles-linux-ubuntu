@@ -1,10 +1,5 @@
-# $HOME/.gitconfig
-[user]
-    name = Christopher Bocardo
-    email = 397636+ccb012100@users.noreply.github.com
-    signingkey = ~/.ssh/id_ed25519
 [include]
     path = .config/git/git.gitconfig
     path = .config/git/aliases.gitconfig
-    path = .config/git/github.gitconfig
     path = .config/git/tools.gitconfig
+    path = .config/git/user.gitconfig
