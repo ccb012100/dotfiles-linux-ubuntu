@@ -1,7 +1,9 @@
 #!/usr/bin/env fish
 
 abbr --add , command # easier way to call aliased commands
+abbr --add b bat
 abbr --add back cd -
+abbr --add brewup brew upgrade
 abbr --add c code
 abbr --add c. 'code .' # open current directory in VS Code
 abbr --add cfish "code $__fish_config_dir" # open fish config directory in vscode
@@ -22,6 +24,7 @@ abbr --add his history
 abbr --add info pinfo
 abbr --add jctl journalctl
 abbr --add jl jless
+abbr --add l less
 abbr --add kc kubectl
 abbr --add m micro
 abbr --add md mdcat
