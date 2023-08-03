@@ -122,6 +122,6 @@
     alias   = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ / | sort
     chx     = update-index --chmod=+x
     fg      = forgit
-	sbs = ! DELTA_FEATURES=sbs git # use delta in side-by-side mode
+	sbs     = ! DELTA_FEATURES=sbs git # use delta in side-by-side mode
     swc     = switch --create # create new branch and switch to it
     update  = ! git fetch origin $1:$1 # update local branch from origin without checking it out

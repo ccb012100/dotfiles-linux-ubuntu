@@ -1,3 +1,3 @@
 [interactive-rebase-tool]
-    inputMoveDown   = "Down Ctrl+n"
-    inputMoveUp     = "Down Ctrl+p"
+    inputMoveDown   = "Down Control+n"
+    inputMoveUp     = "Down Control+p"
