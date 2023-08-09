@@ -25,6 +25,7 @@ abbr --add info pinfo
 abbr --add jctl journalctl
 abbr --add jl jless
 abbr --add l less
+abbr --add lg lazygit
 abbr --add kc kubectl
 abbr --add m micro
 abbr --add md mdcat
