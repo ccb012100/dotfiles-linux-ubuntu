@@ -18,6 +18,7 @@
     brv     = branch --remote -v
     # delete local branches that have been merged into main (adapted from https://stackoverflow.com/a/16906759)
     delete  = ! git fetch --prune && git branch --merged main | rg -v '^[ *]*main$' | xargs --no-run-if-empty git branch -d
+    swc     = switch --create # create new branch and switch to it
 
     ## commit
     amend   = commit --amend
@@ -94,8 +95,8 @@
     rtm     = reset --mixed
     rts     = reset --soft
     rth     = reset --hard
-    undo    = reset HEAD~1 --mixed # resets the last commit and keeps the undone changes in the working directory
-    unwind  = ! git reset HEAD~$1 --mixed # resets last $1 commits and keeps undone changes in working directory
+    # reset last commit or last $1 commits and keeps undone changes in working directory
+    undo    = ! "f() { if [[ $# -eq 0 ]] ; then git reset HEAD~1 --mixed; else git reset HEAD~$1 --mixed; fi; }; f"
 
     ## restore
     uns     = unstage
@@ -104,8 +105,9 @@
     rest    = restore
 
     ## stash
-    pop       = stash pop
-    stash-all = stash push --include-untracked # *not* stash push --all, which includes ignored files
+    checkpoint  = !stash push --include-untracked && git stash apply # stash changes but keep them in staging area
+    pop         = stash pop
+    stashh      = stash push --include-untracked # *not* stash push --all, which includes ignored files
 
     ## status
     s   = ss
@@ -120,8 +122,11 @@
 
     ## misc
     alias   = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ / | sort
+    # reset author for last commit or last $1 commits
+    author  = ! "f() { if [[ $# -eq 0 ]] ; then echo git rebase HEAD~1 -x \"git commit --amend --no-edit --reset-author\"; else git rebase HEAD~$1 -x \"git commit --amend --no-edit --reset-author\"; }; f"
     chx     = update-index --chmod=+x
     fg      = forgit
-	sbs     = ! DELTA_FEATURES=sbs git # use delta in side-by-side mode
-    swc     = switch --create # create new branch and switch to it
-    update  = ! git fetch origin $1:$1 # update local branch from origin without checking it out
+    sbs     = ! DELTA_FEATURES=sbs git # use delta in side-by-side mode
+    # update local branch from origin without checking it out
+    update  = ! "f() { if [[ $# -eq 0 ]] ; then echo "must supply a branch name"; else git fetch origin $1:$1; }; f"
+    unwind  = update
