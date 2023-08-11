@@ -3,6 +3,7 @@
 # .dircolors
 .gitconfig
 .zshrc
+.config/bash
 .config/bat/bat.conf
 .config/broot/conf.hjson
 .config/fish
