@@ -14,7 +14,10 @@ abbr --add difftastic difft
 abbr --add e emacs
 abbr --add ef exec fish
 abbr --add efish exec fish
-abbr --add fd 'fd -H' # show hidden files when doing fd search
+abbr --add fd 'fd -H'
+abbr --add fde 'fd --extension'
+abbr --add fdf 'fd --type file'
+abbr --add fdh 'fd -H' # show hidden files when doing fd search
 abbr --add forgit git-forgit
 abbr --add func functions
 abbr --add funcs functions
