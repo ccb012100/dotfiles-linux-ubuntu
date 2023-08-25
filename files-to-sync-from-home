@@ -25,5 +25,7 @@
 .config/zsh/fzf_config.zsh
 .config/zsh/tools.zsh
 .config/zsh/unalias.zsh
+.gnupg/gpg-agent.conf
+.gnupg/gpg.conf
 .ssh/config
 .vim/vimrc
