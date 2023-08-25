@@ -19,7 +19,6 @@ alias tree 'exa --tree'
 
 # external tools
 alias etty 'emacsclient -nw'
-alias jq 'jq -C' # colorize json
 alias vim nvim
 
 # convenience aliases to run multiple commands in sequence
