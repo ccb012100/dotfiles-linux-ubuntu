@@ -4,7 +4,7 @@ if status is-interactive
 
     set PATH $PATH $HOME/bin
     set PATH $PATH $HOME/.local/bin
-
+    set PATH /home/linuxbrew/.linuxbrew/opt/coreutils/libexec/gnubin $PATH
     # links to Edge binary in "/mnt/c/Program Files (x86)" so that we can use xdg-open from WSL
     set BROWSER $HOME/bin/chrome.exe
 
@@ -17,7 +17,7 @@ if status is-interactive
     stty -ixon # disable XON/XOFF control flow
 
     # source config files
-    for x in "$HOME"/.config/fish/{aliases,abbreviations,tools}.fish
+    for x in "$HOME"/.config/fish/{abbreviations,aliases,tools}.fish
         source $x
     end
 
@@ -28,10 +28,6 @@ if status is-interactive
     bind \ea history-pager # <Alt-a>
     bind \en __fish_pipe_to_devnull # <Alt-n>
     bind \er __fish_pipe_to_ripgrep # <Alt-r>
-    # TODO: figure out why `commandline -f repaint` is buggy with git commands
-    #: from initial investigation in repo's issues, may be due to async functions
-    # bind \cg "git status --short --branch; commandline -f repaint" # <Ctrl-g>
-    # bind \eg "git diff; commandline -f repaint" # <Alt-g>
 
     set fzf_preview_file_cmd batcat # command isn't 'bat'
 end
