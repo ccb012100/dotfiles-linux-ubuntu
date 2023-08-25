@@ -26,8 +26,7 @@
     ca      = commit --amend
     call    = commit --all
     can     = ca --no-edit
-    cm      = commit -m
-    cmnv    = cm --no-verify
+    cnv     = c --no-verify
     contrib = shortlog -s
     cp      = cherry-pick
 

@@ -1,5 +1,5 @@
 [core]
-	editor = nvim
+    editor = nvim
 [include]
     path = .config/git/git.gitconfig
     path = .config/git/aliases.gitconfig

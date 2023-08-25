@@ -1,29 +1,31 @@
 [advice]
-	addIgnoredFile = false
+    addIgnoredFile = false
 [core]
-	autocrlf = input
-	excludesfile = ~/.config/git/ignore
+    autocrlf = input
+    excludesfile = ~/.config/git/ignore
     filemode = false
 [commit]
     gpgsign = true
-	verbose = true
+    verbose = true
 [credential]
-	helper = wincred
+    helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe
 [fetch]
     prune = true
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	process = git-lfs filter-process
-	required = true
-	smudge = git-lfs smudge -- %f
+    clean = git-lfs clean -- %f
+    process = git-lfs filter-process
+    required = true
+    smudge = git-lfs smudge -- %f
 [gpg]
-	format = ssh
+    # vscode doesn't support ssh signing at the moment: <https://github.com/microsoft/vscode/issues/179517>
+    # format = ssh
+    format = openpgp
 [gpg "ssh"]
-	allowedSignersFile = ~/.ssh/allowed_signers
+    allowedSignersFile = ~/.ssh/allowed_signers
 [help]
     autocorrect = prompt
 [init]
-	defaultBranch = main
+    defaultBranch = main
 [pull]
     ff = only
     rebase = true
@@ -33,6 +35,6 @@
 [rebase]
     autoStash = false
 [status]
-	showUntrackedFiles = all
+    showUntrackedFiles = all
 [tag]
-	gpgsign = true
+    gpgsign = true
