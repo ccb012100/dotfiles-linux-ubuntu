@@ -5,8 +5,14 @@ if status is-interactive
     set PATH $PATH $HOME/bin
     set PATH $PATH $HOME/.local/bin
     set PATH /home/linuxbrew/.linuxbrew/opt/coreutils/libexec/gnubin $PATH
-    # links to Edge binary in "/mnt/c/Program Files (x86)" so that we can use xdg-open from WSL
-    set BROWSER $HOME/bin/chrome.exe
+    set PATH $PATH /mnt/c/Users/$USER/AppData/Local/Programs/Microsoft\ VS\ Code/bin
+
+    # symlinks to Windows binaries
+    test -f $HOME/bin/chrome || ln -s '/mnt/c/Program Files/Google/Chrome/Application/chrome' $HOME/bin/chrome
+    #: necessary so that we can use xdg-open from WSL
+    set BROWSER $HOME/bin/chrome
+    #: system clipboard 
+    test -f $HOME/bin/clip || ln -s /mnt/c/windows/SysWOW64/clip.exe $HOME/bin/clip
 
     # less configuration
     #: -X leaves file contents on the screen when less exits.
