@@ -14,8 +14,6 @@
     log = delta
     reflog = delta
     show = delta
-[sequence]
-    editor = interactive-rebase-tool
 
 ## delta
 [delta]
