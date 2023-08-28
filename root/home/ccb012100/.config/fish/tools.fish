@@ -62,6 +62,7 @@ set PATH $HOME/.cargo/bin $PATH
 
 # starship.rs
 starship init fish | source
+enable_transience
 
 # zoxide
 zoxide init fish | source
