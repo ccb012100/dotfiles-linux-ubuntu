@@ -12,7 +12,6 @@ abbr --add cp cp -iv
 abbr --add cpr cp -r
 abbr --add difftastic difft
 abbr --add e emacs
-abbr --add ef exec fish
 abbr --add efish exec fish
 abbr --add fd 'fd -H'
 abbr --add fde 'fd --extension'
@@ -34,8 +33,7 @@ abbr --add m micro
 abbr --add md mdcat
 abbr --add mdp mdcat --paginate
 abbr --add mv mv -iv
-abbr --add nts 'npx ts-node' # run local version of ts-node
-abbr --add open xdg-open
+abbr --add open wslview
 abbr --add py python3
 abbr --add pym python3 -m
 abbr --add python python3
@@ -49,6 +47,7 @@ abbr --add rust 'echo -e "\nthink you mean _rusH_" ' # keep making this typo for
 abbr --add sctl sysmtemctl
 abbr --add sesh 'tmux new-session -A -s sesh'
 abbr --add uuid uuidgen --random
+abbr --add tsn 'npx ts-node' # run local version of ts-node
 abbr --add v vim
 abbr --add vi vim
 abbr --add zd z dotfiles
@@ -93,10 +92,12 @@ abbr --add ksvv git svv
 abbr --add kundo git undo
 abbr --add kunstage git unstage
 
+#: dotnet
+abbr --add dn dotnet
+abbr --add dnb dotnet build
+
 #: GitHub CLI
-abbr --add ghb gh branch
 abbr --add ghv 'gh pr view --web || gh repo view --web'
-abbr --add ghw gh watch
 
 #: npm
 abbr --add nr 'npm run'
@@ -106,5 +107,6 @@ abbr --add nrestart 'npm run build && npm run start'
 abbr --add nrs 'npm run start'
 abbr --add nrt 'npm run test'
 
+#: playlist-search
 abbr --add spd sp --sort date
 abbr --add spalb sp --type album
