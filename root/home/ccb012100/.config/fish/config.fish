@@ -5,14 +5,26 @@ if status is-interactive
     set PATH $PATH $HOME/bin
     set PATH $PATH $HOME/.local/bin
     set PATH /home/linuxbrew/.linuxbrew/opt/coreutils/libexec/gnubin $PATH
-    set PATH $PATH /mnt/c/Users/$USER/AppData/Local/Programs/Microsoft\ VS\ Code/bin
 
     # symlinks to Windows binaries
-    test -f $HOME/bin/chrome || ln -s '/mnt/c/Program Files/Google/Chrome/Application/chrome' $HOME/bin/chrome
+    if not test -f $HOME/bin/chrome
+        ln -s '/mnt/c/Program Files/Google/Chrome/Application/chrome.exe' $HOME/bin/chrome
+        echo "Created Google Chrome symlink $HOME/bin/chrome"
+    end
+
     #: necessary so that we can use xdg-open from WSL
     set BROWSER $HOME/bin/chrome
-    #: system clipboard 
-    test -f $HOME/bin/clip || ln -s /mnt/c/windows/SysWOW64/clip.exe $HOME/bin/clip
+
+    if not test -f $HOME/bin/code
+        ln -s "/mnt/c/Program Files/Microsoft VS Code/bin/code" $HOME/bin/code
+        echo "Created VS Code symlink $HOME/bin/code"
+    end
+
+    #: system clipboard
+    if not test -f $HOME/bin/clip
+        ln -s /mnt/c/windows/SysWOW64/clip.exe $HOME/bin/clip
+        echo "Created clipboard symlink $HOME/bin/clip"
+    end
 
     # less configuration
     #: -X leaves file contents on the screen when less exits.
@@ -27,7 +39,7 @@ if status is-interactive
         source $x
     end
 
-    #source $HOME/.local/local-config.fish
+    source $HOME/.local/config-local.fish
 
     # keyboard bindings
     bind \co __fish_pipe_to_fzf # <Ctrl-o>
