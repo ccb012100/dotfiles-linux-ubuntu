@@ -35,3 +35,5 @@ alias sm "$HOME/src/playlist-search/search.sh"
 alias sms 'sm sync db && sm sync tsv'
 alias smsync 'use `sms`'
 alias sp "$HOME/src/playlist-search/search.py"
+
+alias xdg-open wslview

@@ -87,13 +87,12 @@ abbr --add ghb gh branch
 abbr --add ghv 'gh pr view --web || gh repo view --web'
 abbr --add ghw gh watch
 
-#: npm
-abbr --add nr 'npm run'
-abbr --add nrb 'npm run build'
-abbr --add nrl 'npm run lint'
-abbr --add nrestart 'npm run build && npm run start'
-abbr --add nrs 'npm run start'
-abbr --add nrt 'npm run test'
+#: dotnet
+abbr --add dn dotnet
+abbr --add dnb dotnet build
+abbr --add dnf dotnet format
 
+#: playlist-search
+abbr --add sms sm sync
 abbr --add spd sp --sort date
 abbr --add spalb sp --type album
