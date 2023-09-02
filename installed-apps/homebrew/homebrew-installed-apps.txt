@@ -101,6 +101,7 @@ unzip
 util-linux
 vim
 xorgproto
+xq
 xxhash
 xz
 zlib
