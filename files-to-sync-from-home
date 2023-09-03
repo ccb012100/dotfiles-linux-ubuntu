@@ -6,7 +6,21 @@
 .config/bash
 .config/bat/bat.conf
 .config/broot/conf.hjson
-.config/fish
+.config/fish/abbreviations.fish
+.config/fish/aliases.fish
+.config/fish/config.fish
+.config/fish/functions/cdf.fish
+.config/fish/functions/cla.fish
+.config/fish/functions/clal.fish
+.config/fish/functions/cll.fish
+.config/fish/functions/clla.fish
+.config/fish/functions/cls.fish
+.config/fish/functions/fif.fish
+.config/fish/functions/fish_prompt.fish
+.config/fish/functions/fish_greeting.fish
+.config/fish/functions/new_emacs_frame.fish
+.config/fish/functions/update_packages.fish
+.config/fish/tools.fish
 .config/gh/config.yml
 .config/git
 # .config/micro/bindings.json

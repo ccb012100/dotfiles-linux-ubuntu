@@ -250,8 +250,10 @@ libhogweed6
 libice6
 libicu70
 libidn2-0
+libio-pty-perl
 libip4tc2
 libip6tc2
+libipc-run-perl
 libisc-export1105
 libisl23
 libitm1
@@ -377,6 +379,8 @@ libtext-charwidth-perl
 libtext-iconv-perl
 libtext-wrapi18n-perl
 libtiff5
+libtime-duration-perl
+libtimedate-perl
 libtinfo6
 libtirpc-common
 libtirpc-dev
@@ -453,6 +457,7 @@ manpages-dev
 manpages
 mawk
 media-types
+moreutils
 motd-news-config
 mount
 mtr-tiny
