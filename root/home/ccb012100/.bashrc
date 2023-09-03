@@ -119,5 +119,18 @@ if ! shopt -oq posix; then
     fi
 fi
 
+stty -ixon
+
+export EDITOR="nvim"
+export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+
+source "$HOME"/.config/bash/aliases.sh
+source "$HOME"/.config/bash/functions.sh
+
+bind 'set show-all-if-ambiguous on'
+bind 'TAB:menu-complete'
+
 . "${HOME}/.cargo/env"
+
+eval "$(zoxide init bash)"
 eval "$(starship init bash)"

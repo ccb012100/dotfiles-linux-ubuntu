@@ -1,28 +1,29 @@
 [advice]
-	addIgnoredFile = false
+    addIgnoredFile = false
 [core]
-	autocrlf = input
-	excludesfile = ~/.config/git/ignore
+    autocrlf = input
+    excludesfile = ~/.config/git/ignore
     filemode = false
-    hooksPath = ~/.hooks
 [commit]
     gpgsign = true
-	verbose = true
+    verbose = true
+[credential]
+    helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe
 [fetch]
     prune = true
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	process = git-lfs filter-process
-	required = true
-	smudge = git-lfs smudge -- %f
+    clean = git-lfs clean -- %f
+    process = git-lfs filter-process
+    required = true
+    smudge = git-lfs smudge -- %f
 [gpg]
 	format = ssh
 [gpg "ssh"]
-	allowedSignersFile = ~/.ssh/allowed_signers
+    allowedSignersFile = ~/.ssh/allowed_signers
 [help]
     autocorrect = prompt
 [init]
-	defaultBranch = main
+    defaultBranch = main
 [pull]
     ff = only
     rebase = true
@@ -31,9 +32,6 @@
     autoSetupRemote = true
 [rebase]
     autoStash = false
-[status]
-	showUntrackedFiles = all
+    showUntrackedFiles = all
 [tag]
-	gpgsign = true
-[url "git@github.com:"]
-	insteadof = https://github.com/
+    gpgsign = true
