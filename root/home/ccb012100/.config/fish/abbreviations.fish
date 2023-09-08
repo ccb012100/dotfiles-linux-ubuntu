@@ -80,7 +80,7 @@ abbr --add jl jless
 # kubectl
 abbr --add kub kubectl
 # lazygit
-abbr --add lg lazygit
+abbr --add lk lazygit # k is easier to type than k
 # mdcat
 abbr --add md mdcat
 abbr --add mdp mdcat --paginate
@@ -97,6 +97,7 @@ abbr --add nrt 'npm run test'
 # pinfo
 abbr --add info pinfo
 # python
+abbr --add pip python3 -m pip
 abbr --add py python3
 abbr --add pym python3 -m
 abbr --add python python3
