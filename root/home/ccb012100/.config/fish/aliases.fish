@@ -30,3 +30,4 @@ alias update update_packages
 
 # search Spotify playlists
 alias sm "$HOME/src/playlist-search/search.sh"
+alias sp "$HOME/src/playlist-search/search.py"
