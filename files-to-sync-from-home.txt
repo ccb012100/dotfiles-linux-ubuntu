@@ -1,6 +1,4 @@
-# shellcheck disable=all
 .bashrc
-# .dircolors
 .gitconfig
 .zshrc
 .config/bash
@@ -9,8 +7,6 @@
 .config/fish
 .config/gh/config.yml
 .config/git
-# .config/micro/bindings.json
-# .config/micro/settings.json
 .config/neofetch/config.conf
 .config/nvim/init.vim
 .config/pgcli/config
