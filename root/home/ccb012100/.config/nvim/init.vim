@@ -72,9 +72,16 @@ set ww=<,>,[,],h,l,b,s          " allow cursor to wrap to previous/next line
 " https://github.com/junegunn/vim-plug
 call plug#begin()
     Plug 'easymotion/vim-easymotion'
-    Plug 'tpope/vim-commentary'
     Plug 'nickeb96/fish.vim'
+    Plug 'itchyny/lightline.vim'
+    Plug 'tpope/vim-commentary'
 call plug#end()
+
+" lightline
+set laststatus=2
+let g:lightline = {
+      \ 'colorscheme': 'Tomorrow_Night_Blue',
+      \ }
 
 " vim-easymotion
 let g:EasyMotion_do_mapping = 0             " disable default mappings
@@ -93,17 +100,17 @@ nnoremap <space>l <Plug>(easymotion-lineforward)
 nnoremap <space>s <Plug>(easymotion-s2)     " 2-char search
 nnoremap <space>W <Plug>(easymotion-w)      " word motion
 nnoremap <space>w <Plug>(easymotion-bd-w)   " word motion
-nnoremap <BS>; <Plug>(easymotion-s2)        " 2-char search
-nnoremap <BS>F <Plug>(easymotion-bd-F)      " move to char
-nnoremap <BS>f <Plug>(easymotion-bd-f)      " move to char
+nnoremap <BS>; <Plug>(easymotion-s2)     " 2-char search
+nnoremap <BS>F <Plug>(easymotion-bd-F)   " move to char
+nnoremap <BS>f <Plug>(easymotion-bd-f)   " move to char
 nnoremap <BS>h <Plug>(easymotion-linebackward)
 nnoremap <BS>j <Plug>(easymotion-j)
 nnoremap <BS>k <Plug>(easymotion-k)
-nnoremap <BS>L <Plug>(easymotion-bd-jk)     " move to line
+nnoremap <BS>L <Plug>(easymotion-bd-jk)  " move to line
 nnoremap <BS>l <Plug>(easymotion-lineforward)
-nnoremap <BS>s <Plug>(easymotion-s2)        " 2-char search
-nnoremap <BS>W <Plug>(easymotion-w)         " word motion
-nnoremap <BS>w <Plug>(easymotion-bd-w)      " word motion
+nnoremap <BS>s <Plug>(easymotion-s2)     " 2-char search
+nnoremap <BS>W <Plug>(easymotion-w)      " word motion
+nnoremap <BS>w <Plug>(easymotion-bd-w)   " word motion
 
 """ use easymotion with searches
 map  / <Plug>(easymotion-sn)

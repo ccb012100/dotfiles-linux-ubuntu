@@ -104,6 +104,6 @@ disabled = false
 
 [time]
 disabled = false
-format = ' [$time](cyan)'
+format = ' [$time](green)'
 time_format = "%T %e-%b "
 utc_time_offset = "local"

@@ -6,8 +6,8 @@
 set PATH /home/linuxbrew/.linuxbrew/bin $PATH
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-# GPG (GNU Privacy Guard or GnuPG)
-export GPG_TTY=$(tty)
+# dotnet CLI
+complete -f -c dotnet -a "(dotnet complete (commandline -cp))"
 
 # fd
 #: Use fd (https://github.com/sharkdp/fd) instead of the default find
@@ -49,13 +49,16 @@ export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
 #: copied over from /home/linuxbrew/.linuxbrew/Cellar/fzf/<VERSION>/shell/key-bindings.fish
 source "$HOME/bin/fzf-keybindings.fish" && fzf_key_bindings
 
+# GPG (GNU Privacy Guard or GnuPG)
+export GPG_TTY=$(tty)
+
+# ripgrep
+export RIPGREP_CONFIG_PATH="$HOME/.config/ripgreprc"
+
 function __fish_pipe_to_ripgrep -d "Pipe the current command to ripgrep"
     set -l cmd rg
     fish_commandline_append " &| $cmd"
 end
-
-# set Ripgrep configuration file
-export RIPGREP_CONFIG_PATH="$HOME/.config/ripgreprc"
 
 # Rust
 set PATH $HOME/.cargo/bin $PATH
@@ -66,7 +69,3 @@ enable_transience
 
 # zoxide
 zoxide init fish | source
-
-# forgit
-export FORGIT_NO_ALIASES=true # disable default aliases
-set PATH $PATH $HOME/tools/forgit/bin/ # use forgit as a git command (e.g. `git forgit add`)

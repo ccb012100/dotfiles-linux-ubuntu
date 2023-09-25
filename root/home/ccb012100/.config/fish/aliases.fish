@@ -29,7 +29,5 @@ alias snap-store-refresh 'pkill snap-store && sudo snap refresh snap-store'
 alias update update_packages
 
 # search Spotify playlists
-alias sm "$HOME/src/playlist-search/search.sh"
-alias sms 'sm sync db && sm sync tsv'
-alias smsync 'use `sms`'
-alias sp "$HOME/src/playlist-search/search.py"
+alias sm "$HOME/bin/playlist-search.sh"
+alias sp "$HOME/bin/playlist-search.py"
