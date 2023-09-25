@@ -1,7 +1,4 @@
 .bashrc
-# .dircolors
-.gitconfig
-.zshrc
 .config/bash
 .config/bat/bat.conf
 .config/broot/conf.hjson
@@ -15,15 +12,21 @@
 .config/fish/functions/clla.fish
 .config/fish/functions/cls.fish
 .config/fish/functions/fif.fish
-.config/fish/functions/fish_prompt.fish
 .config/fish/functions/fish_greeting.fish
+.config/fish/functions/fish_prompt.fish
 .config/fish/functions/new_emacs_frame.fish
 .config/fish/functions/update_packages.fish
+.config/fish/functions/zdf.fish
+.config/fish/functions/zla.fish
+.config/fish/functions/zlal.fish
+.config/fish/functions/zll.fish
+.config/fish/functions/zlla.fish
+.config/fish/functions/zls.fish
 .config/fish/tools.fish
 .config/gh/config.yml
 .config/git
-# .config/micro/bindings.json
-# .config/micro/settings.json
+.config/micro/bindings.json
+.config/micro/settings.json
 .config/neofetch/config.conf
 .config/nvim/init.vim
 .config/pgcli/config
@@ -38,7 +41,9 @@
 .config/zsh/fzf_config.zsh
 .config/zsh/tools.zsh
 .config/zsh/unalias.zsh
+.gitconfig
 .gnupg/gpg-agent.conf
 .gnupg/gpg.conf
 .ssh/config
 .vim/vimrc
+.zshrc

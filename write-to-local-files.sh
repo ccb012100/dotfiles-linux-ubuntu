@@ -20,5 +20,5 @@ CONFIG_BACKUP="$REPO_USER_DIR/.config_bak"
 rsync --relative --dirs --recursive --times --progress \
     -vv --dry-run \
     --backup --backup-dir="$CONFIG_BACKUP" \
-    --files-from=files-to-sync.txt \
+    --files-from=files-to-write-over-local.txt \
     "$REPO_USER_DIR" "$CONFIG_BACKUP"
