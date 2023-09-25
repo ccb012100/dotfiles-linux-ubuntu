@@ -10,12 +10,11 @@ yes | YES | y | Y) ;;
     ;;
 esac
 
-REPO_ROOT="$HOME/.dotfiles/root"
-REPO_USER_DIR="$REPO_ROOT/home/ccb012100"
-CONFIG_BACKUP="$HOME/.config_bak"
+repo_user_dir="$HOME/.dotfiles/root/home/ccb012100"
+config_backup="$HOME/.config_bak"
 
 # --verbose --dry-run \
 rsync --relative --dirs --recursive --times -v --progress \
-    --backup --backup-dir="$CONFIG_BACKUP" \
+    --backup --backup-dir="$config_backup" \
     --files-from=files-to-write-over-local.txt \
-    "$REPO_USER_DIR" "$CONFIG_BACKUP"
+    "$repo_user_dir" "$HOME"
