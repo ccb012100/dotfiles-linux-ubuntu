@@ -1,39 +1,39 @@
-[core]
-    editor = vim
-	autocrlf = input
-    filemode = false
-	excludesfile = ~/.config/git/ignore
-    #hooksPath = ~/.config/git/hooks
-
 [advice]
-	addIgnoredFile = false
+    addIgnoredFile = false
+[core]
+    autocrlf = input
+    excludesfile = ~/.config/git/ignore
+    filemode = false
 [commit]
     gpgsign = true
-	verbose = true
+    verbose = true
 [credential]
-	helper = /usr/local/share/gcm-core/git-credential-manager-core
-	credentialStore = gpg
+    helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe
 [fetch]
     prune = true
 [filter "lfs"]
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
+    clean = git-lfs clean -- %f
+    process = git-lfs filter-process
+    required = true
+    smudge = git-lfs smudge -- %f
 [gpg]
-    program = gpg
-	format = ssh
+    # vscode doesn't support ssh signing at the moment: <https://github.com/microsoft/vscode/issues/179517>
+    # format = ssh
+    format = openpgp
 [gpg "ssh"]
-	allowedSignersFile = ~/.ssh/allowed_signers
+    allowedSignersFile = ~/.ssh/allowed_signers
+[help]
+    autocorrect = prompt
 [init]
-	defaultBranch = main
+    defaultBranch = main
 [pull]
     ff = only
     rebase = true
 [push]
-    default = simple
+    default = current
     autoSetupRemote = true
 [rebase]
     autoStash = false
-[status]
-	showUntrackedFiles = all
+    showUntrackedFiles = all
+[tag]
+    gpgsign = true

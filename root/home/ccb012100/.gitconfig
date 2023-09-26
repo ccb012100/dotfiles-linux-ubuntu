@@ -1,7 +1,12 @@
-# $HOME/.gitconfig
+[core]
+    editor = nvim
 [include]
     path = .config/git/git.gitconfig
     path = .config/git/aliases.gitconfig
-    path = .config/git/github.gitconfig
     path = .config/git/tools.gitconfig
-    path = .local/local-machine.gitconfig # contains [user]/[gpg]F configs
+[includeIf "gitdir:~/src/"]
+    path = .config/git/personal.gitconfig
+[includeIf "gitdir:~/.dotfiles/"]
+    path = .config/git/personal.gitconfig
+[includeIf "gitdir:~/work/"]
+    path = .config/git/work.gitconfig

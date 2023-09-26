@@ -4,11 +4,11 @@
 alias cls clear
 alias grep 'grep --color auto'
 alias lec 'echo $status' # last exit code
-alias path 'printf %s\n $PATH'
-alias trash 'gio trash'
+alias path "echo \"$PATH\" | tr ':' '\n'"
+alias rm "echo use trash-cli; false"
+alias unalias 'functions --erase'
 
 # ls
-alias l ls
 alias la 'ls -a'
 alias lal 'ls -al'
 alias ll 'ls -l'
@@ -19,26 +19,15 @@ alias ls 'exa --git --icons --group-directories-first -F' #  replace ls with exa
 alias tree 'exa --tree'
 
 # external tools
-alias brewup 'brew upgrade'
 alias etty 'emacsclient -nw'
-alias jq 'jq -C' # colorize json
 alias vim nvim
 
 # convenience aliases to run multiple commands in sequence
 alias aptup 'sudo apt update && sudo apt upgrade --yes'
-alias audio-reload 'systemctl --user restart pipewire pipewire-pulse'
-alias guake-export "guake --save-preferences $HOME/.dotfiles/app-exports/guake-preferences"
-alias kmonad-reload 'pkill kmonad && nohup kmonad $HOME/.config/kmonad/dell_latitude.kbd &'
 alias snap-store-refresh 'pkill snap-store && sudo snap refresh snap-store'
 
 alias update update_packages
 
 # search Spotify playlists
-alias sm "$HOME/ccb012100/playlist-search/search.sh"
-alias sms 'sm sync db && sm sync tsv'
-alias smsync 'use `sms`'
-alias sp "$HOME/ccb012100/playlist-search/search.py"
-
-# set text-scaling-factor
-alias desktop 'textscale desktop'
-alias laptop 'textscale laptop'
+alias sm "$HOME/bin/playlist-search.sh"
+alias sp "$HOME/bin/playlist-search.py"
