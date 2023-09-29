@@ -6,4 +6,4 @@ files_to_sync="$HOME/.dotfiles/files-to-sync.txt"
 
 # --verbose --dry-run
 rsync --relative --dirs --recursive --times --progress \
-    --files-from="$files_to_sync.txt" "$HOME/" "$repo_user_dir"
+    --files-from="$files_to_sync" "$HOME/" "$repo_user_dir"
