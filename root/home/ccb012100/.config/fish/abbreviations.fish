@@ -55,7 +55,7 @@ abbr --add kco git co
 abbr --add kd git diff
 abbr --add kds git ds
 abbr --add kf git f
-abbr --add kfg git forgit
+abbr --add kk git forgit
 abbr --add kl git l
 abbr --add kcob git cob
 abbr --add kp git p
