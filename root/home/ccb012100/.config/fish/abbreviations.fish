@@ -1,5 +1,7 @@
 #!/usr/bin/env fish
 
+abbr --add update update_packages
+
 # fish
 abbr --add efish exec fish
 abbr --add func functions
@@ -15,6 +17,7 @@ abbr --add his history
 abbr --add jctl journalctl
 abbr --add l less
 abbr --add mv mv -iv
+abbr --add rm rm -i
 abbr --add sctl systemctl
 
 # bat
@@ -143,6 +146,7 @@ abbr --add zo zoxide
 abbr --add c code
 abbr --add c. 'code .' # open current directory in VS Code
 abbr --add cfish "code $__fish_config_dir" # open fish config directory in vscode
+abbr --add cgit "code $HOME/.config/git"
 # wslu
 abbr --add open wslview
 abbr --add sctl sysmtemctl

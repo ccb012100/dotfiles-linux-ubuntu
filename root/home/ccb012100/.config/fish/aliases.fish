@@ -5,7 +5,6 @@ alias cls clear
 alias grep 'grep --color auto'
 alias lec 'echo $status' # last exit code
 alias path "echo \"$PATH\" | tr ':' '\n'"
-alias rm "echo use trash-cli; false"
 
 # ls
 alias la 'ls -a'
@@ -18,13 +17,10 @@ alias ls 'exa --git --icons --group-directories-first -F' #  replace ls with exa
 alias tree 'exa --tree'
 
 # external tools
-alias etty 'emacsclient -nw'
 alias vim nvim
 
 # convenience aliases to run multiple commands in sequence
 alias aptup 'sudo apt update && sudo apt upgrade --yes'
-
-alias update update_packages
 
 # search Spotify playlists
 alias sm "$HOME/bin/playlist-search.sh"
