@@ -17,6 +17,16 @@ if status --is-interactive
     source "$BASE16_SHELL/profile_helper.fish"
 end
 
+#base16-classic-dark
+#base16-google-dark
+#base16-helios
+#base16-horizon-terminal-dark
+#base16-irback
+#base16-materia
+#base16-material-darker
+#base16-outrun-dark
+base16-phd
+
 # dotnet CLI
 complete -f -c dotnet -a "(dotnet complete (commandline -cp))"
 
