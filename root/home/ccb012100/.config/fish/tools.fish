@@ -21,11 +21,11 @@ end
 #base16-google-dark
 #base16-helios
 #base16-horizon-terminal-dark
-#base16-irback
+base16-irblack
 #base16-materia
 #base16-material-darker
 #base16-outrun-dark
-base16-phd
+# base16-phd
 
 # dotnet CLI
 complete -f -c dotnet -a "(dotnet complete (commandline -cp))"
