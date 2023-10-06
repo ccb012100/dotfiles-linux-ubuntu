@@ -16,6 +16,7 @@ d2
 dbus
 deno
 difftastic
+dos2unix
 emacs
 exa
 expat
@@ -109,6 +110,7 @@ pinfo
 pkg-config
 popt
 pygments
+python-certifi
 python-tabulate
 python-typing-extensions
 python@3.11

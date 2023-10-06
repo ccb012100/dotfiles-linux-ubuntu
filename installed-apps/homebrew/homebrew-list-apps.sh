@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-brew list >| "$HOME"/.dotfiles/installed-apps/homebrew/homebrew-installed-apps.txt
+script_dir=$(dirname -- "$(readlink -f -- "$0")")
+brew list >| "$script_dir"/homebrew-installed-apps.txt
