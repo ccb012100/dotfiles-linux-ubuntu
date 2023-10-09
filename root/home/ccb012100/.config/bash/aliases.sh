@@ -18,8 +18,10 @@ alias llt='ls -lt'
 alias llat='ls -Alt'
 alias tree='cmd //c tree' # use cmd.exe "tree command"
 
+alias cls='clear'
 alias path='tr '\'':'\'' '\''\n'\'' <<< "$PATH"'
 
+# k is easier to type
 alias k=git
 alias ka='git a'
 alias kaa='git aa'
@@ -52,8 +54,7 @@ alias kunstage='git unstage'
 alias b=bat
 alias c=code
 alias c.='code .' # open current directory in vscode
-alias dn=dotnet
-alias lg=lazygit
-
-alias v=vim
+alias ghv='gh pr view --web || gh repo view --web'
+alias lk=lazygit # easier than typing 'lg'
+alias v=nvim
 alias vim=nvim

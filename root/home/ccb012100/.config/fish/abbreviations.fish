@@ -14,14 +14,7 @@ abbr --add cpr cp -r
 abbr --add his history
 abbr --add jctl journalctl
 abbr --add l less
-abbr --add l less
 abbr --add mv mv -iv
-abbr --add sctl systemctl
-
-# bat
-abbr --add b bat
-# brew
-abbr --add brewup brew upgrade
 abbr --add sctl systemctl
 
 # bat
@@ -33,21 +26,10 @@ abbr --add ... 'cd ../..'
 abbr --add .... 'cd ../../..'
 abbr --add ..... 'cd ../../../..'
 abbr --add ...... 'cd ../../../../..'
-# difftastic
-abbr --add difftastic difft
-# dotnet
-abbr --add dn dotnet
-abbr --add dnb dotnet build
-# fd
-abbr --add fd 'fd -H'
-abbr --add fde 'fd --extension'
-abbr --add fdf 'fd --type file'
-abbr --add fdh 'fd -H' # show hidden files when doing fd search
-# forgit
-abbr --add fog git-forgit
-abbr --add forgit git-forgit
-# git
-#: k is easier to type than g
+# cht.sh
+abbr --add ch cht.sh
+abbr --add cht cht.sh
+abbr --add cheat cht.sh
 # difftastic
 abbr --add difftastic difft
 # dotnet
@@ -68,10 +50,7 @@ abbr --add ka git a
 abbr --add kaa git aa
 abbr --add kaac git aac
 abbr --add kac git ac
-abbr --add kaac git aac
-abbr --add kac git ac
 abbr --add kau git au
-abbr --add kauc git auc
 abbr --add kauc git auc
 abbr --add kb git b
 abbr --add kbr git br
@@ -87,9 +66,6 @@ abbr --add kp git p
 abbr --add kps git ps
 abbr --add krest git restore
 abbr --add kr git rebase
-abbr --add kra git ra
-abbr --add krc git rc
-abbr --add kri git ri
 abbr --add kra git ra
 abbr --add krc git rc
 abbr --add kri git ri
@@ -135,25 +111,6 @@ abbr --add rguuu rg -uuu # same as `rg --no-ignore --hidden --binary` & equiv. t
 # playlist-search
 abbr --add spd sp --sort date
 abbr --add spalb sp --type album
-# trash-cli
-abbr --add del trash-put
-abbr --add trash trash-put
-# ts-node
-abbr --add tsn 'npx ts-node' # run local version of ts-node
-# uuidgen
-abbr --add uuid uuidgen --random
-# vim
-abbr --add v vim
-abbr --add vi vim
-abbr --add zd z dotfiles
-abbr --add zo zoxide
-# vs code
-abbr --add c code
-abbr --add c. 'code .' # open current directory in VS Code
-abbr --add cfish "code $__fish_config_dir" # open fish config directory in vscode
-# wslu
-abbr --add open wslview
-abbr --add sctl sysmtemctl
 # trash-cli
 abbr --add del trash-put
 abbr --add trash trash-put

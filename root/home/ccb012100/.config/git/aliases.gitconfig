@@ -16,8 +16,7 @@
     bv      = branch -v
     br      = branch --remote
     brv     = branch --remote -v
-    # delete local branches that have been merged into main
-    # (adapted from https://stackoverflow.com/a/16906759)
+    # delete local branches that have been merged into main (adapted from https://stackoverflow.com/a/16906759)
     delete  = ! git fetch --prune && git branch --merged main | rg -v '^[ *]*main$' | xargs --no-run-if-empty git branch -d
     # delete local branches that have been merged into master (adapted from https://stackoverflow.com/a/16906759)
     delmas  = ! git fetch --prune && git branch --merged master | rg -v '^[ *]*master$' | xargs --no-run-if-empty git branch -d
@@ -87,13 +86,13 @@
     publish = push -v --set-upstream origin HEAD
 
     ## rebase
-	r			= rebase
-	ra      	= rebase --abort
-	rc      	= rebase --continue
-    remain   	= rebase --interactive origin/main
-    remaster 	= rebase --interactive origin/master
-	reorigin	= ! git rebase --interactive origin/`git branch --show-current`
-	ri      	= rebase --interactive
+    r            = rebase
+    ra          = rebase --abort
+    rc          = rebase --continue
+    remain       = rebase --interactive origin/main
+    remaster     = rebase --interactive origin/master
+    reorigin    = ! git rebase --interactive origin/`git branch --show-current`
+    ri          = rebase --interactive
 
     ## reset
     rt      = reset
@@ -110,9 +109,10 @@
     rest    = restore
 
     ## stash
-    checkpoint  = ! git stash push --include-untracked && git stash apply # stash changes but keep them in staging area
+    checkpoint  = !git stash push --include-untracked && git stash apply # stash changes but keep them in staging area
     cp          = checkpoint
     pop         = stash pop
+    stc         = checkpoint
     stl         = stash list
     stp         = stash push --include-untracked # *not* stash push --all, which includes ignored files
 
@@ -132,7 +132,6 @@
     # reset author for last commit or last $1 commits
     author  = ! "f() { if [[ $# -eq 0 ]] ; then echo git rebase HEAD~1 -x \"git commit --amend --no-edit --reset-author\"; else git rebase HEAD~$1 -x \"git commit --amend --no-edit --reset-author\"; }; f"
     chx     = update-index --chmod=+x
-    cp      = cherry-pick
     fg      = forgit
     nuke    = clean -fdx
     sbs     = ! DELTA_FEATURES=sbs git # use delta in side-by-side mode

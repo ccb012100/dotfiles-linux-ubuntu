@@ -13,10 +13,10 @@ alias la 'ls -a'
 alias lal 'ls -al'
 alias ll 'ls -l'
 alias lla 'ls -la'
-alias llat 'exa -al -t modified --sort newest'
-alias llt 'exa -l -t modified --sort newest'
-alias ls 'exa --git --icons --group-directories-first -F' #  replace ls with exa
-alias tree 'exa --tree'
+alias llat 'eza -al -t modified --sort newest'
+alias llt 'eza -l -t modified --sort newest'
+alias ls 'eza --git --icons --group-directories-first -F' #  replace ls with eza
+alias tree 'eza --tree'
 
 # external tools
 alias etty 'emacsclient -nw'
@@ -29,5 +29,7 @@ alias snap-store-refresh 'pkill snap-store && sudo snap refresh snap-store'
 alias update update_packages
 
 # search Spotify playlists
-alias sm "$HOME/bin/playlist-search.sh"
-alias sp "$HOME/bin/playlist-search.py"
+alias sm "$HOME/src/playlist-search/search.sh"
+alias sms 'sm sync db && sm sync tsv'
+alias smsync 'use `sms`'
+alias sp "$HOME/src/playlist-search/search.py"
