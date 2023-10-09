@@ -6,6 +6,50 @@
 set PATH /home/linuxbrew/.linuxbrew/bin $PATH
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
+# Base16 Shell
+if status --is-interactive
+    set BASE16_SHELL "$HOME/.config/base16-shell/"
+
+    if not test -d "$BASE16_SHELL"
+        git clone https://github.com/chriskempson/base16-shell.git "$BASE16_SHELL"
+    end
+
+    source "$BASE16_SHELL/profile_helper.fish"
+end
+
+#base16-classic-dark
+#base16-google-dark
+#base16-helios
+#base16-horizon-terminal-dark
+base16-irblack
+#base16-materia
+#base16-material-darker
+#base16-outrun-dark
+# base16-phd
+
+# Base16 Shell
+if status --is-interactive
+    set BASE16_SHELL "$HOME/.config/base16-shell/"
+
+    if not test -d "$BASE16_SHELL"
+        git clone https://github.com/chriskempson/base16-shell.git "$BASE16_SHELL"
+    end
+
+    source "$BASE16_SHELL/profile_helper.fish"
+end
+
+#base16-classic-dark
+#base16-google-dark
+#base16-helios
+#base16-horizon-terminal-dark
+base16-irblack
+#base16-materia
+#base16-material-darker
+#base16-outrun-dark
+# base16-phd
+
+# dotnet CLI
+complete -f -c dotnet -a "(dotnet complete (commandline -cp))"
 # GPG (GNU Privacy Guard or GnuPG)
 export GPG_TTY=$(tty)
 

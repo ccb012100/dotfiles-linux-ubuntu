@@ -1,5 +1,7 @@
 #!/usr/bin/env fish
 
+abbr --add update update_packages
+
 # fish
 abbr --add efish exec fish
 abbr --add func functions
@@ -15,6 +17,7 @@ abbr --add his history
 abbr --add jctl journalctl
 abbr --add l less
 abbr --add mv mv -iv
+abbr --add rm rm -i
 abbr --add sctl systemctl
 
 # bat
@@ -59,7 +62,7 @@ abbr --add kco git co
 abbr --add kd git diff
 abbr --add kds git ds
 abbr --add kf git f
-abbr --add kfg git forgit
+abbr --add kk git-forgit
 abbr --add kl git l
 abbr --add kcob git cob
 abbr --add kp git p
@@ -74,6 +77,25 @@ abbr --add ksl git sl
 abbr --add ksvv git svv
 abbr --add kundo git undo
 abbr --add kunstage git unstage
+# git-forgit
+abbr --add kja git-forgit add
+abbr --add kjbd git-forgit branch_delete
+abbr --add kjblame git-forgit blame
+abbr --add kjclean git-forgit clean
+abbr --add kjco git-forgit checkout_branch
+abbr --add kjcoc git-forgit checkout_commit
+abbr --add kjcof git-forgit checkout_file
+abbr --add kjcot git-forgit checkout_tag
+abbr --add kjf git-forgit fixup
+abbr --add kji git-forgit ignore
+abbr --add kjl git-forgit log
+abbr --add kjpick git-forgit cherry_pick
+abbr --add kjpickb git-forgit cherry_pick_from_branch
+abbr --add kjr git-forgit rebase
+abbr --add kjrc git-forgit revert_commit
+abbr --add kjreset git-forgit reset_head
+abbr --add kjs git-forgit stash_show
+abbr --add kjsp git-forgit stash_push
 # GitHub CLI
 abbr --add ghv 'gh pr view --web || gh repo view --web'
 # golang
@@ -127,6 +149,7 @@ abbr --add zo zoxide
 abbr --add c code
 abbr --add c. 'code .' # open current directory in VS Code
 abbr --add cfish "code $__fish_config_dir" # open fish config directory in vscode
+abbr --add cgit "code $HOME/.config/git"
 # wslu
 abbr --add open wslview
 abbr --add sctl sysmtemctl

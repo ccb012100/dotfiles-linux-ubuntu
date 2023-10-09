@@ -10,8 +10,11 @@ pager:
 aliases:
     co: pr checkout
     clone: repo clone
-    web: repo view --web
+    prco: pr checkout
+    prv: pr view --web
     rl: repo list --no-archived
+    v: repo view --web
+    web: repo view --web
 # The path to a unix socket through which send HTTP connections. If blank, HTTP traffic will be handled by net/http.DefaultTransport.
 http_unix_socket:
 # What web browser gh should use when opening URLs. If blank, will refer to environment.
