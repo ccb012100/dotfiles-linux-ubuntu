@@ -23,7 +23,7 @@ alias vim nvim
 alias aptup 'sudo apt update && sudo apt upgrade --yes'
 
 # search Spotify playlists
-alias sm "$HOME/src/playlist-search/search.sh"
+alias sm "$HOME/bin/playlist-search.sh"
+alias sma 'SM_TSV="$HOME/src/playlist-search/albums/all_albums.tsv" sm'
 alias sms 'sm sync db && sm sync tsv'
-alias smsync 'use `sms`'
-alias sp "$HOME/src/playlist-search/search.py"
+alias sp "$HOME/bin/playlist-search.py"
