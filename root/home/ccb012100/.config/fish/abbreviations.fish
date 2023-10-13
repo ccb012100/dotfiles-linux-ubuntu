@@ -39,6 +39,8 @@ abbr --add do docker
 abbr --add doc docker compose
 abbr --add doi docker image
 abbr --add dois docker images
+abbr --add dop docker ps -a
+abbr --add dops docker ps
 abbr --add dor docker run
 # dotnet
 abbr --add dn dotnet
