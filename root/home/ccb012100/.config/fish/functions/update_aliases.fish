@@ -1,18 +1,4 @@
-function update_abbrevs --description 'Update $HOME/.config/fish/abbreviations.fish and then source the file'
-
-    while read --nchars 1 -l response --prompt-str="Reload $abbrfile? (y/n)"
-        switch $response
-            case y Y
-                . ~/.config/fish/abbreviations.fish
-                return 0
-            case n N
-                echo Not reloading abbrevs.
-                return 0
-            case '*'
-                echo Invalid choice: $response
-                continue
-        end
-    end
+function update_aliases --description 'Update $HOME/.config/fish/aliases.fish and then source the file'
 
     if not isatty stdin; or not isatty stdout
         set_color brred
@@ -21,54 +7,55 @@ function update_abbrevs --description 'Update $HOME/.config/fish/abbreviations.f
         return 1
     end
 
-    set abbrfile $HOME/.config/fish/abbreviations.fish
+    set aliasfile $HOME/.config/fish/aliases.fish
 
     set_color purple
-    echo updating $abbrfile...
+    echo updating $aliasfile...
     set_color normal
 
-    nvim $abbrfile
+    nvim $aliasfile
 
     if test $status -eq 0
         set_color green
-        echo $abbrfile updated.
+        echo $aliasfile updated.
         set_color normal
     else
         set_color brred
-        echo \t--- Error: update of $abbrfile failed ---
+        echo \t--- Error: update of $aliasfile failed ---
         set_color normal
         return 1
     end
 
-    while read --nchars 1 -l response --prompt-str="Reload $abbrfile? (y/n)"
+    while read --nchars 1 -l response --prompt-str="Reload $aliasfile? (y/n)"
         switch $response
             case y Y
                 set_color purple
-                echo Reloading abbrevs ...
+                echo Reloading $aliasfile ...
                 set_color normal
 
-                . $abbrfile
+                . $aliasfile
 
                 if test $status -ne 0
                     set_color brred
-                    echo \t--- Failed to update $abbrfile
+                    echo \t--- Failed to update $aliasfile
                     set_color normal
+
                     return 1
                 end
 
                 set_color green
-                echo $abbrfile reloaded.
+                echo $aliasfile reloaded
                 set_color normal
 
                 break
             case n N
                 set_color purple
-                echo Not reloading $abbrfile.
+                echo Not reloading $aliasfile.
                 set_color normal
 
                 break
             case '*'
-                set_color red
+                set_color bryellow
                 echo Invalid choice: $response
                 set_color normal
 
