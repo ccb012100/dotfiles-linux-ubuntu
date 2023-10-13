@@ -17,15 +17,18 @@ if status --is-interactive
     source "$BASE16_SHELL/profile_helper.fish"
 end
 
-#base16-classic-dark
-#base16-google-dark
-#base16-helios
-#base16-horizon-terminal-dark
-base16-irblack
-#base16-material-darker
+# base16-classic-dark
+# base16-google-dark
+# base16-helios
+# base16-horizon-terminal-dark
+# base16-irblack
+# base16-material-darker
 # base16-mellow-purple
-#base16-outrun-dark
+# base16-outrun-dark
 # base16-phd
+# base16-rebecca
+# base16-sandcastle
+base16-rebecca
 
 # Base16 Shell
 if status --is-interactive
