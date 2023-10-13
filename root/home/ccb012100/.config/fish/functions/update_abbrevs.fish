@@ -1,19 +1,4 @@
 function update_abbrevs --description 'Update $HOME/.config/fish/abbreviations.fish and then source the file'
-
-    while read --nchars 1 -l response --prompt-str="Reload $abbrfile? (y/n)"
-        switch $response
-            case y Y
-                . ~/.config/fish/abbreviations.fish
-                return 0
-            case n N
-                echo Not reloading abbrevs.
-                return 0
-            case '*'
-                echo Invalid choice: $response
-                continue
-        end
-    end
-
     if not isatty stdin; or not isatty stdout
         set_color brred
         echo Not a tty. Exiting.
