@@ -21,12 +21,11 @@ end
 #base16-google-dark
 #base16-helios
 #base16-horizon-terminal-dark
-#base16-irblack
-#base16-materia
+base16-irblack
 #base16-material-darker
 # base16-mellow-purple
 #base16-outrun-dark
-base16-phd
+# base16-phd
 
 # Base16 Shell
 if status --is-interactive
