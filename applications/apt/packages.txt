@@ -33,6 +33,7 @@ command-not-found
 conmon
 console-setup-linux
 console-setup
+containerd.io
 containernetworking-plugins
 coreutils
 cpio
@@ -42,6 +43,7 @@ cron
 crun
 curl
 dash
+dbus-user-session
 dbus-x11
 dbus
 dconf-gsettings-backend
@@ -58,6 +60,11 @@ dmidecode
 dmsetup
 dns-root-data
 dnsmasq-base
+docker-buildx-plugin
+docker-ce-cli
+docker-ce-rootless-extras
+docker-ce
+docker-compose-plugin
 docker
 dosfstools
 dotnet-apphost-pack-6.0
@@ -277,6 +284,7 @@ libllvm15
 liblmdb0
 liblocale-gettext-perl
 liblsan0
+libltdl7
 liblttng-ust-common1
 liblttng-ust-ctl5
 liblttng-ust1
@@ -307,7 +315,10 @@ libnl-genl-3-200
 libnpth0
 libnsl-dev
 libnsl2
+libnspr4
 libnss-systemd
+libnss3-tools
+libnss3
 libntfs-3g89
 libnuma1
 libogg0
@@ -484,6 +495,7 @@ pciutils
 perl-base
 perl-modules-5.34
 perl
+pigz
 pinentry-curses
 pkexec
 plymouth-theme-ubuntu-text
@@ -492,7 +504,9 @@ podman
 policykit-1
 polkitd
 postgresql-15
+postgresql-16
 postgresql-client-15
+postgresql-client-16
 postgresql-client-common
 postgresql-common
 postgresql
@@ -571,6 +585,7 @@ telnet
 time
 tmux
 tnftp
+trash-cli
 tzdata
 ubuntu-advantage-tools
 ubuntu-keyring

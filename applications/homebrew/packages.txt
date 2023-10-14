@@ -5,6 +5,7 @@ binutils
 broot
 brotli
 btop
+bun
 bzip2
 ca-certificates
 conmon
@@ -12,11 +13,10 @@ crun
 curl
 dbus
 difftastic
-docker
 docker-completion
 emacs
-exa
 expat
+eza
 fd
 fish
 fisher
@@ -28,9 +28,11 @@ gdbm
 gettext
 gh
 git
+git-delete-merged-branches
 git-delta
 glib
 gmp
+gnu-sed
 gnupg
 gnutls
 go
@@ -45,6 +47,7 @@ jd
 jpeg-turbo
 jq
 krb5
+lazydocker
 lazygit
 libassuan
 libcap
@@ -60,6 +63,7 @@ libksba
 libmpc
 libnghttp2
 libnsl
+libpng
 libpq
 libseccomp
 libsecret
@@ -78,6 +82,7 @@ libxcb
 libxcrypt
 libxdmcp
 libxml2
+libxslt
 libyaml
 lm-sensors
 lua
@@ -85,6 +90,7 @@ luajit
 luv
 lz4
 mawk
+midnight-commander
 mpdecimal
 mpfr
 msgpack
@@ -97,6 +103,7 @@ openldap
 openssl@1.1
 openssl@3
 p11-kit
+pcre
 pcre2
 perl
 pgcli
@@ -104,15 +111,18 @@ pinentry
 podman
 popt
 pygments
+python-certifi
 python-tabulate
 python-typing-extensions
 python@3.11
+python@3.12
 ranger
 readline
 ripgrep
 rsync
 rtmpdump
 ruby
+s-lang
 shellcheck
 six
 slirp4netns
@@ -126,6 +136,8 @@ unibilium
 unzip
 util-linux
 vim
+visidata
+xh
 xorgproto
 xq
 xxhash
