@@ -7,6 +7,7 @@
 .config/fish
 .config/gh/config.yml
 .config/git
+.config/gitui
 .config/neofetch/config.conf
 .config/nvim/init.vim
 .config/pgcli/config
