@@ -131,6 +131,8 @@ abbr --add info pinfo
 abbr --add py python3
 abbr --add pym python3 -m
 abbr --add python python3
+# ranger
+abbr --add ra ranger
 # ripgrep
 abbr --add rgf rg --fixed-strings # verbatim search (i.e. disable regex)
 abbr --add rgi rg --ignore-case # case-insensitive search
