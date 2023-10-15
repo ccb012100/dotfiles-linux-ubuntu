@@ -8,6 +8,7 @@
 .config/gh/config.yml
 .config/git
 .config/gitui
+.config/lf/lfrc
 .config/neofetch/config.conf
 .config/nvim/init.vim
 .config/pgcli/config
