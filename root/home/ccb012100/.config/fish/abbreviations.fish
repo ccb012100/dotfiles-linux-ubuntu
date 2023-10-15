@@ -69,8 +69,8 @@ abbr --add kf git f
 abbr --add kl git l
 abbr --add kcob git cob
 abbr --add kp git p
+abbr --add kpra git pra
 abbr --add kps git ps
-abbr --add krest git restore
 abbr --add kr git rebase
 abbr --add kra git ra
 abbr --add krc git rc
@@ -78,8 +78,6 @@ abbr --add kri git ri
 abbr --add ks git s
 abbr --add ksl git sl
 abbr --add ksvv git svv
-abbr --add kundo git undo
-abbr --add kunstage git unstage
 # git-forgit
 abbr --add kj git-forgit
 abbr --add kja git-forgit add
@@ -100,6 +98,8 @@ abbr --add kjrc git-forgit revert_commit
 abbr --add kjreset git-forgit reset_head
 abbr --add kjs git-forgit stash_show
 abbr --add kjsp git-forgit stash_push
+# gitui
+abbr --add kui gitui
 # GitHub CLI
 abbr --add ghv 'gh pr view --web || gh repo view --web'
 # golang
