@@ -125,7 +125,7 @@ alias snap-store-refresh='pkill snap-store && sudo snap refresh snap-store'
 alias update='sudo apt update && sudo apt upgrade --yes && brew upgrade && flatpak update'
 
 # search Spotify playlists
-alias sm="$HOME/ccb/playlist-search/search.sh"
-alias sp="$HOME/ccb/playlist-search/search.py"
+alias sm="$HOME/$USER/playlist-search/search.sh"
+alias sp="$HOME/$USER/playlist-search/search.py"
 alias spd="sp --sort date"
 alias spalb="sp --type album"

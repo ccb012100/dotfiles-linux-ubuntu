@@ -1,5 +1,4 @@
 #!/usr/bin/env fish
-
 abbr --add update update_packages
 
 # fish
@@ -29,8 +28,20 @@ abbr --add ... 'cd ../..'
 abbr --add .... 'cd ../../..'
 abbr --add ..... 'cd ../../../..'
 abbr --add ...... 'cd ../../../../..'
+# cht.sh
+abbr --add ch cht.sh
+abbr --add cht cht.sh
+abbr --add cheat cht.sh
 # difftastic
 abbr --add difftastic difft
+# docker
+abbr --add do docker
+abbr --add doc docker compose
+abbr --add doi docker image
+abbr --add dois docker images
+abbr --add dop docker ps -a
+abbr --add dops docker ps
+abbr --add dor docker run
 # dotnet
 abbr --add dn dotnet
 abbr --add dnb dotnet build
@@ -39,9 +50,6 @@ abbr --add fd 'fd -H'
 abbr --add fde 'fd --extension'
 abbr --add fdf 'fd --type file'
 abbr --add fdh 'fd -H' # show hidden files when doing fd search
-# forgit
-abbr --add fog git-forgit
-abbr --add forgit git-forgit
 # git
 #: k is easier to type than g
 abbr --add k git
@@ -58,12 +66,11 @@ abbr --add kco git co
 abbr --add kd git diff
 abbr --add kds git ds
 abbr --add kf git f
-abbr --add kk git-forgit
 abbr --add kl git l
 abbr --add kcob git cob
 abbr --add kp git p
+abbr --add kpra git pra
 abbr --add kps git ps
-abbr --add krest git restore
 abbr --add kr git rebase
 abbr --add kra git ra
 abbr --add krc git rc
@@ -71,9 +78,8 @@ abbr --add kri git ri
 abbr --add ks git s
 abbr --add ksl git sl
 abbr --add ksvv git svv
-abbr --add kundo git undo
-abbr --add kunstage git unstage
 # git-forgit
+abbr --add kj git-forgit
 abbr --add kja git-forgit add
 abbr --add kjbd git-forgit branch_delete
 abbr --add kjblame git-forgit blame
@@ -92,6 +98,8 @@ abbr --add kjrc git-forgit revert_commit
 abbr --add kjreset git-forgit reset_head
 abbr --add kjs git-forgit stash_show
 abbr --add kjsp git-forgit stash_push
+# gitui
+abbr --add kui gitui
 # GitHub CLI
 abbr --add ghv 'gh pr view --web || gh repo view --web'
 # golang
@@ -102,7 +110,8 @@ abbr --add jl jless
 # kubectl
 abbr --add kub kubectl
 # lazygit
-abbr --add lk lazygit # k is easier to type than k
+abbr --add lak lazygit
+abbr --add lad lazydocker
 # mdcat
 abbr --add md mdcat
 abbr --add mdp mdcat --paginate
@@ -119,10 +128,11 @@ abbr --add nrt 'npm run test'
 # pinfo
 abbr --add info pinfo
 # python
-abbr --add pip python3 -m pip
 abbr --add py python3
 abbr --add pym python3 -m
 abbr --add python python3
+# ranger
+abbr --add ra ranger
 # ripgrep
 abbr --add rgf rg --fixed-strings # verbatim search (i.e. disable regex)
 abbr --add rgi rg --ignore-case # case-insensitive search

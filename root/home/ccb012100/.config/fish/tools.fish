@@ -17,18 +17,20 @@ if status --is-interactive
     source "$BASE16_SHELL/profile_helper.fish"
 end
 
-#base16-classic-dark
-#base16-google-dark
-#base16-helios
-#base16-horizon-terminal-dark
-base16-irblack
-#base16-materia
-#base16-material-darker
-#base16-outrun-dark
+# base16-classic-dark
+# base16-google-dark
+# base16-helios
+base16-horizon-terminal-dark
+# base16-irblack
+# base16-material-darker
+# base16-mellow-purple
+# base16-outrun-dark
 # base16-phd
 
 # dotnet CLI
 complete -f -c dotnet -a "(dotnet complete (commandline -cp))"
+# GPG (GNU Privacy Guard or GnuPG)
+export GPG_TTY=$(tty)
 
 # fd
 #: Use fd (https://github.com/sharkdp/fd) instead of the default find
@@ -70,16 +72,13 @@ export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
 #: copied over from /home/linuxbrew/.linuxbrew/Cellar/fzf/<VERSION>/shell/key-bindings.fish
 source "$HOME/bin/fzf-keybindings.fish" && fzf_key_bindings
 
-# GPG (GNU Privacy Guard or GnuPG)
-export GPG_TTY=$(tty)
-
-# ripgrep
-export RIPGREP_CONFIG_PATH="$HOME/.config/ripgreprc"
-
 function __fish_pipe_to_ripgrep -d "Pipe the current command to ripgrep"
     set -l cmd rg
     fish_commandline_append " &| $cmd"
 end
+
+# set Ripgrep configuration file
+export RIPGREP_CONFIG_PATH="$HOME/.config/ripgreprc"
 
 # Rust
 set PATH $HOME/.cargo/bin $PATH
@@ -90,3 +89,7 @@ enable_transience
 
 # zoxide
 zoxide init fish | source
+
+# forgit
+export FORGIT_NO_ALIASES=true # disable default aliases
+set PATH $PATH $HOME/tools/forgit/bin/ # use forgit as a git command (e.g. `git forgit add`)

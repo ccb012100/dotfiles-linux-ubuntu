@@ -1,7 +1,9 @@
 [advice]
     addIgnoredFile = false
 [core]
-    autocrlf = input
+    attributesfile = ~/.config/git/attributes
+    autocrlf = false
+    editor = nvim
     excludesfile = ~/.config/git/ignore
     filemode = false
 [commit]
@@ -23,15 +25,17 @@
 [gpg "ssh"]
     allowedSignersFile = ~/.ssh/allowed_signers
 [help]
-    autocorrect = prompt
+    autoCorrect = prompt
+[http]
+    sslbackend = openssl
 [init]
     defaultBranch = main
 [pull]
     ff = only
     rebase = true
 [push]
-    default = current
     autoSetupRemote = true
+    default = simple
 [rebase]
     autoStash = false
 [status]

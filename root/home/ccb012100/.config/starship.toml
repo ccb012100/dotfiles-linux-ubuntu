@@ -16,9 +16,11 @@ $cmd_duration\
 $line_break\
 $character"""
 
+continuation_prompt = '▶▶ '
+
 [character]
-error_symbol = '[✗](bold red)'
-success_symbol = '[➜](bold purple)'
+error_symbol = "[✗](bold red)"
+success_symbol = "[➜](bold green)"
 vicmd_symbol = "[❮](green)"
 
 [cmd_duration]
@@ -56,12 +58,18 @@ tag_disabled = false
 disabled = false
 
 [git_status]
-ahead = " ⇡${count}"
-behind = " ⇣${count}"
-diverged = " ⇕⇡${ahead_count}⇣${behind_count}"
-format = "[[(*$conflicted$untracked$renamed$deleted)](red)[($modified$staged)](218)($ahead_behind)]($style)[($stashed)](165)"
-stashed = " 🥞"
+format = "[[(*$conflicted$untracked$renamed$deleted)](red)[($modified$staged)](218)[( $stashed)](165)( $ahead_behind)]($style)"
 style = "cyan"
+# conflicted = "​"
+# untracked = "​"
+# modified = "​"
+# staged = "​"
+# renamed = "​"
+# deleted = "​"
+stashed = "🥞"
+ahead = "⇡${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+behind = "⇣${count}"
 windows_starship = "/mnt/c/Program Files/starship/bin/starship.exe"
 
 [git_state]
@@ -104,6 +112,6 @@ disabled = false
 
 [time]
 disabled = false
-format = ' [$time](green)'
+format = ' [$time](cyan)'
 time_format = "%T %e-%b "
 utc_time_offset = "local"
