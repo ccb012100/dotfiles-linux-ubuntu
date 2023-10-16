@@ -42,3 +42,4 @@
     showUntrackedFiles = all
 [tag]
     gpgsign = true
+
