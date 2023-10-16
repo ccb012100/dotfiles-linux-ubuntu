@@ -35,7 +35,7 @@ export fzf_fd_opts='--hidden' # include hidden files
 #: using https://github.com/PatrickF1/fzf.fish
 export FZF_COMPLETION_TRIGGER=';;'
 export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix'
-#: dracul theme
+#: dracula theme
 export FZF_DEFAULT_OPTS='--cycle --layout=reverse --info=inline --border --margin=1 --padding=1 --color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9 --color=info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6 --color=marker:#ff79c6,spinner:#ffb86c,header:#6272a4'
 
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
@@ -44,15 +44,23 @@ export FZF_CTRL_T_OPTS="
   --bind 'ctrl-/:change-preview-window(down|hidden|)'"
 export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
 
+#: keybindings
+#: https://github.com/junegunn/fzf/blob/master/shell/key-bindings.bash
+fzfkeybinds="$HOME"/bin/fzf-keybindings.bash
+if [[ ! -f "$fzfkeybinds" ]]; then
+    curl https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.bash --output "$fzfkeybinds"
+fi
+source "$fzfkeybinds"
+
+#: bash completions
+#: https://github.com/junegunn/fzf/blob/master/shell/completion.bash
+fzfcompletions="$HOME/.local/share/bash-completion/completions/fzf"
+if [[ ! -f "$fzfcompletions" ]]; then
+  curl https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.bash --output "$fzfcompletions"
+fi
+
 # set Ripgrep configuration file
 export RIPGREP_CONFIG_PATH="$HOME/.config/ripgreprc"
-
-#: copied over from https://github.com/junegunn/fzf/blob/master/shell/key-bindings.bash
-source "$HOME/bin/fzf-keybindings.bash"
-
-#: for bash completions, download
-#: https://github.com/junegunn/fzf/blob/master/shell/completion.bash and run
-#: `mv completion.bash ~/.local/share/bash-completion/completions/fzf`
 
 # starship
 eval "$(starship init bash)"
