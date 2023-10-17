@@ -110,8 +110,8 @@ abbr --add jl jless
 # kubectl
 abbr --add kub kubectl
 # lazygit
-abbr --add lak lazygit
-abbr --add lad lazydocker
+abbr --add lk lazygit
+abbr --add ld lazydocker
 # mdcat
 abbr --add md mdcat
 abbr --add mdp mdcat --paginate
