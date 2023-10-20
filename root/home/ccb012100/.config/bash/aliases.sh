@@ -58,3 +58,4 @@ alias ghv='gh pr view --web || gh repo view --web'
 alias lk=lazygit # easier than typing 'lg'
 alias v=nvim
 alias vim=nvim
+alias zq='zoxide query'
