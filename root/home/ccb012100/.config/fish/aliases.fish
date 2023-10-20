@@ -20,8 +20,8 @@ alias tree 'eza --tree'
 # external tools
 alias vim nvim
 
-# convenience aliases to run multiple commands in sequence
-alias aptup 'sudo apt update && sudo apt upgrade --yes'
+# wrapper around git calls
+alias git $HOME/bin/git_wrapper
 
 # search Spotify playlists
 alias sm "$HOME/bin/playlist-search.sh"

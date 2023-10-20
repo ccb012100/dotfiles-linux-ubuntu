@@ -22,8 +22,12 @@ if status is-interactive
 
     #: system clipboard
     if not test -f $HOME/bin/clip
-        ln -s /mnt/c/windows/SysWOW64/clip.exe $HOME/bin/clip
-        echo "Created clipboard symlink $HOME/bin/clip"
+    end
+
+    #: system clipboard
+    if not test -f $HOME/bin/git_wrapper
+        ln -s $HOME/.config/git/git_wrapper.sh $HOME/bin/git_wrapper &&
+            echo "Created git_wrapper symlink: $HOME/bin/git_wrapper"
     end
 
     # less configuration
