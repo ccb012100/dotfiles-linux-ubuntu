@@ -8,20 +8,22 @@ if status is-interactive
 
     # symlinks to Windows binaries
     if not test -f $HOME/bin/chrome
-        ln -s '/mnt/c/Program Files/Google/Chrome/Application/chrome.exe' $HOME/bin/chrome
-        echo "Created Google Chrome symlink $HOME/bin/chrome"
+        ln -s '/mnt/c/Program Files/Google/Chrome/Application/chrome.exe' $HOME/bin/chrome &&
+        echo "Created Google Chrome symlink: $HOME/bin/chrome"
     end
 
     #: necessary so that we can use xdg-open from WSL
     set BROWSER $HOME/bin/chrome
 
     if not test -f $HOME/bin/code
-        ln -s "/mnt/c/Program Files/Microsoft VS Code/bin/code" $HOME/bin/code
-        echo "Created VS Code symlink $HOME/bin/code"
+        ln -s "/mnt/c/Program Files/Microsoft VS Code/bin/code" $HOME/bin/code &&
+        echo "Created VS Code symlink: $HOME/bin/code"
     end
 
     #: system clipboard
     if not test -f $HOME/bin/clip
+        ln -s /mnt/c/windows/SysWOW64/clip.exe $HOME/bin/clip &&
+        echo "Created clipboard symlink: $HOME/bin/clip"
     end
 
     #: system clipboard
@@ -51,7 +53,7 @@ if status is-interactive
     bind \en __fish_pipe_to_devnull # <Alt-n>
     bind \er __fish_pipe_to_ripgrep # <Alt-r>
 
-    set fzf_preview_file_cmd batcat # command isn't 'bat'
+    set fzf_preview_file_cmd batcat # NOTE: command isn't 'bat'
 
     # get ssh key credentials from the running instance of ssh-agent
     eval $(keychain --eval ~/.ssh/*_ed25519)
