@@ -2,8 +2,6 @@
 set -Eeou pipefail
 # wrap git calls to perform more complex aliases
 
-debug_wrapper=true
-
 # ANSI colors
 blue='\033[0;34m'
 clearformat='\033[0m' # clear formatting
