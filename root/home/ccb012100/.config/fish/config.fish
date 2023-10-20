@@ -2,7 +2,7 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
     set EDITOR nvim
 
-    set PATH $PATH $HOME/bin
+    set PATH $HOME/bin $PATH
     set PATH $PATH $HOME/.local/bin
     set PATH /home/linuxbrew/.linuxbrew/opt/coreutils/libexec/gnubin $PATH
 
