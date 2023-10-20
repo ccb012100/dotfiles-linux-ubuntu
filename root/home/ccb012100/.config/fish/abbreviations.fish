@@ -14,7 +14,8 @@ abbr --add cp cp -iv
 abbr --add cpr cp -r
 abbr --add his history
 abbr --add jctl journalctl
-abbr --add l less
+abbr --add l ls
+abbr --add lns ln -s
 abbr --add mv mv -iv
 abbr --add rm rm -i
 abbr --add sctl systemctl
