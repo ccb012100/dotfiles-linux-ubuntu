@@ -69,6 +69,28 @@ la | last) # log compact summary (commit message and list of changed files)
 
     command git log --compact-summary -"$num"
     ;;
+sh) # show
+    shift
+    num=1
+
+    if [[ $# -gt 0 ]]; then
+        num=$1
+        shift
+    fi
+
+    command git show --expand-tabs=4 -n"$num" "$@"
+    ;;
+files | shf)
+    shift
+        num=1
+
+    if [[ $# -gt 0 ]]; then
+        num=$1
+        shift
+    fi
+
+    command git show --pretty="" --name-only -n"$num" "$@"
+    ;;
 undo) # reset last commit or last n commits and keeps undone changes in working directory
     shift
 

@@ -114,13 +114,8 @@
     unstall = unstage *
     unstage = restore --staged
 
-    # show
-    sh      = show --expand-tabs=4
-    shf     = show --pretty="" --name-only # only show list of files changed
-
     ## stash
     checkpoint  = !git stash push --include-untracked && git stash apply # stash changes but keep them in staging area
-    cp          = checkpoint
     pop         = stash pop
     stc         = checkpoint
     stl         = stash list
