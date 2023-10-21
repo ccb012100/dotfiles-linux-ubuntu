@@ -12,7 +12,7 @@ yes | YES | y | Y) ;;
 esac
 
 repo=$(dirname -- "$(readlink -f -- "$0")")
-repo_user_dir="$repo"/root/home/ccb012100
+repo_user_dir="$repo/root/home/$USER"
 config_backup="$HOME"/.config_bak
 files_to_write="$repo"/write-to-local/files-to-write-over-local.txt
 

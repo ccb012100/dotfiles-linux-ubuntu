@@ -14,7 +14,8 @@ abbr --add cp cp -iv
 abbr --add cpr cp -r
 abbr --add his history
 abbr --add jctl journalctl
-abbr --add l less
+abbr --add l ls
+abbr --add lns ln -s
 abbr --add mv mv -iv
 abbr --add rm rm -i
 abbr --add sctl systemctl
@@ -110,8 +111,8 @@ abbr --add jl jless
 # kubectl
 abbr --add kub kubectl
 # lazygit
-abbr --add lak lazygit
-abbr --add lad lazydocker
+abbr --add lk lazygit
+abbr --add ld lazydocker
 # mdcat
 abbr --add md mdcat
 abbr --add mdp mdcat --paginate
@@ -160,3 +161,5 @@ abbr --add cgit "code $HOME/.config/git"
 # wslu
 abbr --add open wslview
 abbr --add sctl sysmtemctl
+# zoxide
+abbr --add zq zoxide query

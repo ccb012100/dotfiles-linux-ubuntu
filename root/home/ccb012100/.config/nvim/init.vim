@@ -145,6 +145,16 @@ autocmd InsertLeave * set nocursorline nocursorcolumn relativenumber
 syntax enable
 colorscheme habamax
 
+let g:clipboard = {
+    \   'name': 'WslClipboard',
+    \   'copy': { '+': 'clip', '*': 'clip' },
+    \   'paste': {
+    \       '+': 'pwsh-win -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+    \       '*': 'pwsh-win -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+    \ },
+    \   'cache_enabled': 0,
+    \ }
+
 "" The rest of these are copied straight from
 """ https://github.com/vim/vim/blob/master/runtime/defaults.vim
 
