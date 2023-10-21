@@ -53,6 +53,7 @@ clang-format
 command-not-found
 console-setup-linux
 console-setup
+containerd.io
 coreutils
 cpio
 cpp-11
@@ -86,6 +87,11 @@ docbook-utils
 docbook-xml
 docbook-xsl
 docbook2x
+docker-buildx-plugin
+docker-ce-cli
+docker-ce-rootless-extras
+docker-ce
+docker-compose-plugin
 dosfstools
 dotnet-apphost-pack-7.0
 dotnet-host-7.0
@@ -587,6 +593,7 @@ libsgmls-perl
 libshout3
 libsigsegv2
 libslang2
+libslirp0
 libsm6
 libsmartcols1
 libsndfile1
@@ -794,6 +801,7 @@ perl-modules-5.34
 perl-openssl-defaults
 perl
 picolibc-riscv64-unknown-elf
+pigz
 pinentry-curses
 pipewire-bin
 pipewire-media-session
@@ -889,6 +897,7 @@ sgml-data
 sgmlspl
 shared-mime-info
 show-motd
+slirp4netns
 snapd
 software-properties-common
 sound-theme-freedesktop
