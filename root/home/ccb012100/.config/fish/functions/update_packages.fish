@@ -10,6 +10,7 @@ function update_packages --description 'Update various system packages'
     and brew upgrade
     and gh extension upgrade --all
     and fisher update
+    and rustup update
 
     if test $status -ne 0
         set_color brred
