@@ -30,6 +30,7 @@ gh
 git
 git-delete-merged-branches
 git-delta
+gitui
 glib
 gmp
 gnu-sed
@@ -38,17 +39,20 @@ gnutls
 go
 gperf
 gpgme
+gum
 htop
 httpie
 icu4c
 isl
 jansson
 jd
+jo
 jpeg-turbo
 jq
 krb5
 lazydocker
 lazygit
+lf
 libassuan
 libcap
 libedit
@@ -90,7 +94,10 @@ luajit
 luv
 lz4
 mawk
+mdcat
+micro
 midnight-commander
+moreutils
 mpdecimal
 mpfr
 msgpack
@@ -112,6 +119,7 @@ podman
 popt
 pygments
 python-certifi
+python-psutil
 python-tabulate
 python-typing-extensions
 python@3.11
@@ -127,9 +135,11 @@ shellcheck
 six
 slirp4netns
 sqlite
+sqlite-utils
 starship
 systemd
 tealdeer
+trash-cli
 tree-sitter
 unbound
 unibilium
@@ -143,6 +153,7 @@ xq
 xxhash
 xz
 yajl
+yq
 zlib
 zoxide
 zstd
