@@ -39,4 +39,4 @@ alias git $HOME/bin/git_wrapper
 alias sa 'SM_TSV="$HOME/bin/albums/all_albums.tsv" sm'
 alias sm $HOME/bin/playlist-search.sh
 alias sms playlist_sync
-alias sp $HOME/bin/playlist-search.py
+alias sp $HOME/bin/playlist-dbsearch.py

@@ -9,6 +9,7 @@
 .config/git
 .config/gitui
 .config/lf/lfrc
+.config/micro
 .config/neofetch/config.conf
 .config/nvim/init.vim
 .config/pgcli/config
