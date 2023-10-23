@@ -1,13 +1,13 @@
 # diff/merge/sequence tools
 [diff]
     colorMoved = zebra
-    tool = winmerge
+    tool = meld
 [difftool]
     prompt = false
 [interactive]
     diffFilter = delta --color-only --features=interactive
 [merge]
-    tool = winmerge
+    tool = meld
 [pager]
     diff = delta
     difftool = true
