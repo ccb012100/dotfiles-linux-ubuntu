@@ -54,8 +54,3 @@
     cmd = code --new-window --wait --diff $REMOTE $LOCAL
 [mergetool "vscode"]
     cmd = code --new-window --wait --merge $REMOTE $LOCAL $BASE $MERGED
-## WinMerge
-[difftool "winmerge"]
-    path = "winmerge"
-[mergetool "winmerge"]
-    cmd = "winmerge -u -e -fm -dl "LOCAL" -dm "MERGED" -dr "REMOTE" -wl -wr $LOCAL $MERGED $REMOTE"
