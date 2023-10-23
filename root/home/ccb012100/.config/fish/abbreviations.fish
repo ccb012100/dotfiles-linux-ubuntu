@@ -156,6 +156,7 @@ abbr --add zo zoxide
 # vs code
 abbr --add c code
 abbr --add c. 'code .' # open current directory in VS Code
+abbr --add cconf "code $HOME/.config"
 abbr --add cfish "code $__fish_config_dir" # open fish config directory in vscode
 abbr --add cgit "code $HOME/.config/git"
 # wslu

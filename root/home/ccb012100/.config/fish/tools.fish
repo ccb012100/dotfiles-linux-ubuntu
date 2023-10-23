@@ -20,11 +20,12 @@ end
 # base16-classic-dark
 # base16-google-dark
 # base16-helios
-base16-horizon-terminal-dark
+# base16-horizon-terminal-dark
 # base16-irblack
 # base16-material-darker
 # base16-mellow-purple
 # base16-outrun-dark
+base16-paraiso
 # base16-phd
 
 # dotnet CLI
