@@ -38,12 +38,6 @@ if status is-interactive
             echo "Created git_wrapper symlink: $HOME/bin/git_wrapper"
     end
 
-    #: WinMerge
-    if not test -f $HOME/bin/winmerge
-        ln -s $HOME/win/AppData/Local/Programs/WinMerge/WinMergeU.exe $HOME/bin/winmerge &&
-            echo "Created WinMerge symlink: $HOME/bin/winmerge"
-    end
-
     # less configuration
     #: -X leaves file contents on the screen when less exits.
     #: -F makes less quit if the entire output can be displayed on one screen.
