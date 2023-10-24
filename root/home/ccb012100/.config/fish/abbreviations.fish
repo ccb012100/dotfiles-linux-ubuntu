@@ -24,6 +24,9 @@ abbr --add sctl systemctl
 abbr --add b bat
 # brew
 abbr --add brewup brew upgrade
+# cargo
+abbr --add ca cargo
+abbr --add ja cargo # easer to type than 'ca'
 # cd
 abbr --add ... 'cd ../..'
 abbr --add .... 'cd ../../..'
@@ -79,6 +82,13 @@ abbr --add kri git ri
 abbr --add ks git s
 abbr --add ksl git sl
 abbr --add ksvv git svv
+abbr --add kw k w
+abbr --add kwa k wa
+abbr --add kwl k wl
+abbr --add kwm k wm
+abbr --add kwp k wp
+abbr --add kwr k wr
+
 # git-forgit
 abbr --add kj git-forgit
 abbr --add kja git-forgit add
@@ -99,6 +109,7 @@ abbr --add kjrc git-forgit revert_commit
 abbr --add kjreset git-forgit reset_head
 abbr --add kjs git-forgit stash_show
 abbr --add kjsp git-forgit stash_push
+
 # gitui
 abbr --add kui gitui
 # GitHub CLI
