@@ -3,10 +3,8 @@
 #
 # built-in tools
 #
-alias cls clear
 alias grep 'grep --color=auto'
-alias lec 'echo $status' # last exit code
-alias path "echo \"$PATH\" | tr ':' '\n'"
+alias ppath "echo \"$PATH\" | tr ':' '\n'"
 
 # ls
 alias la 'ls -a'

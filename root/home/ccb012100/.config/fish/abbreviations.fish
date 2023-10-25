@@ -1,4 +1,6 @@
 #!/usr/bin/env fish
+
+# call functions
 abbr --add update update_packages
 
 # fish
@@ -10,11 +12,13 @@ abbr --add funcs functions
 abbr --add , command # easier way to call aliased commands
 abbr --add back cd -
 abbr --add chx chmod +x # make file executable
+abbr --add cls clear
 abbr --add cp cp -iv
 abbr --add cpr cp -r
 abbr --add his history
 abbr --add jctl journalctl
 abbr --add l ls
+abbr --add lec 'echo $status' # last exit code
 abbr --add lns ln -s
 abbr --add mv mv -iv
 abbr --add rm rm -i
