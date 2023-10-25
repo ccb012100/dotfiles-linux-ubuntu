@@ -32,9 +32,6 @@ alias tree 'eza --tree'
 # aliases to $HOME/bin scripts
 #
 
-# wrapper around git calls
-alias git $HOME/bin/git_wrapper
-
 # search Spotify playlists from <https://github.com/ccb012100/playlist-search>
 alias sa 'SM_TSV="$HOME/bin/albums/all_albums.tsv" sm'
 alias sm $HOME/bin/playlist-search.sh
