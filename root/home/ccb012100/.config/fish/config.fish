@@ -49,7 +49,7 @@ if status is-interactive
     stty -ixon # disable XON/XOFF control flow
 
     # source config files
-    for x in "$HOME"/.config/fish/{abbreviations,aliases,tools}.fish
+    for x in "$HOME"/.config/fish/{abbreviations,git-abbreviations,aliases,tools}.fish
         source $x
     end
 
