@@ -4,7 +4,7 @@
 # built-in tools
 #
 alias cls clear
-alias grep 'grep --color auto'
+alias grep 'grep --color=auto'
 alias lec 'echo $status' # last exit code
 alias path "echo \"$PATH\" | tr ':' '\n'"
 
