@@ -30,6 +30,8 @@ abbr --add b bat
 abbr --add brewup brew upgrade
 # cargo
 abbr --add jj cargo # easer to type than 'ca'
+abbr --add jjb cargo build
+abbr --add jjr cargo run
 # cd
 abbr --add ... 'cd ../..'
 abbr --add .... 'cd ../../..'
@@ -52,11 +54,14 @@ abbr --add dor docker run
 # dotnet
 abbr --add dn dotnet
 abbr --add dnb dotnet build
+abbr --add dnr dotnet run
+abbr --add dnt dotnet test
 # fd
 abbr --add fd 'fd -H'
 abbr --add fde 'fd --extension'
 abbr --add fdf 'fd --type file'
 abbr --add fdh 'fd -H' # show hidden files when doing fd search
+
 # git
 #: k is easier to type than g
 abbr --add k git
@@ -119,6 +124,8 @@ abbr --add kui gitui
 abbr --add ghv 'gh pr view --web || gh repo view --web'
 # golang
 abbr --add gg go
+abbr --add ggb go build
+abbr --add ggr go run
 # jless
 abbr --add jl jless
 # kubectl
