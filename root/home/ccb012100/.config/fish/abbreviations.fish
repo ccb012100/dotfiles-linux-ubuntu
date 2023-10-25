@@ -25,8 +25,7 @@ abbr --add b bat
 # brew
 abbr --add brewup brew upgrade
 # cargo
-abbr --add ca cargo
-abbr --add ja cargo # easer to type than 'ca'
+abbr --add jj cargo # easer to type than 'ca'
 # cd
 abbr --add ... 'cd ../..'
 abbr --add .... 'cd ../../..'
@@ -115,8 +114,7 @@ abbr --add kui gitui
 # GitHub CLI
 abbr --add ghv 'gh pr view --web || gh repo view --web'
 # golang
-abbr --add gob 'go build .' # build the go project in the cwd
-abbr --add gor 'go run .' # run the go project in the cwd
+abbr --add gg go
 # jless
 abbr --add jl jless
 # kubectl
