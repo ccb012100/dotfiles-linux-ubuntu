@@ -61,7 +61,7 @@ if status is-interactive
     bind \en __fish_pipe_to_devnull # <Alt-n>
     bind \er __fish_pipe_to_ripgrep # <Alt-r>
 
-    set fzf_preview_file_cmd batcat # NOTE: command isn't 'bat'
+    set fzf_preview_file_cmd bat
 
     # get ssh key credentials from the running instance of ssh-agent
     eval $(keychain --eval ~/.ssh/*_ed25519)
