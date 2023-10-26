@@ -109,11 +109,6 @@
     rts     = reset --soft
     rth     = reset --hard
 
-    ## restore
-    unst    = unstage
-    unstall = unstage *
-    unstage = restore --staged
-
     ## stash
     checkpoint  = !git stash push --include-untracked && git stash apply # stash changes but keep them in staging area
     pop         = stash pop
