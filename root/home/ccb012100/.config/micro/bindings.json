@@ -1,8 +1,14 @@
 {
+  "'": "command:squote",
+  "[": "command:square",
+  "{": "command:curly",
+  "\"": "command:dquote",
   "\u003cCtrl-x\u003e\u003cCtrl-f\u003e": "OpenFile",
   "\u003cCtrl-x\u003e\u003cCtrl-h\u003e": "SelectAll",
   "\u003cCtrl-x\u003e\u003cCtrl-s\u003e": "Save",
+  "<": "command:angle",
   "<Ctrl-g><l>": "JumpLine",
+  "<Ctrl-j><f>": "OpenFile",
   "<Ctrl-x><0>": "Unsplit",
   "<Ctrl-x><2>": "HSplit",
   "<Ctrl-x><3>": "VSplit",
@@ -100,10 +106,5 @@
   "ShiftLeft": "SelectLeft",
   "ShiftRight": "SelectRight",
   "ShiftUp": "SelectUp",
-  "Tab": "Autocomplete|IndentSelection|InsertTab",
-  "{": "command:curly",
-  "[": "command:square",
-  "<": "command:angle",
-  "\"": "command:dquote",
-  "'": "command:squote"
+  "Tab": "Autocomplete|IndentSelection|InsertTab"
 }
