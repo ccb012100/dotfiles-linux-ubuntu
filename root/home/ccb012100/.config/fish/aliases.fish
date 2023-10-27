@@ -33,5 +33,6 @@ alias tree 'eza --tree'
 # search Spotify playlists from <https://github.com/ccb012100/playlist-search>
 alias sa 'SM_TSV="$HOME/bin/albums/all_albums.tsv" sm'
 alias sm $HOME/bin/playlist-search.sh
+alias smp 'SM_INCLUDE_PLAYLIST=1 sm'
 alias sms playlist_sync
 alias sp $HOME/bin/playlist-dbsearch.py
