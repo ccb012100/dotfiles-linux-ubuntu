@@ -78,7 +78,10 @@ function __fish_pipe_to_ripgrep -d "Pipe the current command to ripgrep"
     fish_commandline_append " &| $cmd"
 end
 
-# set Ripgrep configuration file
+# micro text editor
+set MICRO_TRUECOLOR 1
+
+# Ripgrep
 export RIPGREP_CONFIG_PATH="$HOME/.config/ripgreprc"
 
 # Rust
