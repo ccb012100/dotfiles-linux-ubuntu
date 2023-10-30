@@ -64,11 +64,13 @@ la | last) # log compact summary (commit message and list of changed files)
 
     num=1
 
-    if [[ $# -gt 0 ]]; then
+    # check if $1 is a number
+    if [[ $# -gt 0 ]] && [[ $1 =~ ^[1-9][0-9]*$ ]]; then
         num=$1
+        shift
     fi
 
-    command git log --compact-summary -"$num"
+    command git log --compact-summary -"$num" "$@"
     ;;
 sh) # show
     shift
