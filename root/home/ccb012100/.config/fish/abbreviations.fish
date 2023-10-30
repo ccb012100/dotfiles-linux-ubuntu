@@ -120,4 +120,7 @@ abbr --add cgit "code $HOME/.config/git"
 abbr --add open wslview
 abbr --add sctl sysmtemctl
 # zoxide
-abbr --add zq zoxide query
+abbr --add jq zoxide query
+abbr --add z j
+abbr --add zi ji
+abbr --add zq jq
