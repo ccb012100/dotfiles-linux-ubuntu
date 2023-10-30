@@ -51,7 +51,8 @@ l) # git log, formatted to 1 line per commit
 
     num=25
 
-    if [[ $# -gt 0 ]]; then
+    # check if $1 is a number
+    if [[ $1 =~ ^[1-9][0-9]*$ ]]; then
         num=$1
         shift
     fi
