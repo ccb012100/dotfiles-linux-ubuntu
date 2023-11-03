@@ -75,6 +75,7 @@ call plug#begin()
     Plug 'tpope/vim-commentary'
     Plug 'itchyny/lightline.vim'
     Plug 'nickeb96/fish.vim'
+    Plug 'savq/melange'
 call plug#end()
 
 " lightline
@@ -143,7 +144,7 @@ autocmd InsertEnter * set cursorline cursorcolumn norelativenumber
 autocmd InsertLeave * set nocursorline nocursorcolumn relativenumber
 
 syntax enable
-colorscheme habamax
+colorscheme melange
 
 let g:clipboard = {
     \   'name': 'WslClipboard',
