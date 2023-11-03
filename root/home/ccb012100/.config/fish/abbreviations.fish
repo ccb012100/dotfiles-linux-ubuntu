@@ -117,5 +117,3 @@ abbr --add open wslview
 abbr --add sctl sysmtemctl
 # zoxide
 abbr --add jq zoxide query
-abbr --add zi ji
-abbr --add zq jq

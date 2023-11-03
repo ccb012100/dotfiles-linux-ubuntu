@@ -37,6 +37,3 @@ alias sma 'playlist-util tsv ~/bin/albums/all_albums.tsv search --include-playli
 alias smp 'playlist-util tsv ~/bin/albums/sorted_albums.tsv search --include-playlist-name'
 alias sms playlist_sync
 alias smpd $HOME/bin/playlist-dbsearch.py
-
-# changed zoxide command
-alias z 'echo use "j" for zoxide && exit 1'
