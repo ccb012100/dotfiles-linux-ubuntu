@@ -8,34 +8,29 @@ if status is-interactive
 
     # symlinks to Windows binaries
     if not test -f $HOME/bin/chrome
-        ln -s '/mnt/c/Program Files/Google/Chrome/Application/chrome.exe' $HOME/bin/chrome &&
-            echo "Created Google Chrome symlink: $HOME/bin/chrome"
+        ln -sv '/mnt/c/Program Files/Google/Chrome/Application/chrome.exe' $HOME/bin/chrome
     end
 
     #: necessary so that we can use xdg-open from WSL
     set BROWSER $HOME/bin/chrome
 
     if not test -f $HOME/bin/code
-        ln -s "/mnt/c/Program Files/Microsoft VS Code/bin/code" $HOME/bin/code &&
-            echo "Created VS Code symlink: $HOME/bin/code"
+        ln -sv "/mnt/c/Program Files/Microsoft VS Code/bin/code" $HOME/bin/code
     end
 
     #: system clipboard
     if not test -f $HOME/bin/clip
-        ln -s /mnt/c/windows/SysWOW64/clip.exe $HOME/bin/clip &&
-            echo "Created clipboard symlink: $HOME/bin/clip"
+        ln -sv /mnt/c/windows/SysWOW64/clip.exe $HOME/bin/clip
     end
 
     #: Windows PowerShell
     if not test -f $HOME/bin/pwsh-win
-        ln -s '/mnt/c/Program Files/PowerShell/7/pwsh.exe' $HOME/bin/pwsh-win &&
-            echo "Created Windows PowerShell symlink: $HOME/bin/pwsh-win"
+        ln -sv '/mnt/c/Program Files/PowerShell/7/pwsh.exe' $HOME/bin/pwsh-win
     end
 
     #: git_wrapper
     if not test -f $HOME/bin/git_wrapper
-        ln -s $HOME/.config/git/git_wrapper.sh $HOME/bin/git_wrapper &&
-            echo "Created git_wrapper symlink: $HOME/bin/git_wrapper"
+        ln -sv $HOME/.config/git/git_wrapper.sh $HOME/bin/git_wrapper
     end
 
     # less configuration
