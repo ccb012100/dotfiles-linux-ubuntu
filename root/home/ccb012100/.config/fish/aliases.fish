@@ -30,9 +30,13 @@ alias tree 'eza --tree'
 # aliases to $HOME/bin scripts
 #
 
-# search Spotify playlists from <https://github.com/ccb012100/playlist-search>
-alias sa 'SM_TSV="$HOME/bin/albums/all_albums.tsv" sm'
-alias sm $HOME/bin/playlist-search.sh
-alias smp 'SM_INCLUDE_PLAYLIST=1 sm'
+# use util from <https://github.com/ccb012100/playlist-util> to search
+# Spotify playlists from <https://github.com/ccb012100/playlist-search>
+alias sm 'playlist-util tsv ~/bin/albums/sorted_albums.tsv search'
+alias sma 'playlist-util tsv ~/bin/albums/all_albums.tsv search --include-playlist-name'
+alias smp 'playlist-util tsv ~/bin/albums/sorted_albums.tsv search --include-playlist-name'
 alias sms playlist_sync
-alias sp $HOME/bin/playlist-dbsearch.py
+alias smpd $HOME/bin/playlist-dbsearch.py
+
+# changed zoxide command
+alias z 'echo use "j" for zoxide'

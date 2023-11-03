@@ -61,7 +61,6 @@ abbr --add fd 'fd -H'
 abbr --add fde 'fd --extension'
 abbr --add fdf 'fd --type file'
 abbr --add fdh 'fd -H' # show hidden files when doing fd search
-
 # golang
 abbr --add gg go
 abbr --add ggb go build
@@ -95,9 +94,6 @@ abbr --add ra ranger
 abbr --add rgf rg --fixed-strings # verbatim search (i.e. disable regex)
 abbr --add rgi rg --ignore-case # case-insensitive search
 abbr --add rguuu rg -uuu # same as `rg --no-ignore --hidden --binary` & equiv. to `grep -r`
-# playlist-search
-abbr --add spd sp --sort date
-abbr --add spalb sp --type album
 # trash-cli
 abbr --add del trash-put
 abbr --add trash trash-put
@@ -121,6 +117,5 @@ abbr --add open wslview
 abbr --add sctl sysmtemctl
 # zoxide
 abbr --add jq zoxide query
-abbr --add z j
 abbr --add zi ji
 abbr --add zq jq
