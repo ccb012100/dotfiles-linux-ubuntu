@@ -39,4 +39,4 @@ alias sms playlist_sync
 alias smpd $HOME/bin/playlist-dbsearch.py
 
 # changed zoxide command
-alias z 'echo use "j" for zoxide'
+alias z 'echo use "j" for zoxide && exit 1'

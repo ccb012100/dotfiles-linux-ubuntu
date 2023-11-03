@@ -18,11 +18,8 @@ if status --is-interactive
 end
 
 # base16-classic-dark
-# base16-google-dark
-# base16-helios
-# base16-horizon-terminal-dark
-base16-irblack
-# base16-material-darker
+base16-gruvbox-dark-hard
+# base16-material-palenight
 # base16-mellow-purple
 # base16-outrun-dark
 # base16-paraiso
