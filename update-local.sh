@@ -9,19 +9,19 @@ config="$HOME"/.config
 
 case $1 in
 bash)
-    cp -i "$repoconf"/bash/{aliases,tools,functions}.sh "$config"/bash/
+    cp -u "$repoconf"/bash/{aliases,tools,functions}.sh "$config"/bash/
     ;;
 bashrc)
-    cp -i "$repo"/root/home/ccb012100/.bashrc "$HOME"/
+    cp -u "$repo"/root/home/ccb012100/.bashrc "$HOME"/
     ;;
 fish)
-    cp -i "$repoconf"/fish/{abbreviations,aliases,config,tools}.fish "$config"/fish/
+    cp -u "$repoconf"/fish/{abbreviations,aliases,config,tools}.fish "$config"/fish/
     ;;
 git)
-    cp -i "$repoconf"/git/{aliases.gitconfig,git_wrapper.sh} "$config"/git/
+    cp -u "$repoconf"/git/{aliases.gitconfig,git_wrapper.sh} "$config"/git/
     ;;
 starship)
-    cp -i "$repoconf"/starship.toml "$config"/
+    cp -u "$repoconf"/starship.toml "$config"/
     ;;
 *)
     echo ERROR: unsupported option
