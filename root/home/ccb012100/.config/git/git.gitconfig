@@ -6,6 +6,8 @@
     editor = nvim
     excludesfile = ~/.config/git/ignore
     filemode = false
+    fsmonitor = true
+    untrackedCache = true
 [commit]
     gpgsign = true
     verbose = true
