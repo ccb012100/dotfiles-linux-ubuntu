@@ -90,7 +90,7 @@ starship init fish | source
 enable_transience
 
 # zoxide
-zoxide init fish | source
+zoxide init --cmd j fish | source
 
 # forgit
 export FORGIT_NO_ALIASES=true # disable default aliases
