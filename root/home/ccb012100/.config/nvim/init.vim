@@ -82,9 +82,7 @@ call plug#end()
 " lightline
 set noshowmode
 set laststatus=2
-let g:lightline = {
-      \ 'colorscheme': 'darcula',
-      \ }
+let g:lightline = { 'colorscheme': 'darcula', }
 
 " hop.nvim
 lua << EOF
