@@ -26,12 +26,16 @@ case $1 in
 a)
     shift
     if [[ $# -eq 0 ]]; then
-        git add --update && git status --short
+        if [[ $(git diff --staged --name-only) ]]; then
+            error 'there are already staged files!'
+        else
+            git add --update && git status --short
+        fi
     else
         git add "$@"
     fi
     ;;
-aac ) # add changed and untracked files and then commit
+aac) # add changed and untracked files and then commit
     shift
     # if there are already staged files, I likely didn't mean to run this command
     if [[ $(git diff --staged --name-only) ]]; then
