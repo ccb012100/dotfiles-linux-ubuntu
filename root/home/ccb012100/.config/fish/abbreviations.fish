@@ -7,6 +7,8 @@ abbr --add update update_packages
 abbr --add efish exec fish
 abbr --add func functions
 abbr --add funcs functions
+# dotdot copied from <https://fishshell.com/docs/current/interactive.html#abbreviations>
+abbr --add dotdot --regex '^\.\.+$' --function multicd
 
 # generic Linux utilities
 abbr --add , command # easier way to call aliased commands
@@ -32,11 +34,6 @@ abbr --add brewup brew upgrade
 abbr --add jj cargo # easer to type than 'ca'
 abbr --add jjb cargo build
 abbr --add jjr cargo run
-# cd
-abbr --add ... 'cd ../..'
-abbr --add .... 'cd ../../..'
-abbr --add ..... 'cd ../../../..'
-abbr --add ...... 'cd ../../../../..'
 # cht.sh
 abbr --add ch cht.sh
 abbr --add cht cht.sh
@@ -54,8 +51,12 @@ abbr --add dor docker run
 # dotnet
 abbr --add dn dotnet
 abbr --add dnb dotnet build
+abbr --add dnc dotnet clear
+abbr --add dnf dotnet format
 abbr --add dnr dotnet run
+abbr --add dns dotnet user-secrets
 abbr --add dnt dotnet test
+abbr --add dnu dotnet user-secrets
 # fd
 abbr --add fd 'fd -H'
 abbr --add fde 'fd --extension'
