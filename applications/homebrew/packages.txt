@@ -1,3 +1,4 @@
+acl
 attr
 bat
 berkeley-db
@@ -121,6 +122,8 @@ pkg-config
 popt
 pygments
 python-certifi
+python-click
+python-psutil
 python-tabulate
 python-typing-extensions
 python@3.11
