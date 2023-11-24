@@ -3,10 +3,8 @@
 #
 # built-in tools
 #
-alias cls clear
-alias grep 'grep --color auto'
-alias lec 'echo $status' # last exit code
-alias path "echo \"$PATH\" | tr ':' '\n'"
+alias grep 'grep --color=auto'
+alias ppath "echo \"$PATH\" | tr ':' '\n'"
 
 # ls
 alias la 'ls -a'
@@ -32,11 +30,10 @@ alias tree 'eza --tree'
 # aliases to $HOME/bin scripts
 #
 
-# wrapper around git calls
-alias git $HOME/bin/git_wrapper
-
-# search Spotify playlists from <https://github.com/ccb012100/playlist-search>
-alias sa 'SM_TSV="$HOME/bin/albums/all_albums.tsv" sm'
-alias sm $HOME/bin/playlist-search.sh
+# use util from <https://github.com/ccb012100/playlist-util> to search
+# Spotify playlists from <https://github.com/ccb012100/playlist-search>
+alias sm 'playlist-util search tsv ~/bin/albums/sorted_albums.tsv'
+alias sma 'playlist-util search tsv ~/bin/albums/all_albums.tsv --include-playlist-name'
+alias smp 'playlist-util search tsv ~/bin/albums/sorted_albums.tsv --include-playlist-name'
 alias sms playlist_sync
-alias sp $HOME/bin/playlist-dbsearch.py
+alias smpd $HOME/bin/playlist-dbsearch.py

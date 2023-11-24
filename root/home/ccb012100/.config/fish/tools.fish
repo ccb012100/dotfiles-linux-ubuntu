@@ -18,16 +18,12 @@ if status --is-interactive
 end
 
 # base16-classic-dark
-# base16-google-dark
-# base16-helios
-# base16-horizon-terminal-dark
-# base16-irblack
-# base16-material-darker
+base16-gruvbox-dark-hard
+# base16-material-palenight
 # base16-mellow-purple
 # base16-outrun-dark
 # base16-paraiso
 # base16-phd
-base16-snazzy
 
 # dotnet CLI
 complete -f -c dotnet -a "(dotnet complete (commandline -cp))"
@@ -79,7 +75,10 @@ function __fish_pipe_to_ripgrep -d "Pipe the current command to ripgrep"
     fish_commandline_append " &| $cmd"
 end
 
-# set Ripgrep configuration file
+# micro text editor
+set MICRO_TRUECOLOR 1
+
+# Ripgrep
 export RIPGREP_CONFIG_PATH="$HOME/.config/ripgreprc"
 
 # Rust

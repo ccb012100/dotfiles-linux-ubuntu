@@ -1,14 +1,10 @@
 ## aliases
 [alias]
     ## add
-    a       = add
-    aa      = ! git add --all && git s
-    aac     = ! git add --all && git commit
+    aa      = ! git add --all && git status --short
     aai     = add --all --interactive
-    ac      = ! git add --update && git commit
     ai      = add --update --interactive
-    au      = ! git add --update && git s
-    auc     = ! git add --update && git commit
+    au      = ! git add --update && git status --short
     aui     = add --update --interactive
 
     ## branch
@@ -27,6 +23,7 @@
     ca      = commit --amend
     call    = commit --all
     can     = ca --no-edit
+    cherry  = cherry-pick
     cnv     = c --no-verify
     contrib = shortlog -s
     pick    = cherry-pick
@@ -109,11 +106,6 @@
     rts     = reset --soft
     rth     = reset --hard
 
-    ## restore
-    unst    = unstage
-    unstall = unstage *
-    unstage = restore --staged
-
     ## stash
     checkpoint  = !git stash push --include-untracked && git stash apply # stash changes but keep them in staging area
     pop         = stash pop
@@ -124,7 +116,8 @@
     ## status
     s   = ss
     sl  = status --long
-    ss  = status --short --branch
+    ss  = status --short
+    ssb = status --short --branch
     sv  = svv
     svv = status -vv
 
@@ -132,8 +125,17 @@
     current-tags    = tag --list --points-at HEAD
     t               = current-tags
 
+    ## worktree
+    w   =   worktree
+    wl  =   worktree list
+    wa  =   worktree add
+    wm  =   worktree move
+    wp  =   worktree prune
+    wr  =   worktree remove
+
     ## misc
     chx     = update-index --chmod=+x
+    difft   = difftool --tool=difftastic
     fg      = forgit
     nuke    = clean -fdx
     sbs     = ! DELTA_FEATURES=sbs git # use delta in side-by-side mode

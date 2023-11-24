@@ -6,6 +6,8 @@
     editor = nvim
     excludesfile = ~/.config/git/ignore
     filemode = false
+    fsmonitor = true
+    untrackedCache = true
 [commit]
     gpgsign = true
     verbose = true
@@ -36,9 +38,11 @@
 [push]
     autoSetupRemote = true
     default = simple
+    useForceIfIncludes = true
 [rebase]
     autoStash = false
 [status]
     showUntrackedFiles = all
 [tag]
     gpgsign = true
+
