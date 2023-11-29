@@ -135,6 +135,7 @@
 
     ## misc
     chx     = update-index --chmod=+x
+    date    = ! GIT_COMMITTER_DATE="$(date)" git commit --amend --no-edit --date "$(date)"
     difft   = difftool --tool=difftastic
     fg      = forgit
     nuke    = clean -fdx
