@@ -28,11 +28,6 @@ if status is-interactive
         ln -sv '/mnt/c/Program Files/PowerShell/7/pwsh.exe' $HOME/bin/pwsh-win
     end
 
-    #: git_wrapper
-    if not test -f $HOME/bin/git_wrapper
-        ln -sv $HOME/.config/git/git_wrapper.sh $HOME/bin/git_wrapper
-    end
-
     # less configuration
     #: -X leaves file contents on the screen when less exits.
     #: -F makes less quit if the entire output can be displayed on one screen.
