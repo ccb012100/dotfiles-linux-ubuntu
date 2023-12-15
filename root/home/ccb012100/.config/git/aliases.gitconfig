@@ -38,6 +38,8 @@
 
     ## diff
     d       = diff
+    dm      = diff main..
+    dom     = diff origin/main..
     ds      = diff --staged
     dt      = difftool
     dts     = difftool --staged
@@ -135,7 +137,7 @@
 
     ## misc
     chx     = update-index --chmod=+x
-    date    = ! GIT_COMMITTER_DATE="$(date)" git commit --amend --no-edit --date "$(date)"
+    date    = ! git commit --amend --no-edit --date=now
     difft   = difftool --tool=difftastic
     fg      = forgit
     nuke    = clean -fdx
