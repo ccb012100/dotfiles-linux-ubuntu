@@ -38,6 +38,8 @@ abbr --add jjr cargo run
 abbr --add ch cht.sh
 abbr --add cht cht.sh
 abbr --add cheat cht.sh
+# datasette
+abbr --add ds datasette
 # difftastic
 abbr --add difftastic difft
 # docker
