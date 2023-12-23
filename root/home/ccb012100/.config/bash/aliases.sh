@@ -1,9 +1,4 @@
 #!/usr/bin/env bash
-
-alias ebash='exec bash'
-
-# built-in tools
-#: cd into parent directories
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -11,29 +6,23 @@ alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 
 alias back='cd -'
-alias rm='rm -i'
 
-#: ls
-alias l=ls
-alias la='ls -a'
-alias lal='ls -al'
+alias l=less
+
+alias ls='ls --color --block-size=K'
+alias la='ls -A'
 alias ll='ls -l'
-alias lla='ls -la'
+alias lal='ls -Al'
+alias lla='ls -Al'
+alias llt='ls -lt'
+alias llat='ls -Alt'
+alias tree='cmd //c tree' # use cmd.exe "tree command"
 
 alias cls='clear'
 alias path='tr '\'':'\'' '\''\n'\'' <<< "$PATH"'
 
-# external tools
-
-#: eza
-alias ls='eza --git --icons --group-directories-first -F' #  replace ls with eza
-alias llat='eza -al -t modified --sort newest'
-alias llt='eza -l -t modified --sort newest'
-alias tree='eza --tree'
-
-#: git
-alias git=git_wrapper.sh # ln in ~/bin directory
-alias k=git              # k is easier to type
+# k is easier to type
+alias k=git
 alias ka='git a'
 alias kaa='git aa'
 alias kaac='git aac'
@@ -51,7 +40,6 @@ alias kl='git l'
 alias kcob='git cob'
 alias kp='git p'
 alias kps='git ps'
-alias kpra='git pra'
 alias kr='git rebase'
 alias kra='git ra'
 alias krc='git rc'
@@ -60,25 +48,14 @@ alias krest='git restore'
 alias ks='git s'
 alias ksl='git sl'
 alias ksvv='git svv'
-alias kui='git-ui'
-alias kw='git w'
-alias kwa='git wa'
-alias kwc='git wc'
-alias kwl='git wl'
-alias kwm='git wm'
-alias kwr='git wr'
+alias kundo='git undo'
+alias kunstage='git unstage'
 
 alias b=bat
+alias c=code
+alias c.='code .' # open current directory in vscode
 alias ghv='gh pr view --web || gh repo view --web'
-alias ku=kubectl
 alias lk=lazygit # easier than typing 'lg'
 alias v=nvim
 alias vim=nvim
 alias zq='zoxide query'
-
-#: vs code
-alias c=code
-alias c.='code .' # open current directory in vscode
-alias cbash='code ~/.config/bash'
-alias cconf='code ~/.config'
-alias cgit='code ~/.config/git'
