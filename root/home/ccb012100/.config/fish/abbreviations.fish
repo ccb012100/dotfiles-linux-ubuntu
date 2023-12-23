@@ -42,12 +42,16 @@ abbr --add cheat cht.sh
 abbr --add difftastic difft
 # docker
 abbr --add do docker
-abbr --add doc docker compose
 abbr --add doi docker image
 abbr --add dois docker images
 abbr --add dop docker ps -a
 abbr --add dops docker ps
 abbr --add dor docker run
+# docker compose
+abbr --add dc docker compose
+abbr --add dcb docker compose build
+abbr --add dcd docker compose down
+abbr --add dcr docker compose run
 # dotnet
 abbr --add dn dotnet
 abbr --add dnb dotnet build
