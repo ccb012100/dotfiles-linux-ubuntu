@@ -1,8 +1,7 @@
 #!/usr/bin/env fish
 
-#
 # built-in tools
-#
+
 alias grep 'grep --color=auto'
 alias ppath "echo \"$PATH\" | tr ':' '\n'"
 
@@ -11,6 +10,17 @@ alias la 'ls -a'
 alias lal 'ls -al'
 alias ll 'ls -l'
 alias lla 'ls -la'
+
+alias aptup 'sudo apt update && sudo apt upgrade --yes'
+
+#
+# external tools
+#
+
+alias vim nvim
+
+# eza
+alias ls 'eza --git --icons --group-directories-first -F' # replace ls with eza
 
 alias aptup 'sudo apt update && sudo apt upgrade --yes'
 

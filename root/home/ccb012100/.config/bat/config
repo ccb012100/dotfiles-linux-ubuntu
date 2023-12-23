@@ -1,7 +1,7 @@
 # bat configuration
-# located in ~/.config/bat/bat.conf
+# run `bat --config-file` to get the detault location/name of the config file
 
---theme="ansi-dark"
+--theme="gruvbox-dark"
 
 # Show line numbers, Git modifications and file header (but no grid)
 --style="numbers,changes,header"
@@ -13,5 +13,6 @@
 # versions of "less")
 --pager="less -FR"
 
-# Use "gitignore" highlighting for ".ignore" files
---map-syntax .ignore:.gitignore
+# Set sqlite language to 'sql'
+--map-syntax *.sqlite3:SQL
+--map-syntax *.sqlite:SQL

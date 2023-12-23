@@ -118,35 +118,5 @@ let g:clipboard = {
     \   'cache_enabled': 0,
     \ }
 
-"" The rest of these are copied straight from
-""" https://github.com/vim/vim/blob/master/runtime/defaults.vim
-
-" In many terminal emulators the mouse works just fine.  By enabling it you
-" can position the cursor, Visually select and scroll with the mouse.
-" Only xterm can grab the mouse events when using the shift key, for other
-" terminals use ":", select text and press Esc.
-if has('mouse')
-    if &term =~ 'xterm'
-        set mouse=a
-    else
-        set mouse=nvi
-    endif
-endif
-
-" Convenient command to see the difference between the current buffer and the
-" file it was loaded from, thus the changes you made.
-" Only define it when not defined already.
-" Revert with: ":delcommand DiffOrig".
-if !exists(":DiffOrig")
-  command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
-		  \ | wincmd p | diffthis
-endif
-
-" When editing a file, always jump to the last known cursor position.
-" Don't do it when the position is invalid, when inside an event handler
-" (happens when dropping a file on gvim) and for a commit message (it's
-" likely a different one than last time).
-autocmd BufReadPost *
-            \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
-            \ |   exe "normal! g`\""
-            \ | endif
+" highlight text on yank
+autocmd TextYankPost * silent! lua vim.highlight.on_yank {higroup=(vim.fn['hlexists']('HighlightedyankRegion') > 0 and 'HighlightedyankRegion' or 'IncSearch'), timeout=500}
