@@ -34,7 +34,7 @@ function playlist_sync --description 'Sync Spotify playlists to local DB/spreads
 
                 if test $status -ne 0
                     set_color brred
-                    echo \t --- Playlist DB sync failed! ---
+                    echo \t --- Playlist TSV sync failed! ---
                     set_color normal
 
                     return 1
