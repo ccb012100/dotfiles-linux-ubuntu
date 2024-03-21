@@ -15,10 +15,6 @@ function clal {
 function clla {
     cd "$@" && ls -la
 }
-function brew() {
-    echo "This is Git Bash; did you mean 'choco ${*}'?"
-    return 1
-}
 # cargo cli commands
 function cg() {
     case $1 in
