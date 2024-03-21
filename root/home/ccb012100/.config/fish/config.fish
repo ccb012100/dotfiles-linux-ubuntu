@@ -43,6 +43,7 @@ if status is-interactive
         source $x
     end
 
+    # local config unique to the machine
     source $HOME/.local/config-local.fish
 
     # keyboard bindings
