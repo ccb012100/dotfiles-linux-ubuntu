@@ -58,7 +58,11 @@ if [[ ! -f "$fzfcompletions" ]]; then
   curl https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.bash --output "$fzfcompletions"
 fi
 
-# set Ripgrep configuration file
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Ripgrep
 export RIPGREP_CONFIG_PATH="$HOME/.config/ripgreprc"
 
 # starship
