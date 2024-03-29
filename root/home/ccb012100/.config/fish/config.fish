@@ -1,4 +1,5 @@
 if status is-interactive
+    echo Loading config.fish...
     # Commands to run in interactive sessions can go here
     set EDITOR nvim
 
@@ -56,4 +57,7 @@ if status is-interactive
 
     # get ssh key credentials from the running instance of ssh-agent
     eval $(keychain --eval ~/.ssh/*_ed25519)
+
+    # DONE
+    echo Loaded config.fish
 end
