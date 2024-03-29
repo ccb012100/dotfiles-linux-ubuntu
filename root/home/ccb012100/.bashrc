@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
+echo "Loading config..."
 set -o noclobber
 shopt -s expand_aliases
 stty -ixon
@@ -27,3 +28,5 @@ bind 'set show-all-if-ambiguous on'
 bind 'TAB:menu-complete'
 # also bound by default to Ctrl+Alt+e
 bind "\C-.":shell-expand-line
+
+echo "Loaded config"
