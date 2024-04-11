@@ -6,6 +6,8 @@
     path = .config/git/personal.gitconfig
 [includeIf "gitdir:~/win/src/"]
     path = .config/git/personal.gitconfig
+[includeIf "gitdir:~/.local/share/chezmoi/"]
+    path = .config/git/personal.gitconfig
 [includeIf "gitdir:~/.dotfiles/"]
     path = .config/git/personal.gitconfig
 [includeIf "gitdir:~/.hooks/"]
