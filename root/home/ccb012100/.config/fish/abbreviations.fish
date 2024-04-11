@@ -24,6 +24,7 @@ abbr --add lec 'echo $status' # last exit code
 abbr --add lns ln -s
 abbr --add mv mv -iv
 abbr --add rm rm -i
+abbr --add rmrf rm -rf
 abbr --add sctl systemctl
 
 # bat
@@ -34,6 +35,8 @@ abbr --add brewup brew upgrade
 abbr --add jj cargo # easer to type than 'ca'
 abbr --add jjb cargo build
 abbr --add jjr cargo run
+# chezmoi
+abbr --add cm chezmoi
 # cht.sh
 abbr --add ch cht.sh
 abbr --add cht cht.sh

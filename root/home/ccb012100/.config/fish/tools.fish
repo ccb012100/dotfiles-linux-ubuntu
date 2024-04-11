@@ -10,11 +10,12 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 if status --is-interactive
     set BASE16_SHELL "$HOME/.config/base16-shell/"
 
+    # should be synced by chezmoi
     if not test -d "$BASE16_SHELL"
-        git clone https://github.com/chriskempson/base16-shell.git "$BASE16_SHELL"
+        echo "$BASE16_SHELL does not exist!"
+    else
+        source "$BASE16_SHELL/profile_helper.fish"
     end
-
-    source "$BASE16_SHELL/profile_helper.fish"
 end
 
 # base16-classic-dark
@@ -27,6 +28,7 @@ base16-gruvbox-dark-hard
 
 # dotnet CLI
 complete -f -c dotnet -a "(dotnet complete (commandline -cp))"
+
 # GPG (GNU Privacy Guard or GnuPG)
 export GPG_TTY=$(tty)
 
@@ -67,8 +69,8 @@ export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always {}'
   --bind 'ctrl-/:change-preview-window(down|hidden|)'"
 export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
 
-#: copied over from /home/linuxbrew/.linuxbrew/Cellar/fzf/<VERSION>/shell/key-bindings.fish
-source "$HOME/bin/fzf-keybindings.fish" && fzf_key_bindings
+#: synced to ~/bin by chezmoi
+source "$HOME/bin/fzf-key-bindings.fish" && fzf_key_bindings
 
 function __fish_pipe_to_ripgrep -d "Pipe the current command to ripgrep"
     set -l cmd rg
