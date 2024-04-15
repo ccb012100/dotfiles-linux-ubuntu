@@ -1,6 +1,5 @@
-if status is-interactive
+if status is-interactive # Commands to run in interactive sessions can go here
     echo Loading config.fish...
-    # Commands to run in interactive sessions can go here
     set EDITOR nvim
 
     set PATH $HOME/bin $PATH
@@ -12,8 +11,7 @@ if status is-interactive
         ln -sv '/mnt/c/Program Files/Google/Chrome/Application/chrome.exe' $HOME/bin/chrome
     end
 
-    #: necessary so that we can use xdg-open from WSL
-    set BROWSER $HOME/bin/chrome
+    set BROWSER $HOME/bin/chrome #: necessary so that we can use xdg-open from WSL
 
     if not test -f $HOME/bin/code
         ln -sv "/mnt/c/Program Files/Microsoft VS Code/bin/code" $HOME/bin/code
@@ -44,20 +42,20 @@ if status is-interactive
         source $x
     end
 
-    # local config unique to the machine
-    source $HOME/.local/config-local.fish
+    source $HOME/.local/config-local.fish # local config unique to the machine
 
     # keyboard bindings
     bind \co __fish_pipe_to_fzf # <Ctrl-o>
     bind \ea history-pager # <Alt-a>
     bind \en __fish_pipe_to_devnull # <Alt-n>
     bind \er __fish_pipe_to_ripgrep # <Alt-r>
+    source "$HOME/bin/fzf-key-bindings.fish" && fzf_key_bindings #: synced to ~/bin by chezmoi
+    fzf_configure_bindings --variables=\ev # change variables binding to <Alt-v>
+    bind \cr _atuin_search # bind search to Ctrl-r; this has to to be done _after_ calling fzf_key_bindings
 
     set fzf_preview_file_cmd bat
 
-    # get ssh key credentials from the running instance of ssh-agent
-    eval $(keychain --eval ~/.ssh/*_ed25519)
+    eval $(keychain --eval ~/.ssh/*_ed25519) # get ssh key credentials from the running instance of ssh-agent
 
-    # DONE
-    echo Loaded config.fish
+    echo Loaded config.fish # DONE
 end

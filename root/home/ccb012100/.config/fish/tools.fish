@@ -6,20 +6,22 @@
 set PATH /home/linuxbrew/.linuxbrew/bin $PATH
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-# Base16 Shell
-if status --is-interactive
-    set BASE16_SHELL "$HOME/.config/base16-shell/"
+# atuin
+atuin init fish --disable-up-arrow | source # use --disable-up-arrow to prevent binding it to autin search
 
-    # should be synced by chezmoi
-    if not test -d "$BASE16_SHELL"
-        echo "$BASE16_SHELL does not exist!"
-    else
-        source "$BASE16_SHELL/profile_helper.fish"
-    end
+# Base16 Shell
+set BASE16_SHELL "$HOME/.config/base16-shell/"
+
+# should be synced by chezmoi
+if not test -d "$BASE16_SHELL"
+    echo "$BASE16_SHELL does not exist!"
+else
+    source "$BASE16_SHELL/profile_helper.fish"
 end
 
 # base16-classic-dark
-base16-gruvbox-dark-hard
+#base16-gruvbox-dark-hard
+base16-material-darker
 # base16-material-palenight
 # base16-mellow-purple
 # base16-outrun-dark
@@ -57,7 +59,6 @@ set PATH $PATH $HOME/tools/forgit/bin/ # use forgit as a git command (e.g. `git 
 
 # fzf
 #: using https://github.com/PatrickF1/fzf.fish
-fzf_configure_bindings --variables=\ev # change variables binding to <Alt-v>
 set fzf_fd_opts --hidden # include hidden files
 
 export FZF_COMPLETION_TRIGGER=';;'
@@ -68,9 +69,6 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always {}'
   --bind 'ctrl-/:change-preview-window(down|hidden|)'"
 export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
-
-#: synced to ~/bin by chezmoi
-source "$HOME/bin/fzf-key-bindings.fish" && fzf_key_bindings
 
 function __fish_pipe_to_ripgrep -d "Pipe the current command to ripgrep"
     set -l cmd rg
